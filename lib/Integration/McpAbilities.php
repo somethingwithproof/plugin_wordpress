@@ -67,6 +67,14 @@ final class McpAbilities {
 			return;
 		}
 
+		if (method_exists($registrar, 'registerCategory')) {
+			try {
+				$registrar->registerCategory('monitoring', 'Monitoring');
+			} catch (\LogicException) {
+				// Category may already have been registered by another plugin.
+			}
+		}
+
 		$registrar->register('wordpress-list-sites', [
 			'label'        => 'List WordPress sites',
 			'description'  => 'List monitored WordPress site inventory records and latest health statuses without exposing Application Passwords.',
@@ -158,8 +166,48 @@ final class McpAbilities {
 			'output_schema' => [
 				'type'       => 'object',
 				'properties' => [
-					'counts'  => ['type' => 'object'],
-					'apdex'   => ['type' => 'object'],
+					'counts' => [
+						'type'       => 'object',
+						'properties' => [
+							'sites_total'          => ['type' => 'integer', 'minimum' => 0],
+							'sites_healthy'        => ['type' => 'integer', 'minimum' => 0],
+							'sites_degraded'       => ['type' => 'integer', 'minimum' => 0],
+							'sites_critical'       => ['type' => 'integer', 'minimum' => 0],
+							'sites_unreachable'    => ['type' => 'integer', 'minimum' => 0],
+							'updates_pending'      => ['type' => 'integer', 'minimum' => 0],
+							'cron_overdue_total'   => ['type' => 'integer', 'minimum' => 0],
+							'autoload_bloat_sites' => ['type' => 'integer', 'minimum' => 0],
+							'autoload_warn_sites'  => ['type' => 'integer', 'minimum' => 0],
+							'autoload_crit_sites'  => ['type' => 'integer', 'minimum' => 0],
+							'ttfb_p95_ms'          => ['type' => 'number', 'minimum' => 0],
+							'tls_min_expiry_days'  => ['type' => ['integer', 'null']],
+						],
+						'required' => [
+							'sites_total',
+							'sites_healthy',
+							'sites_degraded',
+							'sites_critical',
+							'sites_unreachable',
+							'updates_pending',
+							'cron_overdue_total',
+							'autoload_bloat_sites',
+							'autoload_warn_sites',
+							'autoload_crit_sites',
+							'ttfb_p95_ms',
+							'tls_min_expiry_days',
+						],
+						'additionalProperties' => false,
+					],
+					'apdex' => [
+						'type'       => 'object',
+						'properties' => [
+							'score'        => ['type' => 'number', 'minimum' => 0, 'maximum' => 1],
+							'rating'       => ['type' => 'string', 'maxLength' => 32],
+							'thresholdTMs' => ['type' => 'integer', 'minimum' => 1],
+						],
+						'required'             => ['score', 'rating', 'thresholdTMs'],
+						'additionalProperties' => false,
+					],
 					'latency' => [
 						'type'       => 'object',
 						'properties' => [
@@ -275,7 +323,30 @@ final class McpAbilities {
 			'output_schema' => [
 				'type'       => 'object',
 				'properties' => [
-					'summary' => ['type' => 'object'],
+					'summary' => [
+						'type'       => 'object',
+						'properties' => [
+							'totalPending'     => ['type' => 'integer', 'minimum' => 0],
+							'sitesWithUpdates' => ['type' => 'integer', 'minimum' => 0],
+							'latestWpVersion'  => ['type' => 'string', 'maxLength' => 32],
+							'wpVersionCounts'  => [
+								'type'     => 'array',
+								'maxItems' => 100,
+								'items'    => [
+									'type'       => 'object',
+									'properties' => [
+										'version' => ['type' => 'string', 'maxLength' => 32],
+										'count'   => ['type' => 'integer', 'minimum' => 0],
+									],
+									'required'             => ['version', 'count'],
+									'additionalProperties' => false,
+								],
+							],
+							'sitesBehindCore'  => ['type' => 'integer', 'minimum' => 0],
+						],
+						'required'             => ['totalPending', 'sitesWithUpdates', 'latestWpVersion', 'wpVersionCounts', 'sitesBehindCore'],
+						'additionalProperties' => false,
+					],
 					'sites'   => [
 						'type'     => 'array',
 						'maxItems' => self::MAX_ARRAY_ITEMS,
@@ -336,8 +407,27 @@ final class McpAbilities {
 					}
 				}
 
+				$versionCounts = [];
+
+				foreach ($analysis['updateDrift']['wpVersionCounts'] as $version => $count) {
+					if (count($versionCounts) >= 100) {
+						break;
+					}
+
+					$versionCounts[] = [
+						'version' => (string) $version,
+						'count'   => (int) $count,
+					];
+				}
+
 				return [
-					'summary' => $analysis['updateDrift'],
+					'summary' => [
+						'totalPending'     => $analysis['updateDrift']['totalPending'],
+						'sitesWithUpdates' => $analysis['updateDrift']['sitesWithUpdates'],
+						'latestWpVersion'  => $analysis['updateDrift']['latestWpVersion'],
+						'wpVersionCounts'  => $versionCounts,
+						'sitesBehindCore'  => $analysis['updateDrift']['sitesBehindCore'],
+					],
 					'sites'   => $driftSites,
 				];
 			},

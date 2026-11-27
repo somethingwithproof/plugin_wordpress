@@ -38,6 +38,7 @@ use Somethingwithproof\WordPress\Metrics\FleetAnalyzer;
 use Somethingwithproof\WordPress\Metrics\SiteMetrics;
 use Somethingwithproof\WordPress\Poller\FleetPoller;
 use Somethingwithproof\WordPress\Repository\SiteRepository;
+use Somethingwithproof\WordPress\Schema;
 use Somethingwithproof\WordPress\Security\OutboundGuard;
 use Somethingwithproof\WordPress\Security\SecretVault;
 use Somethingwithproof\WordPress\Settings;
@@ -187,27 +188,68 @@ final class ConfigCliUiAndIntegrationsTest extends TestCase {
 		$this->assertSame('wordpress.overview', $debug[0]['id']);
 		$this->assertArrayHasKey('vault_keyfile', $debug[0]['fields']);
 
-		// Canonical MCP schema check: every type=array must have both items and maxItems.
+		// Canonical Schema safety check: Cacti 1.2.31 interpolates table/column comments unescaped.
+		foreach (Schema::tables() as $tableName => $def) {
+			if (isset($def['comment']) && is_string($def['comment'])) {
+				$this->assertStringNotContainsString("'", $def['comment'], $tableName . ' comment must not contain single quotes');
+			}
+
+			foreach ((array) ($def['columns'] ?? []) as $col) {
+				if (is_array($col) && isset($col['comment']) && is_string($col['comment'])) {
+					$this->assertStringNotContainsString("'", $col['comment'], $tableName . ' column comment must not contain single quotes');
+				}
+			}
+		}
+
+		// Canonical MCP schema check: registerCategory precedes register, all objects are closed, all arrays are bounded.
 		$abilities = [];
-		$reg       = new class($abilities) {
-			/** @param array<string, mixed> $bag */
-			public function __construct(public array &$bag) {}
+		$events    = [];
+		$reg       = new class($abilities, $events) {
+			/**
+			 * @param array<string, mixed> $bag
+			 * @param list<string> $events
+			 */
+			public function __construct(public array &$bag, public array &$events) {}
+			public function registerCategory(string $id, string $label): void {
+				$this->events[] = 'category:' . $id . ':' . $label;
+			}
 			/** @param array<string, mixed> $def */
 			public function register(string $id, array $def): void {
+				$this->events[] = 'ability:' . $id;
 				$this->bag[$id] = $def;
 			}
 		};
 		McpAbilities::register($reg, static fn (): SiteRepository => $repo, static fn (): Settings => $settings, static fn (int $u): bool => true);
 		$this->assertSame(['wordpress-list-sites', 'wordpress-get-health', 'wordpress-get-drift'], array_keys($abilities));
+		$this->assertSame('category:monitoring:Monitoring', $events[0] ?? null);
+		$this->assertSame('ability:wordpress-list-sites', $events[1] ?? null);
+
+		// Duplicate category LogicException must not abort ability registration.
+		$dupBag = [];
+		$dupReg = new class($dupBag) {
+			/** @param array<string, mixed> $bag */
+			public function __construct(public array &$bag) {}
+			public function registerCategory(string $id, string $label): void {
+				throw new \LogicException('Duplicate category');
+			}
+			/** @param array<string, mixed> $def */
+			public function register(string $id, array $def): void {
+				$this->bag[$id] = $def;
+			}
+		};
+		McpAbilities::register($dupReg, static fn (): SiteRepository => $repo, static fn (): Settings => $settings, static fn (int $u): bool => true);
+		$this->assertCount(3, $dupBag);
 
 		foreach ($abilities as $id => $def) {
-			$this->assertArraySchemasBounded($def['output_schema'], $id);
+			$this->assertSchemaClosedAndBounded($def['input_schema'], $id . '.input_schema');
+			$this->assertSchemaClosedAndBounded($def['output_schema'], $id . '.output_schema');
 		}
 
 		$healthOut = ($abilities['wordpress-get-health']['execute'])(1, new \stdClass());
 		$this->assertSame(1, $healthOut['counts']['sites_total']);
 		$driftOut = ($abilities['wordpress-get-drift']['execute'])(1, new \stdClass());
 		$this->assertCount(1, $driftOut['sites']);
+		$this->assertSame([['version' => '6.6.0', 'count' => 1]], $driftOut['summary']['wpVersionCounts']);
 
 		// Canonical API resource contract.
 		$resources = ApiResources::build(static fn (): SiteRepository => $repo, static fn (): Settings => $settings);
@@ -234,29 +276,39 @@ final class ConfigCliUiAndIntegrationsTest extends TestCase {
 	}
 
 	/**
-	 * Recursively verify every JSON schema array node declares both items and maxItems.
+	 * Recursively verify every JSON schema object is closed and every array declares items and maxItems.
 	 *
 	 * @param array<string, mixed> $schema Schema node.
 	 * @param string $path Context path for failure messages.
 	 * @return void
 	 */
-	private function assertArraySchemasBounded(array $schema, string $path): void {
-		if (($schema['type'] ?? null) === 'array') {
-			$this->assertArrayHasKey('items', $schema, $path . ' missing items');
-			$this->assertArrayHasKey('maxItems', $schema, $path . ' missing maxItems');
-			$this->assertIsInt($schema['maxItems'], $path . ' maxItems must be int');
-		}
+	private function assertSchemaClosedAndBounded(array $schema, string $path): void {
+		$type = is_array($schema['type'] ?? null) ? ($schema['type'][0] ?? null) : ($schema['type'] ?? null);
 
-		if (isset($schema['properties']) && is_array($schema['properties'])) {
-			foreach ($schema['properties'] as $k => $prop) {
+		if ($type === 'object') {
+			$this->assertArrayHasKey('properties', $schema, $path . ' missing properties');
+			$this->assertFalse($schema['additionalProperties'] ?? null, $path . ' must set additionalProperties=false');
+			$props = is_array($schema['properties']) ? $schema['properties'] : (array) $schema['properties'];
+
+			foreach ((array) ($schema['required'] ?? []) as $req) {
+				$this->assertArrayHasKey((string) $req, $props, $path . ' required field missing from properties: ' . (string) $req);
+			}
+
+			foreach ($props as $k => $prop) {
 				if (is_array($prop)) {
-					$this->assertArraySchemasBounded($prop, $path . '.' . $k);
+					$this->assertSchemaClosedAndBounded($prop, $path . '.' . $k);
 				}
 			}
 		}
 
-		if (isset($schema['items']) && is_array($schema['items'])) {
-			$this->assertArraySchemasBounded($schema['items'], $path . '[]');
+		if ($type === 'array') {
+			$this->assertArrayHasKey('items', $schema, $path . ' missing items');
+			$this->assertArrayHasKey('maxItems', $schema, $path . ' missing maxItems');
+			$this->assertIsInt($schema['maxItems'], $path . ' maxItems must be int');
+
+			if (is_array($schema['items'])) {
+				$this->assertSchemaClosedAndBounded($schema['items'], $path . '[]');
+			}
 		}
 	}
 }

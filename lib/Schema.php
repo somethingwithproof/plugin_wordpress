@@ -378,7 +378,7 @@ final class Schema {
 				],
 				'primary' => 'poller_id',
 				'type'    => 'InnoDB',
-				'comment' => 'Adaptive Little\'s Law and CoDel concurrency state per poller',
+				'comment' => 'Adaptive queuing and CoDel concurrency state per poller',
 			],
 		];
 	}
