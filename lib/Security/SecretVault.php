@@ -345,6 +345,7 @@ final class SecretVault {
 		}
 
 		if ($this->enforcePermissions) {
+			clearstatcache(true, $this->keyFilePath);
 			$perms = @fileperms($this->keyFilePath);
 
 			if (is_int($perms) && ($perms & 0o007) !== 0) {
