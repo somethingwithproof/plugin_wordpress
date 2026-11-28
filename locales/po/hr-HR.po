@@ -1,0 +1,325 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
+# SPDX-FileCopyrightText: 2026 Thomas Vincent <thomasvincent@gmail.com>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: wordpress 0.1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/somethingwithproof/plugin_wordpress/issues\n"
+"PO-Revision-Date: 2026-11-28 00:00+0000\n"
+"Last-Translator: Thomas Vincent <thomasvincent@gmail.com>\n"
+"Language-Team: Croatian <developers@cacti.net>\n"
+"Language: hr-HR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+
+#: lib/Pages.php
+msgid "WordPress View"
+msgstr "WordPress pregled"
+
+#: lib/Pages.php
+msgid "WordPress Operator"
+msgstr "WordPress operater"
+
+#: lib/Pages.php
+msgid "WordPress Admin"
+msgstr "WordPress administrator"
+
+#: lib/Pages.php
+msgid "WordPress Fleet Overview"
+msgstr "Pregled WordPress flote"
+
+#: lib/Pages.php
+msgid "WordPress Drift & Probes"
+msgstr "WordPress odstupanja i sonde"
+
+#: lib/Pages.php
+msgid "WordPress Inventory & Vault"
+msgstr "WordPress inventar i trezor"
+
+#: lib/Settings.php
+msgid "WordPress Fleet Security & Vault"
+msgstr "Sigurnost WordPress flote i trezor"
+
+#: lib/Settings.php
+msgid "Vault Keyfile Path"
+msgstr "Putanja datoteke ključa trezora"
+
+#: lib/Settings.php
+msgid "Absolute path to the external 256-bit AES-GCM keyfile used to encrypt Application Passwords at rest. Never replicated to remote pollers."
+msgstr "Apsolutna putanja do vanjske 256-bit AES-GCM datoteke ključa koja se koristi za šifriranje aplikacijskih lozinki u mirovanju. Nikada se ne replicira na udaljene polere."
+
+#: lib/Settings.php
+msgid "Internal Host Allowlist"
+msgstr "Popis dopuštenih internih poslužitelja"
+
+#: lib/Settings.php
+msgid "Comma-separated hostnames or wildcard patterns (e.g. *.corp.example) exempt from private-IP SSRF blocking."
+msgstr "Nazivi poslužitelja ili zamjenski obrasci odvojeni zarezom (npr. *.corp.example) izuzeti od blokiranja SSRF-a za privatne IP adrese."
+
+#: lib/Settings.php
+msgid "Internal CIDR Allowlist"
+msgstr "Popis dopuštenih internih CIDR raspona"
+
+#: lib/Settings.php
+msgid "Comma-separated internal CIDR ranges explicitly permitted by OutboundGuard."
+msgstr "Interni CIDR rasponi odvojeni zarezom koje OutboundGuard izričito dopušta."
+
+#: lib/Settings.php
+msgid "Outbound Client & Adaptive Poller Sizing"
+msgstr "Izlazni klijent i prilagodljivo dimenzioniranje polera"
+
+#: lib/Settings.php
+msgid "Poll Interval (seconds)"
+msgstr "Interval ispitivanja (sekunde)"
+
+#: lib/Settings.php
+msgid "Target fleet polling interval in seconds for Little's Law concurrency sizing."
+msgstr "Ciljni interval ispitivanja flote u sekundama za dimenzioniranje istodobnosti prema Little's Law."
+
+#: lib/Settings.php
+msgid "Connect Timeout (seconds)"
+msgstr "Istek vremena povezivanja (sekunde)"
+
+#: lib/Settings.php
+msgid "Maximum TCP/TLS connect duration per WordPress probe (1-15s)."
+msgstr "Maksimalno trajanje TCP/TLS povezivanja po WordPress sondi (1-15s)."
+
+#: lib/Settings.php
+msgid "Read Timeout (seconds)"
+msgstr "Istek vremena čitanja (sekunde)"
+
+#: lib/Settings.php
+msgid "Maximum total HTTP read duration per WordPress probe (1-60s)."
+msgstr "Maksimalno ukupno trajanje HTTP čitanja po WordPress sondi (1-60s)."
+
+#: lib/Settings.php
+msgid "Max Response Size (bytes)"
+msgstr "Maksimalna veličina odgovora (bajtovi)"
+
+#: lib/Settings.php
+msgid "Hard byte ceiling per HTTP response (capped at 2097152 bytes / 2 MiB)."
+msgstr "Strogo ograničenje bajtova po HTTP odgovoru (ograničeno na 2097152 bajtova / 2 MiB)."
+
+#: lib/Settings.php
+msgid "CoDel Target Standing Delay (ms)"
+msgstr "CoDel ciljno trajno kašnjenje (ms)"
+
+#: lib/Settings.php
+msgid "Queue standing-delay target in milliseconds before adaptive concurrency backs off."
+msgstr "Ciljno trajno kašnjenje reda čekanja u milisekundama prije nego što prilagodljiva istodobnost smanji opterećenje."
+
+#: lib/Settings.php
+msgid "Minimum Concurrency"
+msgstr "Minimalna istodobnost"
+
+#: lib/Settings.php
+msgid "Lower bound on concurrent WordPress probe workers per collector shard."
+msgstr "Donja granica istodobnih radnih procesa WordPress sonde po particiji prikupljača."
+
+#: lib/Settings.php
+msgid "Maximum Concurrency"
+msgstr "Maksimalna istodobnost"
+
+#: lib/Settings.php
+msgid "Upper bound on concurrent WordPress probe workers per collector shard."
+msgstr "Gornja granica istodobnih radnih procesa WordPress sonde po particiji prikupljača."
+
+#: lib/Settings.php
+msgid "HTTP User-Agent"
+msgstr "HTTP User-Agent"
+
+#: lib/Settings.php
+msgid "User-Agent header sent on read-only REST and Site Health probes."
+msgstr "Zaglavlje User-Agent poslano u REST i Site Health sondama samo za čitanje."
+
+#: lib/Settings.php
+msgid "Fleet Health & Thold Thresholds"
+msgstr "Zdravlje flote i pragovi Thold"
+
+#: lib/Settings.php
+msgid "Default Apdex T (ms)"
+msgstr "Zadani Apdex T (ms)"
+
+#: lib/Settings.php
+msgid "Satisfied TTFB threshold T in milliseconds (tolerating threshold is 4T)."
+msgstr "Zadovoljavajući TTFB prag T u milisekundama (prag tolerancije je 4T)."
+
+#: lib/Settings.php
+msgid "Autoload Bloat Warning (bytes)"
+msgstr "Upozorenje za prekomjerni autoload (bajtovi)"
+
+#: lib/Settings.php
+msgid "wp_options autoloaded size warning threshold (default 819200 / 800 KiB)."
+msgstr "Prag upozorenja za veličinu automatskog učitavanja wp_options (zadano 819200 / 800 KiB)."
+
+#: lib/Settings.php
+msgid "Autoload Bloat Critical (bytes)"
+msgstr "Kritični prag za prekomjerni autoload (bajtovi)"
+
+#: lib/Settings.php
+msgid "wp_options autoloaded size critical threshold (default 2097152 / 2 MiB)."
+msgstr "Kritični prag za veličinu automatskog učitavanja wp_options (zadano 2097152 / 2 MiB)."
+
+#: lib/Settings.php
+msgid "WP-Cron Lag Warning (seconds)"
+msgstr "Upozorenje za kašnjenje WP-Cron (sekunde)"
+
+#: lib/Settings.php
+msgid "Oldest overdue WP-Cron job lag threshold for degraded status."
+msgstr "Prag kašnjenja najstarijeg zakašnjelog WP-Cron zadatka za degradirani status."
+
+#: lib/Settings.php
+msgid "TLS Expiry Warning (days)"
+msgstr "Upozorenje za istek TLS-a (dani)"
+
+#: lib/Settings.php
+msgid "Days before TLS certificate expiry triggering degraded status."
+msgstr "Broj dana prije isteka TLS certifikata koji pokreće degradirani status."
+
+#: lib/Settings.php
+msgid "TLS Expiry Critical (days)"
+msgstr "Kritično upozorenje za istek TLS-a (dani)"
+
+#: lib/Settings.php
+msgid "Days before TLS certificate expiry triggering critical status."
+msgstr "Broj dana prije isteka TLS certifikata koji pokreće kritični status."
+
+#: lib/Settings.php
+msgid "Keep Tables on Uninstall"
+msgstr "Zadrži tablice pri deinstalaciji"
+
+#: lib/Settings.php
+msgid "Preserve plugin_wordpress database tables when uninstalling the plugin."
+msgstr "Sačuvaj tablice baze podataka plugin_wordpress prilikom deinstalacije dodatka."
+
+#: lib/Ui/PagesRenderer.php
+msgid "Fleet Health Summary"
+msgstr "Sažetak zdravlja flote"
+
+#: lib/Ui/PagesRenderer.php
+msgid "MAD Latency Anomalies"
+msgstr "MAD anomalije latencije"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Site Snapshots"
+msgstr "Snimke stanja web-mjesta"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Cacti Thold Baseline Templates"
+msgstr "Osnovni predlošci Cacti Thold"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Dry-Run Probe Site:"
+msgstr "Web-mjesto za probnu sondu:"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Run Read-Only Probe"
+msgstr "Pokreni sondu samo za čitanje"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Latest Dry-Run Probe Result"
+msgstr "Najnoviji rezultat probne sonde"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Update Drift, Cron Stalls & Autoload Bloat"
+msgstr "Odstupanja ažuriranja, zastoji Crona i prekomjerni autoload"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Vault Status:"
+msgstr "Status trezora:"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Add or Update WordPress Site"
+msgstr "Dodaj ili ažuriraj WordPress web-mjesto"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Save Site"
+msgstr "Spremi web-mjesto"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Configured Fleet Inventory"
+msgstr "Konfigurirani inventar flote"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Delete"
+msgstr "Izbriši"
+
+#: setup.php
+#, php-format
+msgid "The WordPress plugin requires PHP %s or later. This server runs PHP %s, so the plugin was not installed or enabled."
+msgstr "Dodatak WordPress zahtijeva PHP %s ili noviji. Ovaj poslužitelj koristi PHP %s, pa dodatak nije instaliran niti omogućen."
+
+#: setup.php
+msgid "Utilities"
+msgstr "Alati"
+
+#: setup.php
+msgid "WordPress"
+msgstr "WordPress"
+
+#: setup.php
+msgid "WordPress Fleet Monitor"
+msgstr "Nadzor WordPress flote"
+
+#: setup.php
+msgid "The WordPress plugin is not enabled."
+msgstr "Dodatak WordPress nije omogućen."
+
+#: setup.php
+#, php-format
+msgid "The WordPress plugin requires PHP %s or later."
+msgstr "Dodatak WordPress zahtijeva PHP %s ili noviji."
+
+#: wordpress_admin.php wordpress_operator.php
+msgid "CSRF verification failed. Reload the page and retry."
+msgstr "CSRF provjera nije uspjela. Ponovno učitajte stranicu i pokušajte ponovno."
+
+#: wordpress_admin.php
+msgid "Saved WordPress site inventory entry."
+msgstr "Zapis inventara WordPress web-mjesta je spremljen."
+
+#: wordpress_admin.php
+msgid "Encrypted Application Password stored in local AES-256-GCM vault."
+msgstr "Šifrirana aplikacijska lozinka pohranjena je u lokalni AES-256-GCM trezor."
+
+#: wordpress_admin.php
+msgid "Deleted WordPress site and associated local vault secret."
+msgstr "Izbrisano WordPress web-mjesto i pripadajuća tajna u lokalnom trezoru."
+
+#: wordpress_admin.php
+msgid "Invalid site slug."
+msgstr "Nevažeći slug web-mjesta."
+
+#: wordpress_admin.php
+msgid "Unsupported administrator action."
+msgstr "Nepodržana administratorska radnja."
+
+#: wordpress_admin.php
+msgid "WordPress Inventory, Vault Credentials & Poller Assignment (Administrator)"
+msgstr "WordPress inventar, vjerodajnice trezora i dodjela polera (Administrator)"
+
+#: wordpress_operator.php
+msgid "Select a site to probe."
+msgstr "Odaberite web-mjesto za sondu."
+
+#: wordpress_operator.php
+msgid "Unknown WordPress site slug."
+msgstr "Nepoznat slug WordPress web-mjesta."
+
+#: wordpress_operator.php
+msgid "Completed read-only dry-run probe."
+msgstr "Dovršena probna sonda samo za čitanje."
+
+#: wordpress_operator.php
+msgid "Unsupported operator action."
+msgstr "Nepodržana radnja operatera."
+
+#: wordpress_operator.php
+msgid "WordPress Drift, Site Health, Cron & Dry-Run Probes (Operator)"
+msgstr "WordPress odstupanja, zdravlje web-mjesta, Cron i probne sonde (Operater)"
+
+#: wordpress_view.php
+msgid "WordPress Fleet Health & Metrics Overview (View)"
+msgstr "Pregled zdravlja i metrika WordPress flote (Pregled)"

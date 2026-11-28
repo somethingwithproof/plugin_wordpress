@@ -1,0 +1,324 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
+# SPDX-FileCopyrightText: 2026 Thomas Vincent <thomasvincent@gmail.com>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: wordpress 0.1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/somethingwithproof/plugin_wordpress/issues\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Thomas Vincent <thomasvincent@gmail.com>\n"
+"Language-Team: Thomas Vincent <thomasvincent@gmail.com>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: lib/Pages.php
+msgid "WordPress View"
+msgstr ""
+
+#: lib/Pages.php
+msgid "WordPress Operator"
+msgstr ""
+
+#: lib/Pages.php
+msgid "WordPress Admin"
+msgstr ""
+
+#: lib/Pages.php
+msgid "WordPress Fleet Overview"
+msgstr ""
+
+#: lib/Pages.php
+msgid "WordPress Drift & Probes"
+msgstr ""
+
+#: lib/Pages.php
+msgid "WordPress Inventory & Vault"
+msgstr ""
+
+#: lib/Settings.php
+msgid "WordPress Fleet Security & Vault"
+msgstr ""
+
+#: lib/Settings.php
+msgid "Vault Keyfile Path"
+msgstr ""
+
+#: lib/Settings.php
+msgid "Absolute path to the external 256-bit AES-GCM keyfile used to encrypt Application Passwords at rest. Never replicated to remote pollers."
+msgstr ""
+
+#: lib/Settings.php
+msgid "Internal Host Allowlist"
+msgstr ""
+
+#: lib/Settings.php
+msgid "Comma-separated hostnames or wildcard patterns (e.g. *.corp.example) exempt from private-IP SSRF blocking."
+msgstr ""
+
+#: lib/Settings.php
+msgid "Internal CIDR Allowlist"
+msgstr ""
+
+#: lib/Settings.php
+msgid "Comma-separated internal CIDR ranges explicitly permitted by OutboundGuard."
+msgstr ""
+
+#: lib/Settings.php
+msgid "Outbound Client & Adaptive Poller Sizing"
+msgstr ""
+
+#: lib/Settings.php
+msgid "Poll Interval (seconds)"
+msgstr ""
+
+#: lib/Settings.php
+msgid "Target fleet polling interval in seconds for Little's Law concurrency sizing."
+msgstr ""
+
+#: lib/Settings.php
+msgid "Connect Timeout (seconds)"
+msgstr ""
+
+#: lib/Settings.php
+msgid "Maximum TCP/TLS connect duration per WordPress probe (1-15s)."
+msgstr ""
+
+#: lib/Settings.php
+msgid "Read Timeout (seconds)"
+msgstr ""
+
+#: lib/Settings.php
+msgid "Maximum total HTTP read duration per WordPress probe (1-60s)."
+msgstr ""
+
+#: lib/Settings.php
+msgid "Max Response Size (bytes)"
+msgstr ""
+
+#: lib/Settings.php
+msgid "Hard byte ceiling per HTTP response (capped at 2097152 bytes / 2 MiB)."
+msgstr ""
+
+#: lib/Settings.php
+msgid "CoDel Target Standing Delay (ms)"
+msgstr ""
+
+#: lib/Settings.php
+msgid "Queue standing-delay target in milliseconds before adaptive concurrency backs off."
+msgstr ""
+
+#: lib/Settings.php
+msgid "Minimum Concurrency"
+msgstr ""
+
+#: lib/Settings.php
+msgid "Lower bound on concurrent WordPress probe workers per collector shard."
+msgstr ""
+
+#: lib/Settings.php
+msgid "Maximum Concurrency"
+msgstr ""
+
+#: lib/Settings.php
+msgid "Upper bound on concurrent WordPress probe workers per collector shard."
+msgstr ""
+
+#: lib/Settings.php
+msgid "HTTP User-Agent"
+msgstr ""
+
+#: lib/Settings.php
+msgid "User-Agent header sent on read-only REST and Site Health probes."
+msgstr ""
+
+#: lib/Settings.php
+msgid "Fleet Health & Thold Thresholds"
+msgstr ""
+
+#: lib/Settings.php
+msgid "Default Apdex T (ms)"
+msgstr ""
+
+#: lib/Settings.php
+msgid "Satisfied TTFB threshold T in milliseconds (tolerating threshold is 4T)."
+msgstr ""
+
+#: lib/Settings.php
+msgid "Autoload Bloat Warning (bytes)"
+msgstr ""
+
+#: lib/Settings.php
+msgid "wp_options autoloaded size warning threshold (default 819200 / 800 KiB)."
+msgstr ""
+
+#: lib/Settings.php
+msgid "Autoload Bloat Critical (bytes)"
+msgstr ""
+
+#: lib/Settings.php
+msgid "wp_options autoloaded size critical threshold (default 2097152 / 2 MiB)."
+msgstr ""
+
+#: lib/Settings.php
+msgid "WP-Cron Lag Warning (seconds)"
+msgstr ""
+
+#: lib/Settings.php
+msgid "Oldest overdue WP-Cron job lag threshold for degraded status."
+msgstr ""
+
+#: lib/Settings.php
+msgid "TLS Expiry Warning (days)"
+msgstr ""
+
+#: lib/Settings.php
+msgid "Days before TLS certificate expiry triggering degraded status."
+msgstr ""
+
+#: lib/Settings.php
+msgid "TLS Expiry Critical (days)"
+msgstr ""
+
+#: lib/Settings.php
+msgid "Days before TLS certificate expiry triggering critical status."
+msgstr ""
+
+#: lib/Settings.php
+msgid "Keep Tables on Uninstall"
+msgstr ""
+
+#: lib/Settings.php
+msgid "Preserve plugin_wordpress database tables when uninstalling the plugin."
+msgstr ""
+
+#: lib/Ui/PagesRenderer.php
+msgid "Fleet Health Summary"
+msgstr ""
+
+#: lib/Ui/PagesRenderer.php
+msgid "MAD Latency Anomalies"
+msgstr ""
+
+#: lib/Ui/PagesRenderer.php
+msgid "Site Snapshots"
+msgstr ""
+
+#: lib/Ui/PagesRenderer.php
+msgid "Cacti Thold Baseline Templates"
+msgstr ""
+
+#: lib/Ui/PagesRenderer.php
+msgid "Dry-Run Probe Site:"
+msgstr ""
+
+#: lib/Ui/PagesRenderer.php
+msgid "Run Read-Only Probe"
+msgstr ""
+
+#: lib/Ui/PagesRenderer.php
+msgid "Latest Dry-Run Probe Result"
+msgstr ""
+
+#: lib/Ui/PagesRenderer.php
+msgid "Update Drift, Cron Stalls & Autoload Bloat"
+msgstr ""
+
+#: lib/Ui/PagesRenderer.php
+msgid "Vault Status:"
+msgstr ""
+
+#: lib/Ui/PagesRenderer.php
+msgid "Add or Update WordPress Site"
+msgstr ""
+
+#: lib/Ui/PagesRenderer.php
+msgid "Save Site"
+msgstr ""
+
+#: lib/Ui/PagesRenderer.php
+msgid "Configured Fleet Inventory"
+msgstr ""
+
+#: lib/Ui/PagesRenderer.php
+msgid "Delete"
+msgstr ""
+
+#: setup.php
+#, php-format
+msgid "The WordPress plugin requires PHP %s or later. This server runs PHP %s, so the plugin was not installed or enabled."
+msgstr ""
+
+#: setup.php
+msgid "Utilities"
+msgstr ""
+
+#: setup.php
+msgid "WordPress"
+msgstr ""
+
+#: setup.php
+msgid "WordPress Fleet Monitor"
+msgstr ""
+
+#: setup.php
+msgid "The WordPress plugin is not enabled."
+msgstr ""
+
+#: setup.php
+#, php-format
+msgid "The WordPress plugin requires PHP %s or later."
+msgstr ""
+
+#: wordpress_admin.php wordpress_operator.php
+msgid "CSRF verification failed. Reload the page and retry."
+msgstr ""
+
+#: wordpress_admin.php
+msgid "Saved WordPress site inventory entry."
+msgstr ""
+
+#: wordpress_admin.php
+msgid "Encrypted Application Password stored in local AES-256-GCM vault."
+msgstr ""
+
+#: wordpress_admin.php
+msgid "Deleted WordPress site and associated local vault secret."
+msgstr ""
+
+#: wordpress_admin.php
+msgid "Invalid site slug."
+msgstr ""
+
+#: wordpress_admin.php
+msgid "Unsupported administrator action."
+msgstr ""
+
+#: wordpress_admin.php
+msgid "WordPress Inventory, Vault Credentials & Poller Assignment (Administrator)"
+msgstr ""
+
+#: wordpress_operator.php
+msgid "Select a site to probe."
+msgstr ""
+
+#: wordpress_operator.php
+msgid "Unknown WordPress site slug."
+msgstr ""
+
+#: wordpress_operator.php
+msgid "Completed read-only dry-run probe."
+msgstr ""
+
+#: wordpress_operator.php
+msgid "Unsupported operator action."
+msgstr ""
+
+#: wordpress_operator.php
+msgid "WordPress Drift, Site Health, Cron & Dry-Run Probes (Operator)"
+msgstr ""
+
+#: wordpress_view.php
+msgid "WordPress Fleet Health & Metrics Overview (View)"
+msgstr ""

@@ -1,0 +1,325 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
+# SPDX-FileCopyrightText: 2026 Thomas Vincent <thomasvincent@gmail.com>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: wordpress 0.1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/somethingwithproof/plugin_wordpress/issues\n"
+"PO-Revision-Date: 2026-11-28 00:00+0000\n"
+"Last-Translator: Thomas Vincent <thomasvincent@gmail.com>\n"
+"Language-Team: Somali <developers@cacti.net>\n"
+"Language: so_SO\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: lib/Pages.php
+msgid "WordPress View"
+msgstr "Aragtida WordPress"
+
+#: lib/Pages.php
+msgid "WordPress Operator"
+msgstr "Hawl-wadeenka WordPress"
+
+#: lib/Pages.php
+msgid "WordPress Admin"
+msgstr "Maamulaha WordPress"
+
+#: lib/Pages.php
+msgid "WordPress Fleet Overview"
+msgstr "Dulmar Guud ee Kooxda WordPress"
+
+#: lib/Pages.php
+msgid "WordPress Drift & Probes"
+msgstr "Isbeddelka & Baaritaannada WordPress"
+
+#: lib/Pages.php
+msgid "WordPress Inventory & Vault"
+msgstr "Liiska & Kaydka Sirta ee WordPress"
+
+#: lib/Settings.php
+msgid "WordPress Fleet Security & Vault"
+msgstr "Amniga Kooxda & Kaydka Sirta ee WordPress"
+
+#: lib/Settings.php
+msgid "Vault Keyfile Path"
+msgstr "Jidka Faylka Furaha Kaydka Sirta"
+
+#: lib/Settings.php
+msgid "Absolute path to the external 256-bit AES-GCM keyfile used to encrypt Application Passwords at rest. Never replicated to remote pollers."
+msgstr "Jidka buuxa ee faylka furaha dibadda ee 256-bit AES-GCM oo loo adeegsado in lagu sir-xiro erayada sirta ah ee abka marka la kaydiyo. Weligii looma koobiyeeyo ururiyeyaasha fog."
+
+#: lib/Settings.php
+msgid "Internal Host Allowlist"
+msgstr "Liiska Martigeliyeyaasha Gudaha ee La Oggol Yahay"
+
+#: lib/Settings.php
+msgid "Comma-separated hostnames or wildcard patterns (e.g. *.corp.example) exempt from private-IP SSRF blocking."
+msgstr "Magacyada martigeliyeyaasha ama qaababka wildcard (tusaale *.corp.example) oo hakad lagu kala saaray kana reeban xannibaadda SSRF ee IP-ga gaarka ah."
+
+#: lib/Settings.php
+msgid "Internal CIDR Allowlist"
+msgstr "Liiska CIDR Gudaha ee La Oggol Yahay"
+
+#: lib/Settings.php
+msgid "Comma-separated internal CIDR ranges explicitly permitted by OutboundGuard."
+msgstr "Kala duwanaanshaha CIDR ee gudaha oo hakad lagu kala saaray kuwaas oo si cad uu u oggolaaday OutboundGuard."
+
+#: lib/Settings.php
+msgid "Outbound Client & Adaptive Poller Sizing"
+msgstr "Macmiilka Dibadda & Qiyaasidda Ururiyaha La Qabsada"
+
+#: lib/Settings.php
+msgid "Poll Interval (seconds)"
+msgstr "Inta u Dhexeysa Ururinta (ilbiriqsiyo)"
+
+#: lib/Settings.php
+msgid "Target fleet polling interval in seconds for Little's Law concurrency sizing."
+msgstr "Inta la hiigsanayo ee u dhexeysa ururinta kooxda ilbiriqsi ahaan si loo qiyaaso wada-shaqeynta Little's Law."
+
+#: lib/Settings.php
+msgid "Connect Timeout (seconds)"
+msgstr "Waqtiga Dhammaadka Xiriirka (ilbiriqsiyo)"
+
+#: lib/Settings.php
+msgid "Maximum TCP/TLS connect duration per WordPress probe (1-15s)."
+msgstr "Muddada ugu badan ee xiriirka TCP/TLS baaritaan kasta oo WordPress ah (1-15s)."
+
+#: lib/Settings.php
+msgid "Read Timeout (seconds)"
+msgstr "Waqtiga Dhammaadka Akhriska (ilbiriqsiyo)"
+
+#: lib/Settings.php
+msgid "Maximum total HTTP read duration per WordPress probe (1-60s)."
+msgstr "Muddada guud ee ugu badan ee akhriska HTTP baaritaan kasta oo WordPress ah (1-60s)."
+
+#: lib/Settings.php
+msgid "Max Response Size (bytes)"
+msgstr "Cabbirka Ugu Badan ee Jawaabta (bytes)"
+
+#: lib/Settings.php
+msgid "Hard byte ceiling per HTTP response (capped at 2097152 bytes / 2 MiB)."
+msgstr "Xadka adag ee bytes jawaab kasta oo HTTP ah (waxaa lagu xaddiday 2097152 bytes / 2 MiB)."
+
+#: lib/Settings.php
+msgid "CoDel Target Standing Delay (ms)"
+msgstr "Daahitaanka Joogtada ah ee Bartilmaameedka CoDel (ms)"
+
+#: lib/Settings.php
+msgid "Queue standing-delay target in milliseconds before adaptive concurrency backs off."
+msgstr "Bartilmaameedka daahitaanka joogtada ah ee safka ee millisekan ka hor inta uusan wada-shaqeynta la qabsada hoos u dhigin."
+
+#: lib/Settings.php
+msgid "Minimum Concurrency"
+msgstr "Wada-shaqeynta Ugu Yar"
+
+#: lib/Settings.php
+msgid "Lower bound on concurrent WordPress probe workers per collector shard."
+msgstr "Xadka hoose ee shaqaalaha baaritaanka WordPress ee isku mar shaqeeya qayb kasta oo ururiye ah."
+
+#: lib/Settings.php
+msgid "Maximum Concurrency"
+msgstr "Wada-shaqeynta Ugu Badan"
+
+#: lib/Settings.php
+msgid "Upper bound on concurrent WordPress probe workers per collector shard."
+msgstr "Xadka sare ee shaqaalaha baaritaanka WordPress ee isku mar shaqeeya qayb kasta oo ururiye ah."
+
+#: lib/Settings.php
+msgid "HTTP User-Agent"
+msgstr "Madaxa HTTP User-Agent"
+
+#: lib/Settings.php
+msgid "User-Agent header sent on read-only REST and Site Health probes."
+msgstr "Madaxa User-Agent ee loo diro baaritaannada akhriska keliya ee REST iyo Caafimaadka Bogga."
+
+#: lib/Settings.php
+msgid "Fleet Health & Thold Thresholds"
+msgstr "Caafimaadka Kooxda & Xuduudaha Thold"
+
+#: lib/Settings.php
+msgid "Default Apdex T (ms)"
+msgstr "Apdex T ee Caadiga ah (ms)"
+
+#: lib/Settings.php
+msgid "Satisfied TTFB threshold T in milliseconds (tolerating threshold is 4T)."
+msgstr "Xadka TTFB ee qancinta T ee millisekan (xadka la dulqaadan karo waa 4T)."
+
+#: lib/Settings.php
+msgid "Autoload Bloat Warning (bytes)"
+msgstr "Digniinta Bararka Autoload (bytes)"
+
+#: lib/Settings.php
+msgid "wp_options autoloaded size warning threshold (default 819200 / 800 KiB)."
+msgstr "Xadka digniinta cabbirka is-raridda wp_options (caadiga ah waa 819200 / 800 KiB)."
+
+#: lib/Settings.php
+msgid "Autoload Bloat Critical (bytes)"
+msgstr "Heerka Halista ee Bararka Autoload (bytes)"
+
+#: lib/Settings.php
+msgid "wp_options autoloaded size critical threshold (default 2097152 / 2 MiB)."
+msgstr "Xadka halista cabbirka is-raridda wp_options (caadiga ah waa 2097152 / 2 MiB)."
+
+#: lib/Settings.php
+msgid "WP-Cron Lag Warning (seconds)"
+msgstr "Digniinta Dib-u-dhaca WP-Cron (ilbiriqsiyo)"
+
+#: lib/Settings.php
+msgid "Oldest overdue WP-Cron job lag threshold for degraded status."
+msgstr "Xadka dib-u-dhaca hawsha WP-Cron ee ugu da'da weyn ee dhaaftay waqtigeeda si loo muujiyo xaalad liidata."
+
+#: lib/Settings.php
+msgid "TLS Expiry Warning (days)"
+msgstr "Digniinta Dhammaadka TLS (maalmo)"
+
+#: lib/Settings.php
+msgid "Days before TLS certificate expiry triggering degraded status."
+msgstr "Maalmaha ka hor dhammaadka shahaadada TLS ee kiciya xaalad liidata."
+
+#: lib/Settings.php
+msgid "TLS Expiry Critical (days)"
+msgstr "Heerka Halista Dhammaadka TLS (maalmo)"
+
+#: lib/Settings.php
+msgid "Days before TLS certificate expiry triggering critical status."
+msgstr "Maalmaha ka hor dhammaadka shahaadada TLS ee kiciya xaalad halis ah."
+
+#: lib/Settings.php
+msgid "Keep Tables on Uninstall"
+msgstr "Hayso Jadwallada Marka La Tirtiro"
+
+#: lib/Settings.php
+msgid "Preserve plugin_wordpress database tables when uninstalling the plugin."
+msgstr "Ilaali jadwallada kaydka xogta ee plugin_wordpress marka la tirtirayo ku-xiraha."
+
+#: lib/Ui/PagesRenderer.php
+msgid "Fleet Health Summary"
+msgstr "Koobidda Caafimaadka Kooxda"
+
+#: lib/Ui/PagesRenderer.php
+msgid "MAD Latency Anomalies"
+msgstr "Qaladaadka Daahitaanka ee MAD"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Site Snapshots"
+msgstr "Sawirrada Xaaladda Bogagga"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Cacti Thold Baseline Templates"
+msgstr "Qaababka Aasaasiga ah ee Cacti Thold"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Dry-Run Probe Site:"
+msgstr "Bogga Baaritaanka Tijaabada:"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Run Read-Only Probe"
+msgstr "Orod Baaritaanka Akhriska Keliya"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Latest Dry-Run Probe Result"
+msgstr "Natiijadii Ugu Dambeysay ee Baaritaanka Tijaabada"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Update Drift, Cron Stalls & Autoload Bloat"
+msgstr "Isbeddelka Cusbooneysiinta, Hakadka Cron & Bararka Autoload"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Vault Status:"
+msgstr "Xaaladda Kaydka Sirta:"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Add or Update WordPress Site"
+msgstr "Ku Dar ama Cusbooneysii Bogga WordPress"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Save Site"
+msgstr "Kaydi Bogga"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Configured Fleet Inventory"
+msgstr "Liiska Kooxda La Habeeyay"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Delete"
+msgstr "Tirtir"
+
+#: setup.php
+#, php-format
+msgid "The WordPress plugin requires PHP %s or later. This server runs PHP %s, so the plugin was not installed or enabled."
+msgstr "Ku-xiraha WordPress wuxuu u baahan yahay PHP %s ama ka dambeeya. Serfarkani wuxuu ku shaqeeyaa PHP %s, sidaas darteed ku-xiraha lama rakibin mana la hawlgelin."
+
+#: setup.php
+msgid "Utilities"
+msgstr "Qalabka Adeegga"
+
+#: setup.php
+msgid "WordPress"
+msgstr "WordPress"
+
+#: setup.php
+msgid "WordPress Fleet Monitor"
+msgstr "Kormeeraha Kooxda WordPress"
+
+#: setup.php
+msgid "The WordPress plugin is not enabled."
+msgstr "Ku-xiraha WordPress ma shaqeynayo."
+
+#: setup.php
+#, php-format
+msgid "The WordPress plugin requires PHP %s or later."
+msgstr "Ku-xiraha WordPress wuxuu u baahan yahay PHP %s ama ka dambeeya."
+
+#: wordpress_admin.php wordpress_operator.php
+msgid "CSRF verification failed. Reload the page and retry."
+msgstr "Xaqiijinta CSRF way fashilantay. Dib u soo rar bogga oo mar kale isku day."
+
+#: wordpress_admin.php
+msgid "Saved WordPress site inventory entry."
+msgstr "Waxaa la kaydiyay diiwaanka bogga WordPress ee liiska."
+
+#: wordpress_admin.php
+msgid "Encrypted Application Password stored in local AES-256-GCM vault."
+msgstr "Erayga sirta ah ee abka ee sir-xiran waxaa lagu kaydiyay kaydka maxalliga ah ee AES-256-GCM."
+
+#: wordpress_admin.php
+msgid "Deleted WordPress site and associated local vault secret."
+msgstr "Waxaa la tirtiray bogga WordPress iyo sirta kaydka maxalliga ah ee la xiriirta."
+
+#: wordpress_admin.php
+msgid "Invalid site slug."
+msgstr "Magaca gaaban (slug) ee boggu ma saxna."
+
+#: wordpress_admin.php
+msgid "Unsupported administrator action."
+msgstr "Ficil maamule oo aan la taageerin."
+
+#: wordpress_admin.php
+msgid "WordPress Inventory, Vault Credentials & Poller Assignment (Administrator)"
+msgstr "Liiska WordPress, Aqoonsiyada Kaydka Sirta & U Qoondeynta Ururiyaha (Maamule)"
+
+#: wordpress_operator.php
+msgid "Select a site to probe."
+msgstr "Dooro bog la baaro."
+
+#: wordpress_operator.php
+msgid "Unknown WordPress site slug."
+msgstr "Magaca gaaban (slug) ee bogga WordPress lama yaqaan."
+
+#: wordpress_operator.php
+msgid "Completed read-only dry-run probe."
+msgstr "Waxaa la dhammeeyay baaritaanka tijaabada ee akhriska keliya."
+
+#: wordpress_operator.php
+msgid "Unsupported operator action."
+msgstr "Ficil hawl-wadeen oo aan la taageerin."
+
+#: wordpress_operator.php
+msgid "WordPress Drift, Site Health, Cron & Dry-Run Probes (Operator)"
+msgstr "Isbeddelka WordPress, Caafimaadka Bogga, Cron & Baaritaannada Tijaabada (Hawl-wadeen)"
+
+#: wordpress_view.php
+msgid "WordPress Fleet Health & Metrics Overview (View)"
+msgstr "Dulmarka Caafimaadka & Halbeegyada Kooxda WordPress (Aragti)"

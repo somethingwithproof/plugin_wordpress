@@ -1,0 +1,325 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
+# SPDX-FileCopyrightText: 2026 Thomas Vincent <thomasvincent@gmail.com>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: wordpress 0.1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/somethingwithproof/plugin_wordpress/issues\n"
+"PO-Revision-Date: 2026-11-28 00:00+0000\n"
+"Last-Translator: Thomas Vincent <thomasvincent@gmail.com>\n"
+"Language-Team: Hausa <developers@cacti.net>\n"
+"Language: ha_NG\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: lib/Pages.php
+msgid "WordPress View"
+msgstr "Duba WordPress"
+
+#: lib/Pages.php
+msgid "WordPress Operator"
+msgstr "Mai sarrafa WordPress"
+
+#: lib/Pages.php
+msgid "WordPress Admin"
+msgstr "Mai kula da WordPress"
+
+#: lib/Pages.php
+msgid "WordPress Fleet Overview"
+msgstr "Taƙaitaccen bayanin rukunin WordPress"
+
+#: lib/Pages.php
+msgid "WordPress Drift & Probes"
+msgstr "Karkacewa da binciken WordPress"
+
+#: lib/Pages.php
+msgid "WordPress Inventory & Vault"
+msgstr "Jerin WordPress da ma'ajiyar sirri"
+
+#: lib/Settings.php
+msgid "WordPress Fleet Security & Vault"
+msgstr "Tsaron rukunin WordPress da ma'ajiyar sirri"
+
+#: lib/Settings.php
+msgid "Vault Keyfile Path"
+msgstr "Hanyar fayil ɗin maɓallin ma'ajiyar sirri"
+
+#: lib/Settings.php
+msgid "Absolute path to the external 256-bit AES-GCM keyfile used to encrypt Application Passwords at rest. Never replicated to remote pollers."
+msgstr "Cikakkiyar hanyar zuwa fayil ɗin maɓallin waje na 256-bit AES-GCM da ake amfani da shi don ɓoye kalmomin sirrin manhaja a ajiye. Ba a taɓa kwafa shi zuwa masu tattara bayanai na nesa ba."
+
+#: lib/Settings.php
+msgid "Internal Host Allowlist"
+msgstr "Jerin uwar garken ciki da aka yarda da su"
+
+#: lib/Settings.php
+msgid "Comma-separated hostnames or wildcard patterns (e.g. *.corp.example) exempt from private-IP SSRF blocking."
+msgstr "Sunayen uwar garke ko tsarin alamar maye gurbi da aka raba da waƙafi (misali *.corp.example) da aka cire daga toshewar SSRF na IP mai zaman kansa."
+
+#: lib/Settings.php
+msgid "Internal CIDR Allowlist"
+msgstr "Jerin CIDR na ciki da aka yarda da su"
+
+#: lib/Settings.php
+msgid "Comma-separated internal CIDR ranges explicitly permitted by OutboundGuard."
+msgstr "Jeri na kewayon CIDR na ciki da aka raba da waƙafi waɗanda OutboundGuard ya ba da izini a fili."
+
+#: lib/Settings.php
+msgid "Outbound Client & Adaptive Poller Sizing"
+msgstr "Abokin ciniki mai fita da daidaita girman mai tattara bayanai"
+
+#: lib/Settings.php
+msgid "Poll Interval (seconds)"
+msgstr "Tazarar bincike (daƙiƙa)"
+
+#: lib/Settings.php
+msgid "Target fleet polling interval in seconds for Little's Law concurrency sizing."
+msgstr "Tazarar binciken rukuni da aka nufa a daƙiƙa don daidaita yawan aiki lokaci guda bisa Little's Law."
+
+#: lib/Settings.php
+msgid "Connect Timeout (seconds)"
+msgstr "Iyakar lokacin haɗuwa (daƙiƙa)"
+
+#: lib/Settings.php
+msgid "Maximum TCP/TLS connect duration per WordPress probe (1-15s)."
+msgstr "Mafi tsawon lokacin haɗin TCP/TLS ga kowane binciken WordPress (1-15s)."
+
+#: lib/Settings.php
+msgid "Read Timeout (seconds)"
+msgstr "Iyakar lokacin karatu (daƙiƙa)"
+
+#: lib/Settings.php
+msgid "Maximum total HTTP read duration per WordPress probe (1-60s)."
+msgstr "Mafi tsawon jimillar lokacin karatun HTTP ga kowane binciken WordPress (1-60s)."
+
+#: lib/Settings.php
+msgid "Max Response Size (bytes)"
+msgstr "Mafi girman girman amsa (bytes)"
+
+#: lib/Settings.php
+msgid "Hard byte ceiling per HTTP response (capped at 2097152 bytes / 2 MiB)."
+msgstr "Tsayayyen iyakar byte ga kowace amsar HTTP (iyaka 2097152 bytes / 2 MiB)."
+
+#: lib/Settings.php
+msgid "CoDel Target Standing Delay (ms)"
+msgstr "Tsayayyen jinkirin da aka nufa na CoDel (ms)"
+
+#: lib/Settings.php
+msgid "Queue standing-delay target in milliseconds before adaptive concurrency backs off."
+msgstr "Manufar jinkirin layi a cikin milliseconds kafin aikin lokaci guda mai daidaitawa ya rage gudu."
+
+#: lib/Settings.php
+msgid "Minimum Concurrency"
+msgstr "Mafi ƙarancin aiki lokaci guda"
+
+#: lib/Settings.php
+msgid "Lower bound on concurrent WordPress probe workers per collector shard."
+msgstr "Mafi ƙarancin iyaka ga ma'aikatan binciken WordPress masu aiki lokaci guda a kowane sashen tattarawa."
+
+#: lib/Settings.php
+msgid "Maximum Concurrency"
+msgstr "Mafi yawan aiki lokaci guda"
+
+#: lib/Settings.php
+msgid "Upper bound on concurrent WordPress probe workers per collector shard."
+msgstr "Mafi girman iyaka ga ma'aikatan binciken WordPress masu aiki lokaci guda a kowane sashen tattarawa."
+
+#: lib/Settings.php
+msgid "HTTP User-Agent"
+msgstr "Taken HTTP User-Agent"
+
+#: lib/Settings.php
+msgid "User-Agent header sent on read-only REST and Site Health probes."
+msgstr "Taken User-Agent da ake aikawa a binciken REST da Lafiyar Shafi na karatu kaɗai."
+
+#: lib/Settings.php
+msgid "Fleet Health & Thold Thresholds"
+msgstr "Lafiyar rukuni da iyakokin Thold"
+
+#: lib/Settings.php
+msgid "Default Apdex T (ms)"
+msgstr "Tsohon Apdex T (ms)"
+
+#: lib/Settings.php
+msgid "Satisfied TTFB threshold T in milliseconds (tolerating threshold is 4T)."
+msgstr "Iyakar TTFB mai gamsarwa T a cikin milliseconds (iyakar juriya ita ce 4T)."
+
+#: lib/Settings.php
+msgid "Autoload Bloat Warning (bytes)"
+msgstr "Gargaɗin kumburin lodi ta atomatik (bytes)"
+
+#: lib/Settings.php
+msgid "wp_options autoloaded size warning threshold (default 819200 / 800 KiB)."
+msgstr "Iyakar gargaɗi don girman abubuwan da ake lodawa ta atomatik a wp_options (tsoho 819200 / 800 KiB)."
+
+#: lib/Settings.php
+msgid "Autoload Bloat Critical (bytes)"
+msgstr "Mummunan kumburin lodi ta atomatik (bytes)"
+
+#: lib/Settings.php
+msgid "wp_options autoloaded size critical threshold (default 2097152 / 2 MiB)."
+msgstr "Iyaka mai tsanani don girman abubuwan da ake lodawa ta atomatik a wp_options (tsoho 2097152 / 2 MiB)."
+
+#: lib/Settings.php
+msgid "WP-Cron Lag Warning (seconds)"
+msgstr "Gargaɗin jinkirin WP-Cron (daƙiƙa)"
+
+#: lib/Settings.php
+msgid "Oldest overdue WP-Cron job lag threshold for degraded status."
+msgstr "Iyakar jinkirin mafi tsohon aikin WP-Cron da ya wuce lokaci don yanayin raguwar inganci."
+
+#: lib/Settings.php
+msgid "TLS Expiry Warning (days)"
+msgstr "Gargaɗin ƙarewar TLS (kwanaki)"
+
+#: lib/Settings.php
+msgid "Days before TLS certificate expiry triggering degraded status."
+msgstr "Kwanaki kafin ƙarewar takardar shaidar TLS da ke jawo yanayin raguwar inganci."
+
+#: lib/Settings.php
+msgid "TLS Expiry Critical (days)"
+msgstr "Tsananin ƙarewar TLS (kwanaki)"
+
+#: lib/Settings.php
+msgid "Days before TLS certificate expiry triggering critical status."
+msgstr "Kwanaki kafin ƙarewar takardar shaidar TLS da ke jawo yanayi mai tsanani."
+
+#: lib/Settings.php
+msgid "Keep Tables on Uninstall"
+msgstr "Ajiye teburori idan an cire"
+
+#: lib/Settings.php
+msgid "Preserve plugin_wordpress database tables when uninstalling the plugin."
+msgstr "Kiyaye teburorin bayanai na plugin_wordpress lokacin cire ƙarin manhajar."
+
+#: lib/Ui/PagesRenderer.php
+msgid "Fleet Health Summary"
+msgstr "Taƙaitaccen lafiyar rukuni"
+
+#: lib/Ui/PagesRenderer.php
+msgid "MAD Latency Anomalies"
+msgstr "Sabani na jinkirin MAD"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Site Snapshots"
+msgstr "Hotunan halin shafuka"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Cacti Thold Baseline Templates"
+msgstr "Samfuran asali na Cacti Thold"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Dry-Run Probe Site:"
+msgstr "Shafin binciken gwaji:"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Run Read-Only Probe"
+msgstr "Gudanar da binciken karatu kaɗai"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Latest Dry-Run Probe Result"
+msgstr "Sakamakon binciken gwaji na baya-bayan nan"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Update Drift, Cron Stalls & Autoload Bloat"
+msgstr "Karkacewar sabuntawa, tsayawar Cron da kumburin lodi ta atomatik"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Vault Status:"
+msgstr "Matsayin ma'ajiyar sirri:"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Add or Update WordPress Site"
+msgstr "Ƙara ko sabunta shafin WordPress"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Save Site"
+msgstr "Ajiye shafi"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Configured Fleet Inventory"
+msgstr "Jerin rukunin da aka saita"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Delete"
+msgstr "Goge"
+
+#: setup.php
+#, php-format
+msgid "The WordPress plugin requires PHP %s or later. This server runs PHP %s, so the plugin was not installed or enabled."
+msgstr "Ƙarin manhajar WordPress yana buƙatar PHP %s ko sabo. Wannan uwar garken tana amfani da PHP %s, don haka ba a girka ko kunna ƙarin manhajar ba."
+
+#: setup.php
+msgid "Utilities"
+msgstr "Kayan aiki"
+
+#: setup.php
+msgid "WordPress"
+msgstr "WordPress"
+
+#: setup.php
+msgid "WordPress Fleet Monitor"
+msgstr "Mai lura da rukunin WordPress"
+
+#: setup.php
+msgid "The WordPress plugin is not enabled."
+msgstr "Ba a kunna ƙarin manhajar WordPress ba."
+
+#: setup.php
+#, php-format
+msgid "The WordPress plugin requires PHP %s or later."
+msgstr "Ƙarin manhajar WordPress yana buƙatar PHP %s ko sabo."
+
+#: wordpress_admin.php wordpress_operator.php
+msgid "CSRF verification failed. Reload the page and retry."
+msgstr "Tabbatar da CSRF ya gaza. Sake loda shafin kuma sake gwadawa."
+
+#: wordpress_admin.php
+msgid "Saved WordPress site inventory entry."
+msgstr "An ajiye shigarwar jerin shafin WordPress."
+
+#: wordpress_admin.php
+msgid "Encrypted Application Password stored in local AES-256-GCM vault."
+msgstr "An adana ɓoyayyiyar kalmar sirrin manhaja a cikin ma'ajiyar sirri ta AES-256-GCM ta gida."
+
+#: wordpress_admin.php
+msgid "Deleted WordPress site and associated local vault secret."
+msgstr "An goge shafin WordPress da sirrin ma'ajiyar gida da ke da alaƙa da shi."
+
+#: wordpress_admin.php
+msgid "Invalid site slug."
+msgstr "Sunan alamar shafi (slug) bai dace ba."
+
+#: wordpress_admin.php
+msgid "Unsupported administrator action."
+msgstr "Aikin mai kula da ba a tallafawa ba."
+
+#: wordpress_admin.php
+msgid "WordPress Inventory, Vault Credentials & Poller Assignment (Administrator)"
+msgstr "Jerin WordPress, bayanan shiga na ma'ajiyar sirri da rarraba mai tattara bayanai (Mai kula)"
+
+#: wordpress_operator.php
+msgid "Select a site to probe."
+msgstr "Zaɓi shafin da za a bincika."
+
+#: wordpress_operator.php
+msgid "Unknown WordPress site slug."
+msgstr "Sunan alamar shafin WordPress da ba a sani ba."
+
+#: wordpress_operator.php
+msgid "Completed read-only dry-run probe."
+msgstr "An kammala binciken gwaji na karatu kaɗai."
+
+#: wordpress_operator.php
+msgid "Unsupported operator action."
+msgstr "Aikin mai sarrafawa da ba a tallafawa ba."
+
+#: wordpress_operator.php
+msgid "WordPress Drift, Site Health, Cron & Dry-Run Probes (Operator)"
+msgstr "Karkacewar WordPress, lafiyar shafi, Cron da binciken gwaji (Mai sarrafawa)"
+
+#: wordpress_view.php
+msgid "WordPress Fleet Health & Metrics Overview (View)"
+msgstr "Lafiyar rukunin WordPress da taƙaitaccen ma'auni (Duba)"

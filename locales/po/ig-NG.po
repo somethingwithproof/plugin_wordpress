@@ -1,0 +1,325 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
+# SPDX-FileCopyrightText: 2026 Thomas Vincent <thomasvincent@gmail.com>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: wordpress 0.1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/somethingwithproof/plugin_wordpress/issues\n"
+"PO-Revision-Date: 2026-11-28 00:00+0000\n"
+"Last-Translator: Thomas Vincent <thomasvincent@gmail.com>\n"
+"Language-Team: Igbo <developers@cacti.net>\n"
+"Language: ig_NG\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: lib/Pages.php
+msgid "WordPress View"
+msgstr "Nlele WordPress"
+
+#: lib/Pages.php
+msgid "WordPress Operator"
+msgstr "Onye Ọrụ WordPress"
+
+#: lib/Pages.php
+msgid "WordPress Admin"
+msgstr "Onye Nchịkwa WordPress"
+
+#: lib/Pages.php
+msgid "WordPress Fleet Overview"
+msgstr "Nchịkọta Ọtụtụ Saịtị WordPress"
+
+#: lib/Pages.php
+msgid "WordPress Drift & Probes"
+msgstr "Mgbanwe na Nyocha WordPress"
+
+#: lib/Pages.php
+msgid "WordPress Inventory & Vault"
+msgstr "Ndepụta na Ụlọ Nchekwa WordPress"
+
+#: lib/Settings.php
+msgid "WordPress Fleet Security & Vault"
+msgstr "Nchekwa Ọtụtụ Saịtị na Ụlọ Nchekwa WordPress"
+
+#: lib/Settings.php
+msgid "Vault Keyfile Path"
+msgstr "Ụzọ Faịlụ Igodo Ụlọ Nchekwa"
+
+#: lib/Settings.php
+msgid "Absolute path to the external 256-bit AES-GCM keyfile used to encrypt Application Passwords at rest. Never replicated to remote pollers."
+msgstr "Ụzọ zuru oke na faịlụ igodo 256-bit AES-GCM nke mpụga eji ezobe Okwuntughe Ngwa n'ebe nchekwa. A naghị edepụtaghachi ya na polers dị anya."
+
+#: lib/Settings.php
+msgid "Internal Host Allowlist"
+msgstr "Ndepụta Nnabata Host Ime Ụlọ"
+
+#: lib/Settings.php
+msgid "Comma-separated hostnames or wildcard patterns (e.g. *.corp.example) exempt from private-IP SSRF blocking."
+msgstr "Aha host ma ọ bụ usoro wildcard kewara site na rikọm (dịka *.corp.example) ndị a napụrụ na mgbochi SSRF nke IP nzuzo."
+
+#: lib/Settings.php
+msgid "Internal CIDR Allowlist"
+msgstr "Ndepụta Nnabata CIDR Ime Ụlọ"
+
+#: lib/Settings.php
+msgid "Comma-separated internal CIDR ranges explicitly permitted by OutboundGuard."
+msgstr "Oke CIDR ime ụlọ kewara site na rikọm nke OutboundGuard kwadoro n'ụzọ doro anya."
+
+#: lib/Settings.php
+msgid "Outbound Client & Adaptive Poller Sizing"
+msgstr "Onye Ahịa Mpụga na Nhazi Ogo Poler Na-agbanwe"
+
+#: lib/Settings.php
+msgid "Poll Interval (seconds)"
+msgstr "Oge Nyocha (sekọnd)"
+
+#: lib/Settings.php
+msgid "Target fleet polling interval in seconds for Little's Law concurrency sizing."
+msgstr "Oge nyocha ebumnuche nke ọtụtụ saịtị na sekọnd maka nhazi ọnụọgụ ọrụ otu oge nke Little's Law."
+
+#: lib/Settings.php
+msgid "Connect Timeout (seconds)"
+msgstr "Oge Njikọ Gwụrụ (sekọnd)"
+
+#: lib/Settings.php
+msgid "Maximum TCP/TLS connect duration per WordPress probe (1-15s)."
+msgstr "Oke oge njikọ TCP/TLS maka nyocha WordPress ọ bụla (1-15s)."
+
+#: lib/Settings.php
+msgid "Read Timeout (seconds)"
+msgstr "Oge Ọgụgụ Gwụrụ (sekọnd)"
+
+#: lib/Settings.php
+msgid "Maximum total HTTP read duration per WordPress probe (1-60s)."
+msgstr "Oke mkpokọta oge ọgụgụ HTTP maka nyocha WordPress ọ bụla (1-60s)."
+
+#: lib/Settings.php
+msgid "Max Response Size (bytes)"
+msgstr "Oke Nha Nzaghachi (bytes)"
+
+#: lib/Settings.php
+msgid "Hard byte ceiling per HTTP response (capped at 2097152 bytes / 2 MiB)."
+msgstr "Oke siri ike nke bytes maka nzaghachi HTTP ọ bụla (ejedebere na 2097152 bytes / 2 MiB)."
+
+#: lib/Settings.php
+msgid "CoDel Target Standing Delay (ms)"
+msgstr "Oge Nkwụsị Ebumnuche CoDel (ms)"
+
+#: lib/Settings.php
+msgid "Queue standing-delay target in milliseconds before adaptive concurrency backs off."
+msgstr "Ebumnuche oge nkwụsị n'ahịrị na milisekọnd tupu nhazi ọrụ otu oge na-agbanwe ebelata."
+
+#: lib/Settings.php
+msgid "Minimum Concurrency"
+msgstr "Ọnụọgụ Ọrụ Otu Oge Kacha Nta"
+
+#: lib/Settings.php
+msgid "Lower bound on concurrent WordPress probe workers per collector shard."
+msgstr "Oke ala maka ndị ọrụ nyocha WordPress na-arụ ọrụ n'otu oge maka akụkụ onye nchịkọta ọ bụla."
+
+#: lib/Settings.php
+msgid "Maximum Concurrency"
+msgstr "Ọnụọgụ Ọrụ Otu Oge Kacha Elu"
+
+#: lib/Settings.php
+msgid "Upper bound on concurrent WordPress probe workers per collector shard."
+msgstr "Oke elu maka ndị ọrụ nyocha WordPress na-arụ ọrụ n'otu oge maka akụkụ onye nchịkọta ọ bụla."
+
+#: lib/Settings.php
+msgid "HTTP User-Agent"
+msgstr "HTTP User-Agent"
+
+#: lib/Settings.php
+msgid "User-Agent header sent on read-only REST and Site Health probes."
+msgstr "Isiokwu User-Agent ezitere na nyocha REST na Ahụike Saịtị maka naanị ọgụgụ."
+
+#: lib/Settings.php
+msgid "Fleet Health & Thold Thresholds"
+msgstr "Ahụike Ọtụtụ Saịtị na Oke Thold"
+
+#: lib/Settings.php
+msgid "Default Apdex T (ms)"
+msgstr "Apdex T Nke Ndiịzizi (ms)"
+
+#: lib/Settings.php
+msgid "Satisfied TTFB threshold T in milliseconds (tolerating threshold is 4T)."
+msgstr "Oke TTFB afọ ojuju T na milisekọnd (oke ndidi bụ 4T)."
+
+#: lib/Settings.php
+msgid "Autoload Bloat Warning (bytes)"
+msgstr "Ịdọ Aka Ná Ntị Mbuba Autoload (bytes)"
+
+#: lib/Settings.php
+msgid "wp_options autoloaded size warning threshold (default 819200 / 800 KiB)."
+msgstr "Oke ịdọ aka ná ntị maka nha autoload nke wp_options (ndabara 819200 / 800 KiB)."
+
+#: lib/Settings.php
+msgid "Autoload Bloat Critical (bytes)"
+msgstr "Oke Dị Mkpa nke Mbuba Autoload (bytes)"
+
+#: lib/Settings.php
+msgid "wp_options autoloaded size critical threshold (default 2097152 / 2 MiB)."
+msgstr "Oke dị mkpa maka nha autoload nke wp_options (ndabara 2097152 / 2 MiB)."
+
+#: lib/Settings.php
+msgid "WP-Cron Lag Warning (seconds)"
+msgstr "Ịdọ Aka Ná Ntị Nkwụsị WP-Cron (sekọnd)"
+
+#: lib/Settings.php
+msgid "Oldest overdue WP-Cron job lag threshold for degraded status."
+msgstr "Oke nkwụsị nke ọrụ WP-Cron kacha gafe oge maka ọnọdụ dara ada."
+
+#: lib/Settings.php
+msgid "TLS Expiry Warning (days)"
+msgstr "Ịdọ Aka Ná Ntị Mbibi Oge TLS (ụbọchị)"
+
+#: lib/Settings.php
+msgid "Days before TLS certificate expiry triggering degraded status."
+msgstr "Ụbọchị tupu asambodo TLS agwụ nke na-akpalite ọnọdụ dara ada."
+
+#: lib/Settings.php
+msgid "TLS Expiry Critical (days)"
+msgstr "Oke Dị Mkpa nke Mbibi Oge TLS (ụbọchị)"
+
+#: lib/Settings.php
+msgid "Days before TLS certificate expiry triggering critical status."
+msgstr "Ụbọchị tupu asambodo TLS agwụ nke na-akpalite ọnọdụ dị njọ."
+
+#: lib/Settings.php
+msgid "Keep Tables on Uninstall"
+msgstr "Debe Tebụl Mgbe A Na-ewepụ"
+
+#: lib/Settings.php
+msgid "Preserve plugin_wordpress database tables when uninstalling the plugin."
+msgstr "Chekwaa tebụl nchekwa data plugin_wordpress mgbe a na-ewepụ plọgin ahụ."
+
+#: lib/Ui/PagesRenderer.php
+msgid "Fleet Health Summary"
+msgstr "Nchịkọta Ahụike Ọtụtụ Saịtị"
+
+#: lib/Ui/PagesRenderer.php
+msgid "MAD Latency Anomalies"
+msgstr "Nsogbu Oge Nzaghachi MAD"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Site Snapshots"
+msgstr "Foto Ọnọdụ Saịtị"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Cacti Thold Baseline Templates"
+msgstr "Ụkpụrụ Ntọala Cacti Thold"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Dry-Run Probe Site:"
+msgstr "Saịtị Nyocha Nnwale:"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Run Read-Only Probe"
+msgstr "Gbaa Nyocha Naanị Ọgụgụ"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Latest Dry-Run Probe Result"
+msgstr "Nsonaazụ Nyocha Nnwale Kacha Ọhụrụ"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Update Drift, Cron Stalls & Autoload Bloat"
+msgstr "Mgbanwe Mmelite, Nkwụsị Cron na Mbuba Autoload"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Vault Status:"
+msgstr "Ọnọdụ Ụlọ Nchekwa:"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Add or Update WordPress Site"
+msgstr "Tinye ma ọ bụ Melite Saịtị WordPress"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Save Site"
+msgstr "Chekwaa Saịtị"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Configured Fleet Inventory"
+msgstr "Ndepụta Ọtụtụ Saịtị E Haziri"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Delete"
+msgstr "Hichapụ"
+
+#: setup.php
+#, php-format
+msgid "The WordPress plugin requires PHP %s or later. This server runs PHP %s, so the plugin was not installed or enabled."
+msgstr "Plọgin WordPress chọrọ PHP %s ma ọ bụ karịa. Sava a na-agba PHP %s, yabụ etinyeghị ma ọ bụ rụọ ọrụ plọgin ahụ."
+
+#: setup.php
+msgid "Utilities"
+msgstr "Ngwa Ọrụ"
+
+#: setup.php
+msgid "WordPress"
+msgstr "WordPress"
+
+#: setup.php
+msgid "WordPress Fleet Monitor"
+msgstr "Onye Nlekọta Ọtụtụ Saịtị WordPress"
+
+#: setup.php
+msgid "The WordPress plugin is not enabled."
+msgstr "E meghị ka plọgin WordPress rụọ ọrụ."
+
+#: setup.php
+#, php-format
+msgid "The WordPress plugin requires PHP %s or later."
+msgstr "Plọgin WordPress chọrọ PHP %s ma ọ bụ karịa."
+
+#: wordpress_admin.php wordpress_operator.php
+msgid "CSRF verification failed. Reload the page and retry."
+msgstr "Nkwenye CSRF dara. Butegharịa ibe a wee nwaa ọzọ."
+
+#: wordpress_admin.php
+msgid "Saved WordPress site inventory entry."
+msgstr "Echekwara ndenye ndepụta saịtị WordPress."
+
+#: wordpress_admin.php
+msgid "Encrypted Application Password stored in local AES-256-GCM vault."
+msgstr "Echekwara Okwuntughe Ngwa ezoro ezo n'ụlọ nchekwa AES-256-GCM dị n'ógbè."
+
+#: wordpress_admin.php
+msgid "Deleted WordPress site and associated local vault secret."
+msgstr "Ehichapụrụ saịtị WordPress na ihe nzuzo ụlọ nchekwa dị n'ógbè metụtara ya."
+
+#: wordpress_admin.php
+msgid "Invalid site slug."
+msgstr "Aha mkpirisi saịtị na-abaghị uru."
+
+#: wordpress_admin.php
+msgid "Unsupported administrator action."
+msgstr "Omume onye nchịkwa a na-akwadoghị."
+
+#: wordpress_admin.php
+msgid "WordPress Inventory, Vault Credentials & Poller Assignment (Administrator)"
+msgstr "Ndepụta WordPress, Asambodo Ụlọ Nchekwa na Nhọpụta Poler (Onye Nchịkwa)"
+
+#: wordpress_operator.php
+msgid "Select a site to probe."
+msgstr "Họrọ saịtị ị ga-enyocha."
+
+#: wordpress_operator.php
+msgid "Unknown WordPress site slug."
+msgstr "Aha mkpirisi saịtị WordPress a na-amaghị."
+
+#: wordpress_operator.php
+msgid "Completed read-only dry-run probe."
+msgstr "Emechara nyocha nnwale nke naanị ọgụgụ."
+
+#: wordpress_operator.php
+msgid "Unsupported operator action."
+msgstr "Omume onye ọrụ a na-akwadoghị."
+
+#: wordpress_operator.php
+msgid "WordPress Drift, Site Health, Cron & Dry-Run Probes (Operator)"
+msgstr "Mgbanwe WordPress, Ahụike Saịtị, Cron na Nyocha Nnwale (Onye Ọrụ)"
+
+#: wordpress_view.php
+msgid "WordPress Fleet Health & Metrics Overview (View)"
+msgstr "Nchịkọta Ahụike na Nleta Ọtụtụ Saịtị WordPress (Nlele)"

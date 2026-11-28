@@ -1,0 +1,325 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
+# SPDX-FileCopyrightText: 2026 Thomas Vincent <thomasvincent@gmail.com>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: wordpress 0.1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/somethingwithproof/plugin_wordpress/issues\n"
+"PO-Revision-Date: 2026-11-28 00:00+0000\n"
+"Last-Translator: Thomas Vincent <thomasvincent@gmail.com>\n"
+"Language-Team: Swedish <https://translate.cacti.net/projects/cacti/core/sv/>\n"
+"Language: sv-SE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: lib/Pages.php
+msgid "WordPress View"
+msgstr "WordPress-vy"
+
+#: lib/Pages.php
+msgid "WordPress Operator"
+msgstr "WordPress-operatör"
+
+#: lib/Pages.php
+msgid "WordPress Admin"
+msgstr "WordPress-administratör"
+
+#: lib/Pages.php
+msgid "WordPress Fleet Overview"
+msgstr "Översikt över WordPress-flotta"
+
+#: lib/Pages.php
+msgid "WordPress Drift & Probes"
+msgstr "WordPress-avvikelser och sonder"
+
+#: lib/Pages.php
+msgid "WordPress Inventory & Vault"
+msgstr "WordPress-inventering och valv"
+
+#: lib/Settings.php
+msgid "WordPress Fleet Security & Vault"
+msgstr "Säkerhet och valv för WordPress-flotta"
+
+#: lib/Settings.php
+msgid "Vault Keyfile Path"
+msgstr "Sökväg till valvnyckelfil"
+
+#: lib/Settings.php
+msgid "Absolute path to the external 256-bit AES-GCM keyfile used to encrypt Application Passwords at rest. Never replicated to remote pollers."
+msgstr "Absolut sökväg till den externa 256-bit AES-GCM-nyckelfilen som används för att kryptera applikationslösenord i vila. Replikeras aldrig till fjärrpollare."
+
+#: lib/Settings.php
+msgid "Internal Host Allowlist"
+msgstr "Tillåtenlista för interna värdar"
+
+#: lib/Settings.php
+msgid "Comma-separated hostnames or wildcard patterns (e.g. *.corp.example) exempt from private-IP SSRF blocking."
+msgstr "Kommaseparerade värdnamn eller jokerteckenmönster (t.ex. *.corp.example) som är undantagna från SSRF-blockering av privata IP-adresser."
+
+#: lib/Settings.php
+msgid "Internal CIDR Allowlist"
+msgstr "Tillåtenlista för interna CIDR-intervall"
+
+#: lib/Settings.php
+msgid "Comma-separated internal CIDR ranges explicitly permitted by OutboundGuard."
+msgstr "Kommaseparerade interna CIDR-intervall som uttryckligen tillåts av OutboundGuard."
+
+#: lib/Settings.php
+msgid "Outbound Client & Adaptive Poller Sizing"
+msgstr "Utgående klient och adaptiv storleksanpassning av pollare"
+
+#: lib/Settings.php
+msgid "Poll Interval (seconds)"
+msgstr "Avfrågningsintervall (sekunder)"
+
+#: lib/Settings.php
+msgid "Target fleet polling interval in seconds for Little's Law concurrency sizing."
+msgstr "Målintervall för flottavfrågning i sekunder för samtidighetsdimensionering enligt Little's Law."
+
+#: lib/Settings.php
+msgid "Connect Timeout (seconds)"
+msgstr "Tidsgräns för anslutning (sekunder)"
+
+#: lib/Settings.php
+msgid "Maximum TCP/TLS connect duration per WordPress probe (1-15s)."
+msgstr "Maximal TCP/TLS-anslutningstid per WordPress-sond (1-15s)."
+
+#: lib/Settings.php
+msgid "Read Timeout (seconds)"
+msgstr "Tidsgräns för läsning (sekunder)"
+
+#: lib/Settings.php
+msgid "Maximum total HTTP read duration per WordPress probe (1-60s)."
+msgstr "Maximal total HTTP-lästid per WordPress-sond (1-60s)."
+
+#: lib/Settings.php
+msgid "Max Response Size (bytes)"
+msgstr "Maximal svarsstorlek (byte)"
+
+#: lib/Settings.php
+msgid "Hard byte ceiling per HTTP response (capped at 2097152 bytes / 2 MiB)."
+msgstr "Hård gräns i byte per HTTP-svar (begränsad till 2097152 byte / 2 MiB)."
+
+#: lib/Settings.php
+msgid "CoDel Target Standing Delay (ms)"
+msgstr "CoDel-mål för stående fördröjning (ms)"
+
+#: lib/Settings.php
+msgid "Queue standing-delay target in milliseconds before adaptive concurrency backs off."
+msgstr "Mål för stående köfördröjning i millisekunder innan adaptiv samtidighet drar ned."
+
+#: lib/Settings.php
+msgid "Minimum Concurrency"
+msgstr "Minsta samtidighet"
+
+#: lib/Settings.php
+msgid "Lower bound on concurrent WordPress probe workers per collector shard."
+msgstr "Undre gräns för samtidiga WordPress-sondarbetare per insamlarshard."
+
+#: lib/Settings.php
+msgid "Maximum Concurrency"
+msgstr "Största samtidighet"
+
+#: lib/Settings.php
+msgid "Upper bound on concurrent WordPress probe workers per collector shard."
+msgstr "Övre gräns för samtidiga WordPress-sondarbetare per insamlarshard."
+
+#: lib/Settings.php
+msgid "HTTP User-Agent"
+msgstr "HTTP User-Agent-huvud"
+
+#: lib/Settings.php
+msgid "User-Agent header sent on read-only REST and Site Health probes."
+msgstr "User-Agent-huvud som skickas vid skrivskyddade REST- och webbplatshälsosonder."
+
+#: lib/Settings.php
+msgid "Fleet Health & Thold Thresholds"
+msgstr "Flotthälsa och Thold-tröskelvärden"
+
+#: lib/Settings.php
+msgid "Default Apdex T (ms)"
+msgstr "Standard Apdex T (ms)"
+
+#: lib/Settings.php
+msgid "Satisfied TTFB threshold T in milliseconds (tolerating threshold is 4T)."
+msgstr "Tillfredsställande TTFB-tröskelvärde T i millisekunder (toleranströskeln är 4T)."
+
+#: lib/Settings.php
+msgid "Autoload Bloat Warning (bytes)"
+msgstr "Varning för uppsvälld autoinläsning (byte)"
+
+#: lib/Settings.php
+msgid "wp_options autoloaded size warning threshold (default 819200 / 800 KiB)."
+msgstr "Varningströskel för autoinläst storlek i wp_options (standard 819200 / 800 KiB)."
+
+#: lib/Settings.php
+msgid "Autoload Bloat Critical (bytes)"
+msgstr "Kritisk nivå för uppsvälld autoinläsning (byte)"
+
+#: lib/Settings.php
+msgid "wp_options autoloaded size critical threshold (default 2097152 / 2 MiB)."
+msgstr "Kritisk tröskel för autoinläst storlek i wp_options (standard 2097152 / 2 MiB)."
+
+#: lib/Settings.php
+msgid "WP-Cron Lag Warning (seconds)"
+msgstr "Varning för WP-Cron-eftersläpning (sekunder)"
+
+#: lib/Settings.php
+msgid "Oldest overdue WP-Cron job lag threshold for degraded status."
+msgstr "Tröskelvärde för eftersläpning hos äldsta försenade WP-Cron-jobb för försämrad status."
+
+#: lib/Settings.php
+msgid "TLS Expiry Warning (days)"
+msgstr "Varning för utgående TLS (dagar)"
+
+#: lib/Settings.php
+msgid "Days before TLS certificate expiry triggering degraded status."
+msgstr "Antal dagar före TLS-certifikatets utgång som utlöser försämrad status."
+
+#: lib/Settings.php
+msgid "TLS Expiry Critical (days)"
+msgstr "Kritisk gräns för utgående TLS (dagar)"
+
+#: lib/Settings.php
+msgid "Days before TLS certificate expiry triggering critical status."
+msgstr "Antal dagar före TLS-certifikatets utgång som utlöser kritisk status."
+
+#: lib/Settings.php
+msgid "Keep Tables on Uninstall"
+msgstr "Behåll tabeller vid avinstallation"
+
+#: lib/Settings.php
+msgid "Preserve plugin_wordpress database tables when uninstalling the plugin."
+msgstr "Bevara databastabellerna för plugin_wordpress vid avinstallation av tillägget."
+
+#: lib/Ui/PagesRenderer.php
+msgid "Fleet Health Summary"
+msgstr "Sammanfattning av flotthälsa"
+
+#: lib/Ui/PagesRenderer.php
+msgid "MAD Latency Anomalies"
+msgstr "MAD-latensavvikelser"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Site Snapshots"
+msgstr "Ögonblicksbilder av webbplatser"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Cacti Thold Baseline Templates"
+msgstr "Baslinjemallar för Cacti Thold"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Dry-Run Probe Site:"
+msgstr "Webbplats för torrkörningssond:"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Run Read-Only Probe"
+msgstr "Kör skrivskyddad sond"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Latest Dry-Run Probe Result"
+msgstr "Senaste resultat från torrkörningssond"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Update Drift, Cron Stalls & Autoload Bloat"
+msgstr "Uppdateringsavvikelser, cron-stopp och uppsvälld autoinläsning"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Vault Status:"
+msgstr "Valvstatus:"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Add or Update WordPress Site"
+msgstr "Lägg till eller uppdatera WordPress-webbplats"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Save Site"
+msgstr "Spara webbplats"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Configured Fleet Inventory"
+msgstr "Konfigurerad flottinventering"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Delete"
+msgstr "Ta bort"
+
+#: setup.php
+#, php-format
+msgid "The WordPress plugin requires PHP %s or later. This server runs PHP %s, so the plugin was not installed or enabled."
+msgstr "WordPress-tillägget kräver PHP %s eller senare. Denna server kör PHP %s, så tillägget installerades eller aktiverades inte."
+
+#: setup.php
+msgid "Utilities"
+msgstr "Verktyg"
+
+#: setup.php
+msgid "WordPress"
+msgstr "WordPress"
+
+#: setup.php
+msgid "WordPress Fleet Monitor"
+msgstr "Övervakning av WordPress-flotta"
+
+#: setup.php
+msgid "The WordPress plugin is not enabled."
+msgstr "WordPress-tillägget är inte aktiverat."
+
+#: setup.php
+#, php-format
+msgid "The WordPress plugin requires PHP %s or later."
+msgstr "WordPress-tillägget kräver PHP %s eller senare."
+
+#: wordpress_admin.php wordpress_operator.php
+msgid "CSRF verification failed. Reload the page and retry."
+msgstr "CSRF-verifieringen misslyckades. Ladda om sidan och försök igen."
+
+#: wordpress_admin.php
+msgid "Saved WordPress site inventory entry."
+msgstr "Sparade inventeringspost för WordPress-webbplats."
+
+#: wordpress_admin.php
+msgid "Encrypted Application Password stored in local AES-256-GCM vault."
+msgstr "Krypterat applikationslösenord lagrat i lokalt AES-256-GCM-valv."
+
+#: wordpress_admin.php
+msgid "Deleted WordPress site and associated local vault secret."
+msgstr "Tog bort WordPress-webbplats och tillhörande lokal valvhemlighet."
+
+#: wordpress_admin.php
+msgid "Invalid site slug."
+msgstr "Ogiltig webbplatsslug."
+
+#: wordpress_admin.php
+msgid "Unsupported administrator action."
+msgstr "Administratörsåtgärden stöds inte."
+
+#: wordpress_admin.php
+msgid "WordPress Inventory, Vault Credentials & Poller Assignment (Administrator)"
+msgstr "WordPress-inventering, valvinloggningsuppgifter och pollartilldelning (Administratör)"
+
+#: wordpress_operator.php
+msgid "Select a site to probe."
+msgstr "Välj en webbplats att sondera."
+
+#: wordpress_operator.php
+msgid "Unknown WordPress site slug."
+msgstr "Okänd slug för WordPress-webbplats."
+
+#: wordpress_operator.php
+msgid "Completed read-only dry-run probe."
+msgstr "Slutförde skrivskyddad torrkörningssond."
+
+#: wordpress_operator.php
+msgid "Unsupported operator action."
+msgstr "Operatörsåtgärden stöds inte."
+
+#: wordpress_operator.php
+msgid "WordPress Drift, Site Health, Cron & Dry-Run Probes (Operator)"
+msgstr "WordPress-avvikelser, webbplatshälsa, cron och torrkörningssonder (Operatör)"
+
+#: wordpress_view.php
+msgid "WordPress Fleet Health & Metrics Overview (View)"
+msgstr "Översikt över hälsa och mätvärden för WordPress-flotta (Vy)"

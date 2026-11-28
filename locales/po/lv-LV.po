@@ -1,0 +1,325 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
+# SPDX-FileCopyrightText: 2026 Thomas Vincent <thomasvincent@gmail.com>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: wordpress 0.1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/somethingwithproof/plugin_wordpress/issues\n"
+"PO-Revision-Date: 2026-11-28 00:00+0000\n"
+"Last-Translator: Thomas Vincent <thomasvincent@gmail.com>\n"
+"Language-Team: Latvian <https://translate.cacti.net/projects/cacti/core/lv/>\n"
+"Language: lv-LV\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n % 10 == 0 || n % 100 >= 11 && n % 100 <= 19) ? 0 : ((n % 10 == 1 && n % 100 != 11) ? 1 : 2);\n"
+
+#: lib/Pages.php
+msgid "WordPress View"
+msgstr "WordPress skats"
+
+#: lib/Pages.php
+msgid "WordPress Operator"
+msgstr "WordPress operators"
+
+#: lib/Pages.php
+msgid "WordPress Admin"
+msgstr "WordPress administrators"
+
+#: lib/Pages.php
+msgid "WordPress Fleet Overview"
+msgstr "WordPress flotes pārskats"
+
+#: lib/Pages.php
+msgid "WordPress Drift & Probes"
+msgstr "WordPress novirzes un zondes"
+
+#: lib/Pages.php
+msgid "WordPress Inventory & Vault"
+msgstr "WordPress inventārs un glabātuve"
+
+#: lib/Settings.php
+msgid "WordPress Fleet Security & Vault"
+msgstr "WordPress flotes drošība un glabātuve"
+
+#: lib/Settings.php
+msgid "Vault Keyfile Path"
+msgstr "Glabātuves atslēgas datnes ceļš"
+
+#: lib/Settings.php
+msgid "Absolute path to the external 256-bit AES-GCM keyfile used to encrypt Application Passwords at rest. Never replicated to remote pollers."
+msgstr "Absolūtais ceļš uz ārējo 256-bit AES-GCM atslēgas datni, ko izmanto lietotņu paroļu šifrēšanai glabāšanā. Nekad netiek replicēta uz attālajiem aptaujātājiem."
+
+#: lib/Settings.php
+msgid "Internal Host Allowlist"
+msgstr "Iekšējo resursdatoru atļauju saraksts"
+
+#: lib/Settings.php
+msgid "Comma-separated hostnames or wildcard patterns (e.g. *.corp.example) exempt from private-IP SSRF blocking."
+msgstr "Ar komatiem atdalīti resursdatoru nosaukumi vai aizstājējzīmju šabloni (piem., *.corp.example), uz kuriem neattiecas privāto IP SSRF bloķēšana."
+
+#: lib/Settings.php
+msgid "Internal CIDR Allowlist"
+msgstr "Iekšējo CIDR atļauju saraksts"
+
+#: lib/Settings.php
+msgid "Comma-separated internal CIDR ranges explicitly permitted by OutboundGuard."
+msgstr "Ar komatiem atdalīti iekšējie CIDR diapazoni, kurus tieši atļauj OutboundGuard."
+
+#: lib/Settings.php
+msgid "Outbound Client & Adaptive Poller Sizing"
+msgstr "Izejošais klients un adaptīvā aptaujātāja mērogošana"
+
+#: lib/Settings.php
+msgid "Poll Interval (seconds)"
+msgstr "Aptaujas intervāls (sekundes)"
+
+#: lib/Settings.php
+msgid "Target fleet polling interval in seconds for Little's Law concurrency sizing."
+msgstr "Mērķa flotes aptaujas intervāls sekundēs paralēlisma aprēķinam pēc Little's Law."
+
+#: lib/Settings.php
+msgid "Connect Timeout (seconds)"
+msgstr "Savienojuma noildze (sekundes)"
+
+#: lib/Settings.php
+msgid "Maximum TCP/TLS connect duration per WordPress probe (1-15s)."
+msgstr "Maksimālais TCP/TLS savienojuma ilgums vienai WordPress zondei (1-15s)."
+
+#: lib/Settings.php
+msgid "Read Timeout (seconds)"
+msgstr "Lasīšanas noildze (sekundes)"
+
+#: lib/Settings.php
+msgid "Maximum total HTTP read duration per WordPress probe (1-60s)."
+msgstr "Maksimālais kopējais HTTP lasīšanas ilgums vienai WordPress zondei (1-60s)."
+
+#: lib/Settings.php
+msgid "Max Response Size (bytes)"
+msgstr "Maksimālais atbildes lielums (baiti)"
+
+#: lib/Settings.php
+msgid "Hard byte ceiling per HTTP response (capped at 2097152 bytes / 2 MiB)."
+msgstr "Stingrs baitu griests vienai HTTP atbildei (ierobežots līdz 2097152 baitiem / 2 MiB)."
+
+#: lib/Settings.php
+msgid "CoDel Target Standing Delay (ms)"
+msgstr "CoDel mērķa pastāvīgā aizkave (ms)"
+
+#: lib/Settings.php
+msgid "Queue standing-delay target in milliseconds before adaptive concurrency backs off."
+msgstr "Rindas pastāvīgās aizkaves mērķis milisekundēs, pirms adaptīvais paralēlisms samazina slodzi."
+
+#: lib/Settings.php
+msgid "Minimum Concurrency"
+msgstr "Minimālais paralēlisms"
+
+#: lib/Settings.php
+msgid "Lower bound on concurrent WordPress probe workers per collector shard."
+msgstr "Apakšējā robeža vienlaicīgu WordPress zondes darbinieku skaitam uz vienu vācēja šardu."
+
+#: lib/Settings.php
+msgid "Maximum Concurrency"
+msgstr "Maksimālais paralēlisms"
+
+#: lib/Settings.php
+msgid "Upper bound on concurrent WordPress probe workers per collector shard."
+msgstr "Augšējā robeža vienlaicīgu WordPress zondes darbinieku skaitam uz vienu vācēja šardu."
+
+#: lib/Settings.php
+msgid "HTTP User-Agent"
+msgstr "HTTP User-Agent"
+
+#: lib/Settings.php
+msgid "User-Agent header sent on read-only REST and Site Health probes."
+msgstr "User-Agent galvene, kas tiek sūtīta tikai lasāmās REST un vietnes veselības zondēs."
+
+#: lib/Settings.php
+msgid "Fleet Health & Thold Thresholds"
+msgstr "Flotes veselība un Thold sliekšņi"
+
+#: lib/Settings.php
+msgid "Default Apdex T (ms)"
+msgstr "Noklusējuma Apdex T (ms)"
+
+#: lib/Settings.php
+msgid "Satisfied TTFB threshold T in milliseconds (tolerating threshold is 4T)."
+msgstr "Apmierinošais TTFB slieksnis T milisekundēs (pieļaujamais slieksnis ir 4T)."
+
+#: lib/Settings.php
+msgid "Autoload Bloat Warning (bytes)"
+msgstr "Automātiskās ielādes pārblīvēšanas brīdinājums (baiti)"
+
+#: lib/Settings.php
+msgid "wp_options autoloaded size warning threshold (default 819200 / 800 KiB)."
+msgstr "wp_options automātiskās ielādes lieluma brīdinājuma slieksnis (noklusējums 819200 / 800 KiB)."
+
+#: lib/Settings.php
+msgid "Autoload Bloat Critical (bytes)"
+msgstr "Automātiskās ielādes pārblīvēšanas kritiskais slieksnis (baiti)"
+
+#: lib/Settings.php
+msgid "wp_options autoloaded size critical threshold (default 2097152 / 2 MiB)."
+msgstr "wp_options automātiskās ielādes lieluma kritiskais slieksnis (noklusējums 2097152 / 2 MiB)."
+
+#: lib/Settings.php
+msgid "WP-Cron Lag Warning (seconds)"
+msgstr "WP-Cron aizkaves brīdinājums (sekundes)"
+
+#: lib/Settings.php
+msgid "Oldest overdue WP-Cron job lag threshold for degraded status."
+msgstr "Vecākā nokavētā WP-Cron uzdevuma aizkaves slieksnis pasliktināta stāvokļa noteikšanai."
+
+#: lib/Settings.php
+msgid "TLS Expiry Warning (days)"
+msgstr "TLS termiņa beigšanās brīdinājums (dienas)"
+
+#: lib/Settings.php
+msgid "Days before TLS certificate expiry triggering degraded status."
+msgstr "Dienu skaits pirms TLS sertifikāta termiņa beigām, kas izraisa pasliktinātu stāvokli."
+
+#: lib/Settings.php
+msgid "TLS Expiry Critical (days)"
+msgstr "TLS termiņa beigšanās kritiskais slieksnis (dienas)"
+
+#: lib/Settings.php
+msgid "Days before TLS certificate expiry triggering critical status."
+msgstr "Dienu skaits pirms TLS sertifikāta termiņa beigām, kas izraisa kritisku stāvokli."
+
+#: lib/Settings.php
+msgid "Keep Tables on Uninstall"
+msgstr "Saglabāt tabulas atinstalējot"
+
+#: lib/Settings.php
+msgid "Preserve plugin_wordpress database tables when uninstalling the plugin."
+msgstr "Saglabāt plugin_wordpress datubāzes tabulas, atinstalējot spraudni."
+
+#: lib/Ui/PagesRenderer.php
+msgid "Fleet Health Summary"
+msgstr "Flotes veselības kopsavilkums"
+
+#: lib/Ui/PagesRenderer.php
+msgid "MAD Latency Anomalies"
+msgstr "MAD latentuma anomālijas"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Site Snapshots"
+msgstr "Vietņu momentuzņēmumi"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Cacti Thold Baseline Templates"
+msgstr "Cacti Thold pamatlīnijas veidnes"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Dry-Run Probe Site:"
+msgstr "Izmēģinājuma zondes vietne:"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Run Read-Only Probe"
+msgstr "Palaist tikai lasāmu zondi"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Latest Dry-Run Probe Result"
+msgstr "Jaunākais izmēģinājuma zondes rezultāts"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Update Drift, Cron Stalls & Autoload Bloat"
+msgstr "Atjauninājumu novirzes, Cron apstāšanās un automātiskās ielādes pārblīvēšana"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Vault Status:"
+msgstr "Glabātuves statuss:"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Add or Update WordPress Site"
+msgstr "Pievienot vai atjaunināt WordPress vietni"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Save Site"
+msgstr "Saglabāt vietni"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Configured Fleet Inventory"
+msgstr "Konfigurētais flotes inventārs"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Delete"
+msgstr "Dzēst"
+
+#: setup.php
+#, php-format
+msgid "The WordPress plugin requires PHP %s or later. This server runs PHP %s, so the plugin was not installed or enabled."
+msgstr "Spraudnim WordPress nepieciešama PHP %s vai jaunāka versija. Šajā serverī darbojas PHP %s, tāpēc spraudnis netika instalēts vai iespējots."
+
+#: setup.php
+msgid "Utilities"
+msgstr "Rīki"
+
+#: setup.php
+msgid "WordPress"
+msgstr "WordPress"
+
+#: setup.php
+msgid "WordPress Fleet Monitor"
+msgstr "WordPress flotes monitors"
+
+#: setup.php
+msgid "The WordPress plugin is not enabled."
+msgstr "WordPress spraudnis nav iespējots."
+
+#: setup.php
+#, php-format
+msgid "The WordPress plugin requires PHP %s or later."
+msgstr "WordPress spraudnim nepieciešama PHP %s vai jaunāka versija."
+
+#: wordpress_admin.php wordpress_operator.php
+msgid "CSRF verification failed. Reload the page and retry."
+msgstr "CSRF pārbaude neizdevās. Pārlādējiet lapu un mēģiniet vēlreiz."
+
+#: wordpress_admin.php
+msgid "Saved WordPress site inventory entry."
+msgstr "WordPress vietnes inventāra ieraksts saglabāts."
+
+#: wordpress_admin.php
+msgid "Encrypted Application Password stored in local AES-256-GCM vault."
+msgstr "Šifrētā lietotnes parole saglabāta lokālajā AES-256-GCM glabātuvē."
+
+#: wordpress_admin.php
+msgid "Deleted WordPress site and associated local vault secret."
+msgstr "WordPress vietne un saistītais lokālās glabātuves noslēpums izdzēsts."
+
+#: wordpress_admin.php
+msgid "Invalid site slug."
+msgstr "Nederīgs vietnes identifikators (slug)."
+
+#: wordpress_admin.php
+msgid "Unsupported administrator action."
+msgstr "Neatbalstīta administratora darbība."
+
+#: wordpress_admin.php
+msgid "WordPress Inventory, Vault Credentials & Poller Assignment (Administrator)"
+msgstr "WordPress inventārs, glabātuves akreditācijas dati un aptaujātāja piešķiršana (Administrators)"
+
+#: wordpress_operator.php
+msgid "Select a site to probe."
+msgstr "Atlasiet vietni zondēšanai."
+
+#: wordpress_operator.php
+msgid "Unknown WordPress site slug."
+msgstr "Nezināms WordPress vietnes identifikators (slug)."
+
+#: wordpress_operator.php
+msgid "Completed read-only dry-run probe."
+msgstr "Tikai lasāmā izmēģinājuma zonde pabeigta."
+
+#: wordpress_operator.php
+msgid "Unsupported operator action."
+msgstr "Neatbalstīta operatora darbība."
+
+#: wordpress_operator.php
+msgid "WordPress Drift, Site Health, Cron & Dry-Run Probes (Operator)"
+msgstr "WordPress novirzes, vietnes veselība, Cron un izmēģinājuma zondes (Operators)"
+
+#: wordpress_view.php
+msgid "WordPress Fleet Health & Metrics Overview (View)"
+msgstr "WordPress flotes veselības un metrikas pārskats (Skats)"

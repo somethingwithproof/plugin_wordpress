@@ -1,0 +1,325 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
+# SPDX-FileCopyrightText: 2026 Thomas Vincent <thomasvincent@gmail.com>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: wordpress 0.1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/somethingwithproof/plugin_wordpress/issues\n"
+"PO-Revision-Date: 2026-11-28 00:00+0000\n"
+"Last-Translator: Thomas Vincent <thomasvincent@gmail.com>\n"
+"Language-Team: Greek <https://translate.cacti.net/projects/cacti/core/el/>\n"
+"Language: el-GR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: lib/Pages.php
+msgid "WordPress View"
+msgstr "Προβολή WordPress"
+
+#: lib/Pages.php
+msgid "WordPress Operator"
+msgstr "Χειριστής WordPress"
+
+#: lib/Pages.php
+msgid "WordPress Admin"
+msgstr "Διαχειριστής WordPress"
+
+#: lib/Pages.php
+msgid "WordPress Fleet Overview"
+msgstr "Επισκόπηση στόλου WordPress"
+
+#: lib/Pages.php
+msgid "WordPress Drift & Probes"
+msgstr "Αποκλίσεις και έλεγχοι WordPress"
+
+#: lib/Pages.php
+msgid "WordPress Inventory & Vault"
+msgstr "Απογραφή και θησαυροφυλάκιο WordPress"
+
+#: lib/Settings.php
+msgid "WordPress Fleet Security & Vault"
+msgstr "Ασφάλεια στόλου και θησαυροφυλάκιο WordPress"
+
+#: lib/Settings.php
+msgid "Vault Keyfile Path"
+msgstr "Διαδρομή αρχείου κλειδιού θησαυροφυλακίου"
+
+#: lib/Settings.php
+msgid "Absolute path to the external 256-bit AES-GCM keyfile used to encrypt Application Passwords at rest. Never replicated to remote pollers."
+msgstr "Απόλυτη διαδρομή προς το εξωτερικό αρχείο κλειδιού 256-bit AES-GCM που χρησιμοποιείται για την κρυπτογράφηση κωδικών εφαρμογών σε ηρεμία. Δεν αναπαράγεται ποτέ σε απομακρυσμένους pollers."
+
+#: lib/Settings.php
+msgid "Internal Host Allowlist"
+msgstr "Λίστα επιτρεπόμενων εσωτερικών κεντρικών υπολογιστών"
+
+#: lib/Settings.php
+msgid "Comma-separated hostnames or wildcard patterns (e.g. *.corp.example) exempt from private-IP SSRF blocking."
+msgstr "Ονόματα κεντρικών υπολογιστών ή μοτίβα μπαλαντέρ διαχωρισμένα με κόμμα (π.χ. *.corp.example) που εξαιρούνται από τον αποκλεισμό SSRF ιδιωτικών IP."
+
+#: lib/Settings.php
+msgid "Internal CIDR Allowlist"
+msgstr "Λίστα επιτρεπόμενων εσωτερικών CIDR"
+
+#: lib/Settings.php
+msgid "Comma-separated internal CIDR ranges explicitly permitted by OutboundGuard."
+msgstr "Εσωτερικά εύρη CIDR διαχωρισμένα με κόμμα που επιτρέπονται ρητά από το OutboundGuard."
+
+#: lib/Settings.php
+msgid "Outbound Client & Adaptive Poller Sizing"
+msgstr "Εξερχόμενος πελάτης και προσαρμοστική διαστασιολόγηση poller"
+
+#: lib/Settings.php
+msgid "Poll Interval (seconds)"
+msgstr "Διάστημα ελέγχου (δευτερόλεπτα)"
+
+#: lib/Settings.php
+msgid "Target fleet polling interval in seconds for Little's Law concurrency sizing."
+msgstr "Στοχευμένο διάστημα ελέγχου στόλου σε δευτερόλεπτα για διαστασιολόγηση ταυτοχρονισμού βάσει Little's Law."
+
+#: lib/Settings.php
+msgid "Connect Timeout (seconds)"
+msgstr "Χρονικό όριο σύνδεσης (δευτερόλεπτα)"
+
+#: lib/Settings.php
+msgid "Maximum TCP/TLS connect duration per WordPress probe (1-15s)."
+msgstr "Μέγιστη διάρκεια σύνδεσης TCP/TLS ανά έλεγχο WordPress (1-15s)."
+
+#: lib/Settings.php
+msgid "Read Timeout (seconds)"
+msgstr "Χρονικό όριο ανάγνωσης (δευτερόλεπτα)"
+
+#: lib/Settings.php
+msgid "Maximum total HTTP read duration per WordPress probe (1-60s)."
+msgstr "Μέγιστη συνολική διάρκεια ανάγνωσης HTTP ανά έλεγχο WordPress (1-60s)."
+
+#: lib/Settings.php
+msgid "Max Response Size (bytes)"
+msgstr "Μέγιστο μέγεθος απόκρισης (bytes)"
+
+#: lib/Settings.php
+msgid "Hard byte ceiling per HTTP response (capped at 2097152 bytes / 2 MiB)."
+msgstr "Αυστηρό ανώτατο όριο σε bytes ανά απόκριση HTTP (όριο 2097152 bytes / 2 MiB)."
+
+#: lib/Settings.php
+msgid "CoDel Target Standing Delay (ms)"
+msgstr "Στοχευμένη μόνιμη καθυστέρηση CoDel (ms)"
+
+#: lib/Settings.php
+msgid "Queue standing-delay target in milliseconds before adaptive concurrency backs off."
+msgstr "Στόχος μόνιμης καθυστέρησης ουράς σε χιλιοστά του δευτερολέπτου πριν μειωθεί ο προσαρμοστικός ταυτοχρονισμός."
+
+#: lib/Settings.php
+msgid "Minimum Concurrency"
+msgstr "Ελάχιστος ταυτοχρονισμός"
+
+#: lib/Settings.php
+msgid "Lower bound on concurrent WordPress probe workers per collector shard."
+msgstr "Κατώτατο όριο ταυτόχρονων διεργασιών ελέγχου WordPress ανά τμήμα συλλέκτη."
+
+#: lib/Settings.php
+msgid "Maximum Concurrency"
+msgstr "Μέγιστος ταυτοχρονισμός"
+
+#: lib/Settings.php
+msgid "Upper bound on concurrent WordPress probe workers per collector shard."
+msgstr "Ανώτατο όριο ταυτόχρονων διεργασιών ελέγχου WordPress ανά τμήμα συλλέκτη."
+
+#: lib/Settings.php
+msgid "HTTP User-Agent"
+msgstr "Κεφαλίδα HTTP User-Agent"
+
+#: lib/Settings.php
+msgid "User-Agent header sent on read-only REST and Site Health probes."
+msgstr "Κεφαλίδα User-Agent που αποστέλλεται σε ελέγχους REST και υγείας ιστότοπου μόνο για ανάγνωση."
+
+#: lib/Settings.php
+msgid "Fleet Health & Thold Thresholds"
+msgstr "Υγεία στόλου και όρια Thold"
+
+#: lib/Settings.php
+msgid "Default Apdex T (ms)"
+msgstr "Προεπιλεγμένο Apdex T (ms)"
+
+#: lib/Settings.php
+msgid "Satisfied TTFB threshold T in milliseconds (tolerating threshold is 4T)."
+msgstr "Ικανοποιητικό όριο TTFB T σε χιλιοστά του δευτερολέπτου (το όριο ανοχής είναι 4T)."
+
+#: lib/Settings.php
+msgid "Autoload Bloat Warning (bytes)"
+msgstr "Προειδοποίηση διόγκωσης αυτόματης φόρτωσης (bytes)"
+
+#: lib/Settings.php
+msgid "wp_options autoloaded size warning threshold (default 819200 / 800 KiB)."
+msgstr "Όριο προειδοποίησης μεγέθους αυτόματης φόρτωσης του wp_options (προεπιλογή 819200 / 800 KiB)."
+
+#: lib/Settings.php
+msgid "Autoload Bloat Critical (bytes)"
+msgstr "Κρίσιμη διόγκωση αυτόματης φόρτωσης (bytes)"
+
+#: lib/Settings.php
+msgid "wp_options autoloaded size critical threshold (default 2097152 / 2 MiB)."
+msgstr "Κρίσιμο όριο μεγέθους αυτόματης φόρτωσης του wp_options (προεπιλογή 2097152 / 2 MiB)."
+
+#: lib/Settings.php
+msgid "WP-Cron Lag Warning (seconds)"
+msgstr "Προειδοποίηση καθυστέρησης WP-Cron (δευτερόλεπτα)"
+
+#: lib/Settings.php
+msgid "Oldest overdue WP-Cron job lag threshold for degraded status."
+msgstr "Όριο καθυστέρησης της παλαιότερης εκπρόθεσμης εργασίας WP-Cron για υποβαθμισμένη κατάσταση."
+
+#: lib/Settings.php
+msgid "TLS Expiry Warning (days)"
+msgstr "Προειδοποίηση λήξης TLS (ημέρες)"
+
+#: lib/Settings.php
+msgid "Days before TLS certificate expiry triggering degraded status."
+msgstr "Ημέρες πριν από τη λήξη του πιστοποιητικού TLS που ενεργοποιούν υποβαθμισμένη κατάσταση."
+
+#: lib/Settings.php
+msgid "TLS Expiry Critical (days)"
+msgstr "Κρίσιμη λήξη TLS (ημέρες)"
+
+#: lib/Settings.php
+msgid "Days before TLS certificate expiry triggering critical status."
+msgstr "Ημέρες πριν από τη λήξη του πιστοποιητικού TLS που ενεργοποιούν κρίσιμη κατάσταση."
+
+#: lib/Settings.php
+msgid "Keep Tables on Uninstall"
+msgstr "Διατήρηση πινάκων κατά την απεγκατάσταση"
+
+#: lib/Settings.php
+msgid "Preserve plugin_wordpress database tables when uninstalling the plugin."
+msgstr "Διατήρηση των πινάκων βάσης δεδομένων plugin_wordpress κατά την απεγκατάσταση του προσθέτου."
+
+#: lib/Ui/PagesRenderer.php
+msgid "Fleet Health Summary"
+msgstr "Σύνοψη υγείας στόλου"
+
+#: lib/Ui/PagesRenderer.php
+msgid "MAD Latency Anomalies"
+msgstr "Ανωμαλίες καθυστέρησης MAD"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Site Snapshots"
+msgstr "Στιγμιότυπα ιστότοπων"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Cacti Thold Baseline Templates"
+msgstr "Βασικά πρότυπα Cacti Thold"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Dry-Run Probe Site:"
+msgstr "Ιστότοπος δοκιμαστικού ελέγχου:"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Run Read-Only Probe"
+msgstr "Εκτέλεση ελέγχου μόνο για ανάγνωση"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Latest Dry-Run Probe Result"
+msgstr "Τελευταίο αποτέλεσμα δοκιμαστικού ελέγχου"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Update Drift, Cron Stalls & Autoload Bloat"
+msgstr "Αποκλίσεις ενημερώσεων, κολλήματα Cron και διόγκωση αυτόματης φόρτωσης"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Vault Status:"
+msgstr "Κατάσταση θησαυροφυλακίου:"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Add or Update WordPress Site"
+msgstr "Προσθήκη ή ενημέρωση ιστότοπου WordPress"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Save Site"
+msgstr "Αποθήκευση ιστότοπου"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Configured Fleet Inventory"
+msgstr "Διαμορφωμένη απογραφή στόλου"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Delete"
+msgstr "Διαγραφή"
+
+#: setup.php
+#, php-format
+msgid "The WordPress plugin requires PHP %s or later. This server runs PHP %s, so the plugin was not installed or enabled."
+msgstr "Το πρόσθετο WordPress απαιτεί PHP %s ή νεότερη έκδοση. Αυτός ο διακομιστής εκτελεί PHP %s, επομένως το πρόσθετο δεν εγκαταστάθηκε ούτε ενεργοποιήθηκε."
+
+#: setup.php
+msgid "Utilities"
+msgstr "Εργαλεία"
+
+#: setup.php
+msgid "WordPress"
+msgstr "WordPress"
+
+#: setup.php
+msgid "WordPress Fleet Monitor"
+msgstr "Παρακολούθηση στόλου WordPress"
+
+#: setup.php
+msgid "The WordPress plugin is not enabled."
+msgstr "Το πρόσθετο WordPress δεν είναι ενεργοποιημένο."
+
+#: setup.php
+#, php-format
+msgid "The WordPress plugin requires PHP %s or later."
+msgstr "Το πρόσθετο WordPress απαιτεί PHP %s ή νεότερη έκδοση."
+
+#: wordpress_admin.php wordpress_operator.php
+msgid "CSRF verification failed. Reload the page and retry."
+msgstr "Η επαλήθευση CSRF απέτυχε. Επαναφορτώστε τη σελίδα και δοκιμάστε ξανά."
+
+#: wordpress_admin.php
+msgid "Saved WordPress site inventory entry."
+msgstr "Η καταχώριση ιστότοπου WordPress στην απογραφή αποθηκεύτηκε."
+
+#: wordpress_admin.php
+msgid "Encrypted Application Password stored in local AES-256-GCM vault."
+msgstr "Ο κρυπτογραφημένος κωδικός εφαρμογής αποθηκεύτηκε στο τοπικό θησαυροφυλάκιο AES-256-GCM."
+
+#: wordpress_admin.php
+msgid "Deleted WordPress site and associated local vault secret."
+msgstr "Ο ιστότοπος WordPress και το σχετικό τοπικό μυστικό θησαυροφυλακίου διαγράφηκαν."
+
+#: wordpress_admin.php
+msgid "Invalid site slug."
+msgstr "Μη έγκυρο αναγνωριστικό (slug) ιστότοπου."
+
+#: wordpress_admin.php
+msgid "Unsupported administrator action."
+msgstr "Μη υποστηριζόμενη ενέργεια διαχειριστή."
+
+#: wordpress_admin.php
+msgid "WordPress Inventory, Vault Credentials & Poller Assignment (Administrator)"
+msgstr "Απογραφή WordPress, διαπιστευτήρια θησαυροφυλακίου και ανάθεση poller (Διαχειριστής)"
+
+#: wordpress_operator.php
+msgid "Select a site to probe."
+msgstr "Επιλέξτε έναν ιστότοπο για έλεγχο."
+
+#: wordpress_operator.php
+msgid "Unknown WordPress site slug."
+msgstr "Άγνωστο αναγνωριστικό (slug) ιστότοπου WordPress."
+
+#: wordpress_operator.php
+msgid "Completed read-only dry-run probe."
+msgstr "Ο δοκιμαστικός έλεγχος μόνο για ανάγνωση ολοκληρώθηκε."
+
+#: wordpress_operator.php
+msgid "Unsupported operator action."
+msgstr "Μη υποστηριζόμενη ενέργεια χειριστή."
+
+#: wordpress_operator.php
+msgid "WordPress Drift, Site Health, Cron & Dry-Run Probes (Operator)"
+msgstr "Αποκλίσεις WordPress, υγεία ιστότοπου, Cron και δοκιμαστικοί έλεγχοι (Χειριστής)"
+
+#: wordpress_view.php
+msgid "WordPress Fleet Health & Metrics Overview (View)"
+msgstr "Υγεία στόλου WordPress και επισκόπηση μετρήσεων (Προβολή)"

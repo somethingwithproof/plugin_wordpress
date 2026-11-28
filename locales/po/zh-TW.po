@@ -1,0 +1,325 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
+# SPDX-FileCopyrightText: 2026 Thomas Vincent <thomasvincent@gmail.com>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: wordpress 0.1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/somethingwithproof/plugin_wordpress/issues\n"
+"PO-Revision-Date: 2026-11-28 00:00+0000\n"
+"Last-Translator: Thomas Vincent <thomasvincent@gmail.com>\n"
+"Language-Team: Chinese (Traditional Han script) <https://translate.cacti.net/projects/cacti/core/zh_Hant/>\n"
+"Language: zh-TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: lib/Pages.php
+msgid "WordPress View"
+msgstr "WordPress 檢視"
+
+#: lib/Pages.php
+msgid "WordPress Operator"
+msgstr "WordPress 操作員"
+
+#: lib/Pages.php
+msgid "WordPress Admin"
+msgstr "WordPress 管理員"
+
+#: lib/Pages.php
+msgid "WordPress Fleet Overview"
+msgstr "WordPress 叢集總覽"
+
+#: lib/Pages.php
+msgid "WordPress Drift & Probes"
+msgstr "WordPress 漂移與探測"
+
+#: lib/Pages.php
+msgid "WordPress Inventory & Vault"
+msgstr "WordPress 資產清單與金鑰庫"
+
+#: lib/Settings.php
+msgid "WordPress Fleet Security & Vault"
+msgstr "WordPress 叢集安全性與金鑰庫"
+
+#: lib/Settings.php
+msgid "Vault Keyfile Path"
+msgstr "金鑰庫金鑰檔案路徑"
+
+#: lib/Settings.php
+msgid "Absolute path to the external 256-bit AES-GCM keyfile used to encrypt Application Passwords at rest. Never replicated to remote pollers."
+msgstr "用於靜態加密應用程式密碼的外部 256-bit AES-GCM 金鑰檔案絕對路徑。絕不會複寫至遠端輪詢器。"
+
+#: lib/Settings.php
+msgid "Internal Host Allowlist"
+msgstr "內部主機允許清單"
+
+#: lib/Settings.php
+msgid "Comma-separated hostnames or wildcard patterns (e.g. *.corp.example) exempt from private-IP SSRF blocking."
+msgstr "以逗號分隔的主機名稱或萬用字元模式（例如 *.corp.example），豁免私有 IP 的 SSRF 封鎖。"
+
+#: lib/Settings.php
+msgid "Internal CIDR Allowlist"
+msgstr "內部 CIDR 允許清單"
+
+#: lib/Settings.php
+msgid "Comma-separated internal CIDR ranges explicitly permitted by OutboundGuard."
+msgstr "OutboundGuard 明確允許的、以逗號分隔的內部 CIDR 範圍。"
+
+#: lib/Settings.php
+msgid "Outbound Client & Adaptive Poller Sizing"
+msgstr "連出用戶端與自適應輪詢器規模調整"
+
+#: lib/Settings.php
+msgid "Poll Interval (seconds)"
+msgstr "輪詢間隔（秒）"
+
+#: lib/Settings.php
+msgid "Target fleet polling interval in seconds for Little's Law concurrency sizing."
+msgstr "用於 Little's Law 並行規模估算的目標叢集輪詢間隔（秒）。"
+
+#: lib/Settings.php
+msgid "Connect Timeout (seconds)"
+msgstr "連線逾時（秒）"
+
+#: lib/Settings.php
+msgid "Maximum TCP/TLS connect duration per WordPress probe (1-15s)."
+msgstr "每次 WordPress 探測的最大 TCP/TLS 連線時間（1-15s）。"
+
+#: lib/Settings.php
+msgid "Read Timeout (seconds)"
+msgstr "讀取逾時（秒）"
+
+#: lib/Settings.php
+msgid "Maximum total HTTP read duration per WordPress probe (1-60s)."
+msgstr "每次 WordPress 探測的最大 HTTP 總讀取時間（1-60s）。"
+
+#: lib/Settings.php
+msgid "Max Response Size (bytes)"
+msgstr "最大回應大小（位元組）"
+
+#: lib/Settings.php
+msgid "Hard byte ceiling per HTTP response (capped at 2097152 bytes / 2 MiB)."
+msgstr "每個 HTTP 回應的硬性位元組上限（上限為 2097152 位元組 / 2 MiB）。"
+
+#: lib/Settings.php
+msgid "CoDel Target Standing Delay (ms)"
+msgstr "CoDel 目標持續延遲（ms）"
+
+#: lib/Settings.php
+msgid "Queue standing-delay target in milliseconds before adaptive concurrency backs off."
+msgstr "自適應並行退讓前的佇列持續延遲目標值（毫秒）。"
+
+#: lib/Settings.php
+msgid "Minimum Concurrency"
+msgstr "最小並行數"
+
+#: lib/Settings.php
+msgid "Lower bound on concurrent WordPress probe workers per collector shard."
+msgstr "每個收集器分片的 WordPress 並行探測背景工作下限。"
+
+#: lib/Settings.php
+msgid "Maximum Concurrency"
+msgstr "最大並行數"
+
+#: lib/Settings.php
+msgid "Upper bound on concurrent WordPress probe workers per collector shard."
+msgstr "每個收集器分片的 WordPress 並行探測背景工作上限。"
+
+#: lib/Settings.php
+msgid "HTTP User-Agent"
+msgstr "HTTP User-Agent 標頭"
+
+#: lib/Settings.php
+msgid "User-Agent header sent on read-only REST and Site Health probes."
+msgstr "於唯讀 REST 與網站健康狀況探測時傳送的 User-Agent 標頭。"
+
+#: lib/Settings.php
+msgid "Fleet Health & Thold Thresholds"
+msgstr "叢集健康狀況與 Thold 臨界值"
+
+#: lib/Settings.php
+msgid "Default Apdex T (ms)"
+msgstr "預設 Apdex T（ms）"
+
+#: lib/Settings.php
+msgid "Satisfied TTFB threshold T in milliseconds (tolerating threshold is 4T)."
+msgstr "滿意的 TTFB 臨界值 T（毫秒，可容忍臨界值為 4T）。"
+
+#: lib/Settings.php
+msgid "Autoload Bloat Warning (bytes)"
+msgstr "自動載入膨脹警告（位元組）"
+
+#: lib/Settings.php
+msgid "wp_options autoloaded size warning threshold (default 819200 / 800 KiB)."
+msgstr "wp_options 自動載入大小的警告臨界值（預設 819200 / 800 KiB）。"
+
+#: lib/Settings.php
+msgid "Autoload Bloat Critical (bytes)"
+msgstr "自動載入膨脹嚴重警告（位元組）"
+
+#: lib/Settings.php
+msgid "wp_options autoloaded size critical threshold (default 2097152 / 2 MiB)."
+msgstr "wp_options 自動載入大小的嚴重臨界值（預設 2097152 / 2 MiB）。"
+
+#: lib/Settings.php
+msgid "WP-Cron Lag Warning (seconds)"
+msgstr "WP-Cron 延遲警告（秒）"
+
+#: lib/Settings.php
+msgid "Oldest overdue WP-Cron job lag threshold for degraded status."
+msgstr "觸發效能降級狀態的最早逾期 WP-Cron 工作延遲臨界值。"
+
+#: lib/Settings.php
+msgid "TLS Expiry Warning (days)"
+msgstr "TLS 到期警告（天）"
+
+#: lib/Settings.php
+msgid "Days before TLS certificate expiry triggering degraded status."
+msgstr "觸發效能降級狀態的 TLS 憑證到期前剩餘天數。"
+
+#: lib/Settings.php
+msgid "TLS Expiry Critical (days)"
+msgstr "TLS 到期嚴重警告（天）"
+
+#: lib/Settings.php
+msgid "Days before TLS certificate expiry triggering critical status."
+msgstr "觸發嚴重狀態的 TLS 憑證到期前剩餘天數。"
+
+#: lib/Settings.php
+msgid "Keep Tables on Uninstall"
+msgstr "解除安裝時保留資料表"
+
+#: lib/Settings.php
+msgid "Preserve plugin_wordpress database tables when uninstalling the plugin."
+msgstr "解除安裝外掛程式時保留 plugin_wordpress 資料庫資料表。"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Fleet Health Summary"
+msgstr "叢集健康狀況摘要"
+
+#: lib/Ui/PagesRenderer.php
+msgid "MAD Latency Anomalies"
+msgstr "MAD 延遲異常"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Site Snapshots"
+msgstr "網站快照"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Cacti Thold Baseline Templates"
+msgstr "Cacti Thold 基準範本"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Dry-Run Probe Site:"
+msgstr "試執行探測網站:"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Run Read-Only Probe"
+msgstr "執行唯讀探測"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Latest Dry-Run Probe Result"
+msgstr "最新試執行探測結果"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Update Drift, Cron Stalls & Autoload Bloat"
+msgstr "更新漂移、Cron 停滯與自動載入膨脹"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Vault Status:"
+msgstr "金鑰庫狀態:"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Add or Update WordPress Site"
+msgstr "新增或更新 WordPress 網站"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Save Site"
+msgstr "儲存網站"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Configured Fleet Inventory"
+msgstr "已設定的叢集資產清單"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Delete"
+msgstr "刪除"
+
+#: setup.php
+#, php-format
+msgid "The WordPress plugin requires PHP %s or later. This server runs PHP %s, so the plugin was not installed or enabled."
+msgstr "WordPress 外掛程式需要 PHP %s 或更新版本。此伺服器執行的是 PHP %s，因此未安裝或啟用此外掛程式。"
+
+#: setup.php
+msgid "Utilities"
+msgstr "公用程式"
+
+#: setup.php
+msgid "WordPress"
+msgstr "WordPress"
+
+#: setup.php
+msgid "WordPress Fleet Monitor"
+msgstr "WordPress 叢集監控"
+
+#: setup.php
+msgid "The WordPress plugin is not enabled."
+msgstr "WordPress 外掛程式尚未啟用。"
+
+#: setup.php
+#, php-format
+msgid "The WordPress plugin requires PHP %s or later."
+msgstr "WordPress 外掛程式需要 PHP %s 或更新版本。"
+
+#: wordpress_admin.php wordpress_operator.php
+msgid "CSRF verification failed. Reload the page and retry."
+msgstr "CSRF 驗證失敗。請重新載入頁面並重試。"
+
+#: wordpress_admin.php
+msgid "Saved WordPress site inventory entry."
+msgstr "已儲存 WordPress 網站資產清單項目。"
+
+#: wordpress_admin.php
+msgid "Encrypted Application Password stored in local AES-256-GCM vault."
+msgstr "已將加密的應用程式密碼儲存至本機 AES-256-GCM 金鑰庫。"
+
+#: wordpress_admin.php
+msgid "Deleted WordPress site and associated local vault secret."
+msgstr "已刪除 WordPress 網站及其關聯的本機金鑰庫密鑰。"
+
+#: wordpress_admin.php
+msgid "Invalid site slug."
+msgstr "無效的網站代稱（slug）。"
+
+#: wordpress_admin.php
+msgid "Unsupported administrator action."
+msgstr "不支援的管理員動作。"
+
+#: wordpress_admin.php
+msgid "WordPress Inventory, Vault Credentials & Poller Assignment (Administrator)"
+msgstr "WordPress 資產清單、金鑰庫認證與輪詢器指派（管理員）"
+
+#: wordpress_operator.php
+msgid "Select a site to probe."
+msgstr "請選擇要探測的網站。"
+
+#: wordpress_operator.php
+msgid "Unknown WordPress site slug."
+msgstr "未知的 WordPress 網站代稱（slug）。"
+
+#: wordpress_operator.php
+msgid "Completed read-only dry-run probe."
+msgstr "已完成唯讀試執行探測。"
+
+#: wordpress_operator.php
+msgid "Unsupported operator action."
+msgstr "不支援的操作員動作。"
+
+#: wordpress_operator.php
+msgid "WordPress Drift, Site Health, Cron & Dry-Run Probes (Operator)"
+msgstr "WordPress 漂移、網站健康狀況、Cron 與試執行探測（操作員）"
+
+#: wordpress_view.php
+msgid "WordPress Fleet Health & Metrics Overview (View)"
+msgstr "WordPress 叢集健康狀況與指標總覽（檢視）"

@@ -1,0 +1,325 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
+# SPDX-FileCopyrightText: 2026 Thomas Vincent <thomasvincent@gmail.com>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: wordpress 0.1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/somethingwithproof/plugin_wordpress/issues\n"
+"PO-Revision-Date: 2026-11-28 00:00+0000\n"
+"Last-Translator: Thomas Vincent <thomasvincent@gmail.com>\n"
+"Language-Team: Georgian <https://translate.cacti.net/projects/cacti/core/ka/>\n"
+"Language: ka-GE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: lib/Pages.php
+msgid "WordPress View"
+msgstr "WordPress ნახვა"
+
+#: lib/Pages.php
+msgid "WordPress Operator"
+msgstr "WordPress ოპერატორი"
+
+#: lib/Pages.php
+msgid "WordPress Admin"
+msgstr "WordPress ადმინისტრატორი"
+
+#: lib/Pages.php
+msgid "WordPress Fleet Overview"
+msgstr "WordPress ფლოტის მიმოხილვა"
+
+#: lib/Pages.php
+msgid "WordPress Drift & Probes"
+msgstr "WordPress გადახრა და ზონდები"
+
+#: lib/Pages.php
+msgid "WordPress Inventory & Vault"
+msgstr "WordPress ინვენტარი და საცავი"
+
+#: lib/Settings.php
+msgid "WordPress Fleet Security & Vault"
+msgstr "WordPress ფლოტის უსაფრთხოება და საცავი"
+
+#: lib/Settings.php
+msgid "Vault Keyfile Path"
+msgstr "საცავის გასაღების ფაილის გზა"
+
+#: lib/Settings.php
+msgid "Absolute path to the external 256-bit AES-GCM keyfile used to encrypt Application Passwords at rest. Never replicated to remote pollers."
+msgstr "აბსოლუტური გზა გარე 256-bit AES-GCM გასაღების ფაილისკენ, რომელიც გამოიყენება აპლიკაციის პაროლების შენახვისას დასაშიფრად. არასოდეს რეპლიცირდება დისტანციურ პოლერებზე."
+
+#: lib/Settings.php
+msgid "Internal Host Allowlist"
+msgstr "შიდა ჰოსტების დაშვებულთა სია"
+
+#: lib/Settings.php
+msgid "Comma-separated hostnames or wildcard patterns (e.g. *.corp.example) exempt from private-IP SSRF blocking."
+msgstr "მძიმით გამოყოფილი ჰოსტების სახელები ან შაბლონები (მაგ. *.corp.example), რომლებიც გათავისუფლებულია კერძო IP-ის SSRF დაბლოკვისგან."
+
+#: lib/Settings.php
+msgid "Internal CIDR Allowlist"
+msgstr "შიდა CIDR დაშვებულთა სია"
+
+#: lib/Settings.php
+msgid "Comma-separated internal CIDR ranges explicitly permitted by OutboundGuard."
+msgstr "მძიმით გამოყოფილი შიდა CIDR დიაპაზონები, რომლებიც ცალსახად დაშვებულია OutboundGuard-ის მიერ."
+
+#: lib/Settings.php
+msgid "Outbound Client & Adaptive Poller Sizing"
+msgstr "გამავალი კლიენტი და ადაპტური პოლერის ზომის შერჩევა"
+
+#: lib/Settings.php
+msgid "Poll Interval (seconds)"
+msgstr "გამოკითხვის ინტერვალი (წამი)"
+
+#: lib/Settings.php
+msgid "Target fleet polling interval in seconds for Little's Law concurrency sizing."
+msgstr "ფლოტის გამოკითხვის სამიზნე ინტერვალი წამებში Little's Law-ით პარალელურობის გამოსათვლელად."
+
+#: lib/Settings.php
+msgid "Connect Timeout (seconds)"
+msgstr "დაკავშირების მოლოდინის ვადა (წამი)"
+
+#: lib/Settings.php
+msgid "Maximum TCP/TLS connect duration per WordPress probe (1-15s)."
+msgstr "TCP/TLS დაკავშირების მაქსიმალური ხანგრძლივობა თითო WordPress ზონდზე (1-15s)."
+
+#: lib/Settings.php
+msgid "Read Timeout (seconds)"
+msgstr "წაკითხვის მოლოდინის ვადა (წამი)"
+
+#: lib/Settings.php
+msgid "Maximum total HTTP read duration per WordPress probe (1-60s)."
+msgstr "HTTP წაკითხვის მაქსიმალური ჯამური ხანგრძლივობა თითო WordPress ზონდზე (1-60s)."
+
+#: lib/Settings.php
+msgid "Max Response Size (bytes)"
+msgstr "პასუხის მაქსიმალური ზომა (ბაიტი)"
+
+#: lib/Settings.php
+msgid "Hard byte ceiling per HTTP response (capped at 2097152 bytes / 2 MiB)."
+msgstr "მკაცრი ბაიტების ზღვარი თითო HTTP პასუხზე (შეზღუდულია 2097152 ბაიტით / 2 MiB)."
+
+#: lib/Settings.php
+msgid "CoDel Target Standing Delay (ms)"
+msgstr "CoDel მუდმივი დაყოვნების სამიზნე (ms)"
+
+#: lib/Settings.php
+msgid "Queue standing-delay target in milliseconds before adaptive concurrency backs off."
+msgstr "რიგის მუდმივი დაყოვნების სამიზნე მილიწამებში, სანამ ადაპტური პარალელურობა შემცირდება."
+
+#: lib/Settings.php
+msgid "Minimum Concurrency"
+msgstr "მინიმალური პარალელურობა"
+
+#: lib/Settings.php
+msgid "Lower bound on concurrent WordPress probe workers per collector shard."
+msgstr "პარალელური WordPress ზონდის დამმუშავებლების ქვედა ზღვარი თითო შემგროვებლის შარდზე."
+
+#: lib/Settings.php
+msgid "Maximum Concurrency"
+msgstr "მაქსიმალური პარალელურობა"
+
+#: lib/Settings.php
+msgid "Upper bound on concurrent WordPress probe workers per collector shard."
+msgstr "პარალელური WordPress ზონდის დამმუშავებლების ზედა ზღვარი თითო შემგროვებლის შარდზე."
+
+#: lib/Settings.php
+msgid "HTTP User-Agent"
+msgstr "HTTP User-Agent"
+
+#: lib/Settings.php
+msgid "User-Agent header sent on read-only REST and Site Health probes."
+msgstr "User-Agent თავსართი, რომელიც იგზავნება მხოლოდ წაკითხვის REST და საიტის ჯანმრთელობის ზონდებზე."
+
+#: lib/Settings.php
+msgid "Fleet Health & Thold Thresholds"
+msgstr "ფლოტის ჯანმრთელობა და Thold ზღვრები"
+
+#: lib/Settings.php
+msgid "Default Apdex T (ms)"
+msgstr "ნაგულისხმევი Apdex T (ms)"
+
+#: lib/Settings.php
+msgid "Satisfied TTFB threshold T in milliseconds (tolerating threshold is 4T)."
+msgstr "დამაკმაყოფილებელი TTFB ზღვარი T მილიწამებში (დასაშვები ზღვარია 4T)."
+
+#: lib/Settings.php
+msgid "Autoload Bloat Warning (bytes)"
+msgstr "ავტოჩატვირთვის გადატვირთვის გაფრთხილება (ბაიტი)"
+
+#: lib/Settings.php
+msgid "wp_options autoloaded size warning threshold (default 819200 / 800 KiB)."
+msgstr "wp_options ავტოჩატვირთვის ზომის გაფრთხილების ზღვარი (ნაგულისხმევი 819200 / 800 KiB)."
+
+#: lib/Settings.php
+msgid "Autoload Bloat Critical (bytes)"
+msgstr "ავტოჩატვირთვის გადატვირთვის კრიტიკული ზღვარი (ბაიტი)"
+
+#: lib/Settings.php
+msgid "wp_options autoloaded size critical threshold (default 2097152 / 2 MiB)."
+msgstr "wp_options ავტოჩატვირთვის ზომის კრიტიკული ზღვარი (ნაგულისხმევი 2097152 / 2 MiB)."
+
+#: lib/Settings.php
+msgid "WP-Cron Lag Warning (seconds)"
+msgstr "WP-Cron ჩამორჩენის გაფრთხილება (წამი)"
+
+#: lib/Settings.php
+msgid "Oldest overdue WP-Cron job lag threshold for degraded status."
+msgstr "ყველაზე ძველი ვადაგადაცილებული WP-Cron დავალების ჩამორჩენის ზღვარი გაუარესებული სტატუსისთვის."
+
+#: lib/Settings.php
+msgid "TLS Expiry Warning (days)"
+msgstr "TLS ვადის გასვლის გაფრთხილება (დღე)"
+
+#: lib/Settings.php
+msgid "Days before TLS certificate expiry triggering degraded status."
+msgstr "TLS სერტიფიკატის ვადის გასვლამდე დარჩენილი დღეები, რომლებიც იწვევს გაუარესებულ სტატუსს."
+
+#: lib/Settings.php
+msgid "TLS Expiry Critical (days)"
+msgstr "TLS ვადის გასვლის კრიტიკული ზღვარი (დღე)"
+
+#: lib/Settings.php
+msgid "Days before TLS certificate expiry triggering critical status."
+msgstr "TLS სერტიფიკატის ვადის გასვლამდე დარჩენილი დღეები, რომლებიც იწვევს კრიტიკულ სტატუსს."
+
+#: lib/Settings.php
+msgid "Keep Tables on Uninstall"
+msgstr "ცხრილების შენარჩუნება დეინსტალაციისას"
+
+#: lib/Settings.php
+msgid "Preserve plugin_wordpress database tables when uninstalling the plugin."
+msgstr "შეინარჩუნეთ plugin_wordpress მონაცემთა ბაზის ცხრილები მოდულის წაშლისას."
+
+#: lib/Ui/PagesRenderer.php
+msgid "Fleet Health Summary"
+msgstr "ფლოტის ჯანმრთელობის შეჯამება"
+
+#: lib/Ui/PagesRenderer.php
+msgid "MAD Latency Anomalies"
+msgstr "MAD დაყოვნების ანომალიები"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Site Snapshots"
+msgstr "საიტის ანაბეჭდები"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Cacti Thold Baseline Templates"
+msgstr "Cacti Thold საბაზისო შაბლონები"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Dry-Run Probe Site:"
+msgstr "საცდელი ზონდირების საიტი:"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Run Read-Only Probe"
+msgstr "მხოლოდ წაკითხვის ზონდის გაშვება"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Latest Dry-Run Probe Result"
+msgstr "ბოლო საცდელი ზონდის შედეგი"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Update Drift, Cron Stalls & Autoload Bloat"
+msgstr "განახლებების გადახრა, Cron შეფერხებები და ავტოჩატვირთვის გადატვირთვა"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Vault Status:"
+msgstr "საცავის სტატუსი:"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Add or Update WordPress Site"
+msgstr "WordPress საიტის დამატება ან განახლება"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Save Site"
+msgstr "საიტის შენახვა"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Configured Fleet Inventory"
+msgstr "კონფიგურირებული ფლოტის ინვენტარი"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Delete"
+msgstr "წაშლა"
+
+#: setup.php
+#, php-format
+msgid "The WordPress plugin requires PHP %s or later. This server runs PHP %s, so the plugin was not installed or enabled."
+msgstr "WordPress მოდულს სჭირდება PHP %s ან უფრო ახალი. ამ სერვერზე გაშვებულია PHP %s, ამიტომ მოდული არ დაინსტალირდა და არ გააქტიურდა."
+
+#: setup.php
+msgid "Utilities"
+msgstr "ინსტრუმენტები"
+
+#: setup.php
+msgid "WordPress"
+msgstr "WordPress"
+
+#: setup.php
+msgid "WordPress Fleet Monitor"
+msgstr "WordPress ფლოტის მონიტორი"
+
+#: setup.php
+msgid "The WordPress plugin is not enabled."
+msgstr "WordPress მოდული გააქტიურებული არ არის."
+
+#: setup.php
+#, php-format
+msgid "The WordPress plugin requires PHP %s or later."
+msgstr "WordPress მოდულს სჭირდება PHP %s ან უფრო ახალი."
+
+#: wordpress_admin.php wordpress_operator.php
+msgid "CSRF verification failed. Reload the page and retry."
+msgstr "CSRF შემოწმება ვერ მოხერხდა. განაახლეთ გვერდი და სცადეთ ხელახლა."
+
+#: wordpress_admin.php
+msgid "Saved WordPress site inventory entry."
+msgstr "WordPress საიტის ინვენტარის ჩანაწერი შენახულია."
+
+#: wordpress_admin.php
+msgid "Encrypted Application Password stored in local AES-256-GCM vault."
+msgstr "დაშიფრული აპლიკაციის პაროლი შენახულია ლოკალურ AES-256-GCM საცავში."
+
+#: wordpress_admin.php
+msgid "Deleted WordPress site and associated local vault secret."
+msgstr "WordPress საიტი და მასთან დაკავშირებული ლოკალური საცავის საიდუმლო წაიშალა."
+
+#: wordpress_admin.php
+msgid "Invalid site slug."
+msgstr "საიტის არასწორი იდენტიფიკატორი (slug)."
+
+#: wordpress_admin.php
+msgid "Unsupported administrator action."
+msgstr "ადმინისტრატორის მხარდაუჭერელი მოქმედება."
+
+#: wordpress_admin.php
+msgid "WordPress Inventory, Vault Credentials & Poller Assignment (Administrator)"
+msgstr "WordPress ინვენტარი, საცავის მონაცემები და პოლერის მინიჭება (ადმინისტრატორი)"
+
+#: wordpress_operator.php
+msgid "Select a site to probe."
+msgstr "აირჩიეთ საიტი ზონდირებისთვის."
+
+#: wordpress_operator.php
+msgid "Unknown WordPress site slug."
+msgstr "უცნობი WordPress საიტის იდენტიფიკატორი (slug)."
+
+#: wordpress_operator.php
+msgid "Completed read-only dry-run probe."
+msgstr "მხოლოდ წაკითხვის საცდელი ზონდირება დასრულდა."
+
+#: wordpress_operator.php
+msgid "Unsupported operator action."
+msgstr "ოპერატორის მხარდაუჭერელი მოქმედება."
+
+#: wordpress_operator.php
+msgid "WordPress Drift, Site Health, Cron & Dry-Run Probes (Operator)"
+msgstr "WordPress გადახრა, საიტის ჯანმრთელობა, Cron და საცდელი ზონდები (ოპერატორი)"
+
+#: wordpress_view.php
+msgid "WordPress Fleet Health & Metrics Overview (View)"
+msgstr "WordPress ფლოტის ჯანმრთელობისა და მეტრიკის მიმოხილვა (ნახვა)"

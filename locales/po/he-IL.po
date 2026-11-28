@@ -1,0 +1,325 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
+# SPDX-FileCopyrightText: 2026 Thomas Vincent <thomasvincent@gmail.com>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: wordpress 0.1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/somethingwithproof/plugin_wordpress/issues\n"
+"PO-Revision-Date: 2026-11-28 00:00+0000\n"
+"Last-Translator: Thomas Vincent <thomasvincent@gmail.com>\n"
+"Language-Team: Hebrew (Israel) <https://translate.cacti.net/projects/cacti/core/he_IL/>\n"
+"Language: he-IL\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && n % 10 == 0) ? 2 : 3));\n"
+
+#: lib/Pages.php
+msgid "WordPress View"
+msgstr "תצוגת WordPress"
+
+#: lib/Pages.php
+msgid "WordPress Operator"
+msgstr "מפעיל WordPress"
+
+#: lib/Pages.php
+msgid "WordPress Admin"
+msgstr "מנהל WordPress"
+
+#: lib/Pages.php
+msgid "WordPress Fleet Overview"
+msgstr "סקירת צי WordPress"
+
+#: lib/Pages.php
+msgid "WordPress Drift & Probes"
+msgstr "סחף ובדיקות WordPress"
+
+#: lib/Pages.php
+msgid "WordPress Inventory & Vault"
+msgstr "מלאי וכספת WordPress"
+
+#: lib/Settings.php
+msgid "WordPress Fleet Security & Vault"
+msgstr "אבטחת צי וכספת WordPress"
+
+#: lib/Settings.php
+msgid "Vault Keyfile Path"
+msgstr "נתיב קובץ המפתח של הכספת"
+
+#: lib/Settings.php
+msgid "Absolute path to the external 256-bit AES-GCM keyfile used to encrypt Application Passwords at rest. Never replicated to remote pollers."
+msgstr "נתיב מוחלט לקובץ מפתח AES-GCM חיצוני של 256-bit המשמש להצפנת סיסמאות יישומים במנוחה. אינו משוכפל לעולם לדוגמים מרוחקים."
+
+#: lib/Settings.php
+msgid "Internal Host Allowlist"
+msgstr "רשימת מארחים פנימיים מורשים"
+
+#: lib/Settings.php
+msgid "Comma-separated hostnames or wildcard patterns (e.g. *.corp.example) exempt from private-IP SSRF blocking."
+msgstr "שמות מארחים או תבניות תווים כלליים מופרדים בפסיקים (למשל *.corp.example) הפטורים מחסימת SSRF לכתובות IP פרטיות."
+
+#: lib/Settings.php
+msgid "Internal CIDR Allowlist"
+msgstr "רשימת טווחי CIDR פנימיים מורשים"
+
+#: lib/Settings.php
+msgid "Comma-separated internal CIDR ranges explicitly permitted by OutboundGuard."
+msgstr "טווחי CIDR פנימיים מופרדים בפסיקים המותרים במפורש על ידי OutboundGuard."
+
+#: lib/Settings.php
+msgid "Outbound Client & Adaptive Poller Sizing"
+msgstr "לקוח יוצא והתאמת גודל דוגם מסתגלת"
+
+#: lib/Settings.php
+msgid "Poll Interval (seconds)"
+msgstr "מרווח דגימה (שניות)"
+
+#: lib/Settings.php
+msgid "Target fleet polling interval in seconds for Little's Law concurrency sizing."
+msgstr "מרווח דגימת יעד לצי בשניות עבור חישוב מקביליות לפי Little's Law."
+
+#: lib/Settings.php
+msgid "Connect Timeout (seconds)"
+msgstr "זמן קצוב לחיבור (שניות)"
+
+#: lib/Settings.php
+msgid "Maximum TCP/TLS connect duration per WordPress probe (1-15s)."
+msgstr "משך חיבור TCP/TLS מרבי לכל בדיקת WordPress (1-15s)."
+
+#: lib/Settings.php
+msgid "Read Timeout (seconds)"
+msgstr "זמן קצוב לקריאה (שניות)"
+
+#: lib/Settings.php
+msgid "Maximum total HTTP read duration per WordPress probe (1-60s)."
+msgstr "משך קריאת HTTP כולל מרבי לכל בדיקת WordPress (1-60s)."
+
+#: lib/Settings.php
+msgid "Max Response Size (bytes)"
+msgstr "גודל תגובה מרבי (בתים)"
+
+#: lib/Settings.php
+msgid "Hard byte ceiling per HTTP response (capped at 2097152 bytes / 2 MiB)."
+msgstr "תקרת בתים קשיחה לכל תגובת HTTP (מוגבלת ל-2097152 בתים / 2 MiB)."
+
+#: lib/Settings.php
+msgid "CoDel Target Standing Delay (ms)"
+msgstr "עיכוב עמידה יעד של CoDel (ms)"
+
+#: lib/Settings.php
+msgid "Queue standing-delay target in milliseconds before adaptive concurrency backs off."
+msgstr "יעד עיכוב עמידה בתור באלפיות השנייה לפני שהמקביליות המסתגלת נסוגה."
+
+#: lib/Settings.php
+msgid "Minimum Concurrency"
+msgstr "מקביליות מזערית"
+
+#: lib/Settings.php
+msgid "Lower bound on concurrent WordPress probe workers per collector shard."
+msgstr "חסם תחתון למספר עובדי בדיקות WordPress מקבילים לכל מקטע איסוף."
+
+#: lib/Settings.php
+msgid "Maximum Concurrency"
+msgstr "מקביליות מרבית"
+
+#: lib/Settings.php
+msgid "Upper bound on concurrent WordPress probe workers per collector shard."
+msgstr "חסם עליון למספר עובדי בדיקות WordPress מקבילים לכל מקטע איסוף."
+
+#: lib/Settings.php
+msgid "HTTP User-Agent"
+msgstr "כותרת HTTP User-Agent"
+
+#: lib/Settings.php
+msgid "User-Agent header sent on read-only REST and Site Health probes."
+msgstr "כותרת User-Agent הנשלחת בבדיקות REST ובריאות אתר לקריאה בלבד."
+
+#: lib/Settings.php
+msgid "Fleet Health & Thold Thresholds"
+msgstr "בריאות הצי וערכי סף של Thold"
+
+#: lib/Settings.php
+msgid "Default Apdex T (ms)"
+msgstr "ערך Apdex T ברירת מחדל (ms)"
+
+#: lib/Settings.php
+msgid "Satisfied TTFB threshold T in milliseconds (tolerating threshold is 4T)."
+msgstr "סף TTFB משביע רצון T באלפיות השנייה (סף הסבילות הוא 4T)."
+
+#: lib/Settings.php
+msgid "Autoload Bloat Warning (bytes)"
+msgstr "אזהרת התנפחות טעינה אוטומטית (בתים)"
+
+#: lib/Settings.php
+msgid "wp_options autoloaded size warning threshold (default 819200 / 800 KiB)."
+msgstr "סף אזהרה לגודל הנטען אוטומטית ב-wp_options (ברירת מחדל 819200 / 800 KiB)."
+
+#: lib/Settings.php
+msgid "Autoload Bloat Critical (bytes)"
+msgstr "סף קריטי להתנפחות טעינה אוטומטית (בתים)"
+
+#: lib/Settings.php
+msgid "wp_options autoloaded size critical threshold (default 2097152 / 2 MiB)."
+msgstr "סף קריטי לגודל הנטען אוטומטית ב-wp_options (ברירת מחדל 2097152 / 2 MiB)."
+
+#: lib/Settings.php
+msgid "WP-Cron Lag Warning (seconds)"
+msgstr "אזהרת פיגור WP-Cron (שניות)"
+
+#: lib/Settings.php
+msgid "Oldest overdue WP-Cron job lag threshold for degraded status."
+msgstr "סף הפיגור של משימת WP-Cron המאחרת ביותר למצב ביצועים ירוד."
+
+#: lib/Settings.php
+msgid "TLS Expiry Warning (days)"
+msgstr "אזהרת תפוגת TLS (ימים)"
+
+#: lib/Settings.php
+msgid "Days before TLS certificate expiry triggering degraded status."
+msgstr "מספר ימים לפני תפוגת אישור TLS המפעילים מצב ביצועים ירוד."
+
+#: lib/Settings.php
+msgid "TLS Expiry Critical (days)"
+msgstr "סף קריטי לתפוגת TLS (ימים)"
+
+#: lib/Settings.php
+msgid "Days before TLS certificate expiry triggering critical status."
+msgstr "מספר ימים לפני תפוגת אישור TLS המפעילים מצב קריטי."
+
+#: lib/Settings.php
+msgid "Keep Tables on Uninstall"
+msgstr "שמור טבלאות בעת הסרה"
+
+#: lib/Settings.php
+msgid "Preserve plugin_wordpress database tables when uninstalling the plugin."
+msgstr "שמור על טבלאות מסד הנתונים של plugin_wordpress בעת הסרת התוסף."
+
+#: lib/Ui/PagesRenderer.php
+msgid "Fleet Health Summary"
+msgstr "סיכום בריאות הצי"
+
+#: lib/Ui/PagesRenderer.php
+msgid "MAD Latency Anomalies"
+msgstr "חריגות השהיה מסוג MAD"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Site Snapshots"
+msgstr "תמונות מצב של אתרים"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Cacti Thold Baseline Templates"
+msgstr "תבניות קו בסיס של Cacti Thold"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Dry-Run Probe Site:"
+msgstr "אתר לבדיקת הרצה יבשה:"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Run Read-Only Probe"
+msgstr "הפעל בדיקה לקריאה בלבד"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Latest Dry-Run Probe Result"
+msgstr "תוצאת בדיקת ההרצה היבשה האחרונה"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Update Drift, Cron Stalls & Autoload Bloat"
+msgstr "סחף עדכונים, תקיעות Cron והתנפחות טעינה אוטומטית"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Vault Status:"
+msgstr "מצב הכספת:"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Add or Update WordPress Site"
+msgstr "הוסף או עדכן אתר WordPress"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Save Site"
+msgstr "שמור אתר"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Configured Fleet Inventory"
+msgstr "מלאי צי מוגדר"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Delete"
+msgstr "מחק"
+
+#: setup.php
+#, php-format
+msgid "The WordPress plugin requires PHP %s or later. This server runs PHP %s, so the plugin was not installed or enabled."
+msgstr "תוסף WordPress דורש PHP %s ומעלה. שרת זה מריץ PHP %s, ולכן התוסף לא הותקן או הופעל."
+
+#: setup.php
+msgid "Utilities"
+msgstr "כלי עזר"
+
+#: setup.php
+msgid "WordPress"
+msgstr "WordPress"
+
+#: setup.php
+msgid "WordPress Fleet Monitor"
+msgstr "ניטור צי WordPress"
+
+#: setup.php
+msgid "The WordPress plugin is not enabled."
+msgstr "תוסף WordPress אינו מופעל."
+
+#: setup.php
+#, php-format
+msgid "The WordPress plugin requires PHP %s or later."
+msgstr "תוסף WordPress דורש PHP %s ומעלה."
+
+#: wordpress_admin.php wordpress_operator.php
+msgid "CSRF verification failed. Reload the page and retry."
+msgstr "אימות CSRF נכשל. טען מחדש את הדף ונסה שוב."
+
+#: wordpress_admin.php
+msgid "Saved WordPress site inventory entry."
+msgstr "רשומת מלאי אתר WordPress נשמרה."
+
+#: wordpress_admin.php
+msgid "Encrypted Application Password stored in local AES-256-GCM vault."
+msgstr "סיסמת יישום מוצפנת נשמרה בכספת AES-256-GCM המקומית."
+
+#: wordpress_admin.php
+msgid "Deleted WordPress site and associated local vault secret."
+msgstr "אתר WordPress והסוד המקושר בכספת המקומית נמחקו."
+
+#: wordpress_admin.php
+msgid "Invalid site slug."
+msgstr "מזהה אתר לא חוקי."
+
+#: wordpress_admin.php
+msgid "Unsupported administrator action."
+msgstr "פעולת מנהל לא נתמכת."
+
+#: wordpress_admin.php
+msgid "WordPress Inventory, Vault Credentials & Poller Assignment (Administrator)"
+msgstr "מלאי WordPress, פרטי כספת והקצאת דוגמים (מנהל)"
+
+#: wordpress_operator.php
+msgid "Select a site to probe."
+msgstr "בחר אתר לבדיקה."
+
+#: wordpress_operator.php
+msgid "Unknown WordPress site slug."
+msgstr "מזהה אתר לא מוכר של WordPress."
+
+#: wordpress_operator.php
+msgid "Completed read-only dry-run probe."
+msgstr "בדיקת ההרצה היבשה לקריאה בלבד הושלמה."
+
+#: wordpress_operator.php
+msgid "Unsupported operator action."
+msgstr "פעולת מפעיל לא נתמכת."
+
+#: wordpress_operator.php
+msgid "WordPress Drift, Site Health, Cron & Dry-Run Probes (Operator)"
+msgstr "סחף WordPress, בריאות אתר, Cron ובדיקות הרצה יבשה (מפעיל)"
+
+#: wordpress_view.php
+msgid "WordPress Fleet Health & Metrics Overview (View)"
+msgstr "סקירת בריאות ומדדי צי WordPress (תצוגה)"
