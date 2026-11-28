@@ -1,0 +1,325 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
+# SPDX-FileCopyrightText: 2026 Thomas Vincent <thomasvincent@gmail.com>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: wordpress 0.1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/somethingwithproof/plugin_wordpress/issues\n"
+"PO-Revision-Date: 2026-11-28 00:00+0000\n"
+"Last-Translator: Thomas Vincent <thomasvincent@gmail.com>\n"
+"Language-Team: Malagasy <developers@cacti.net>\n"
+"Language: mg_MG\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: lib/Pages.php
+msgid "WordPress View"
+msgstr "Fijerena WordPress"
+
+#: lib/Pages.php
+msgid "WordPress Operator"
+msgstr "Mpampiasa WordPress"
+
+#: lib/Pages.php
+msgid "WordPress Admin"
+msgstr "Mpitantana WordPress"
+
+#: lib/Pages.php
+msgid "WordPress Fleet Overview"
+msgstr "Topi-maso ny andian-tranonkala WordPress"
+
+#: lib/Pages.php
+msgid "WordPress Drift & Probes"
+msgstr "Fiviliana sy fitsapana WordPress"
+
+#: lib/Pages.php
+msgid "WordPress Inventory & Vault"
+msgstr "Lisitra sy fitehirizana WordPress"
+
+#: lib/Settings.php
+msgid "WordPress Fleet Security & Vault"
+msgstr "Fiarovana ny andian-tranonkala sy fitehirizana WordPress"
+
+#: lib/Settings.php
+msgid "Vault Keyfile Path"
+msgstr "Lalan'ny rakitra fanalahidin'ny fitehirizana"
+
+#: lib/Settings.php
+msgid "Absolute path to the external 256-bit AES-GCM keyfile used to encrypt Application Passwords at rest. Never replicated to remote pollers."
+msgstr "Lalana feno mankany amin'ny rakitra fanalahidy ivelany 256-bit AES-GCM ampiasaina hanafenana tenimiafina rindranasa tehirizina. Tsy adika mihitsy any amin'ny poller lavitra."
+
+#: lib/Settings.php
+msgid "Internal Host Allowlist"
+msgstr "Lisitry ny mpampiantrano anatiny azo ekena"
+
+#: lib/Settings.php
+msgid "Comma-separated hostnames or wildcard patterns (e.g. *.corp.example) exempt from private-IP SSRF blocking."
+msgstr "Anarana mpampiantrano na endrika wildcard misaraka amin'ny faingo (oh. *.corp.example) afaka amin'ny fanakanana SSRF ho an'ny IP manokana."
+
+#: lib/Settings.php
+msgid "Internal CIDR Allowlist"
+msgstr "Lisitry ny CIDR anatiny azo ekena"
+
+#: lib/Settings.php
+msgid "Comma-separated internal CIDR ranges explicitly permitted by OutboundGuard."
+msgstr "Fari-piadidiana CIDR anatiny misaraka amin'ny faingo izay avelan'ny OutboundGuard mazava tsara."
+
+#: lib/Settings.php
+msgid "Outbound Client & Adaptive Poller Sizing"
+msgstr "Mpanjifa mivoaka sy famaritana habe mifanaraka ho an'ny poller"
+
+#: lib/Settings.php
+msgid "Poll Interval (seconds)"
+msgstr "Elanelam-potoana fitsapana (segondra)"
+
+#: lib/Settings.php
+msgid "Target fleet polling interval in seconds for Little's Law concurrency sizing."
+msgstr "Elanelam-potoana kendrena hitsapana ny andian-tranonkala amin'ny segondra ho an'ny kajy fampiarahana araka ny Little's Law."
+
+#: lib/Settings.php
+msgid "Connect Timeout (seconds)"
+msgstr "Fe-potoana fifandraisana (segondra)"
+
+#: lib/Settings.php
+msgid "Maximum TCP/TLS connect duration per WordPress probe (1-15s)."
+msgstr "Faharetana faratampony amin'ny fifandraisana TCP/TLS isaky ny fitsapana WordPress (1-15s)."
+
+#: lib/Settings.php
+msgid "Read Timeout (seconds)"
+msgstr "Fe-potoana famakiana (segondra)"
+
+#: lib/Settings.php
+msgid "Maximum total HTTP read duration per WordPress probe (1-60s)."
+msgstr "Faharetana faratampony manontolo amin'ny famakiana HTTP isaky ny fitsapana WordPress (1-60s)."
+
+#: lib/Settings.php
+msgid "Max Response Size (bytes)"
+msgstr "Habe faratampon'ny valiny (bytes)"
+
+#: lib/Settings.php
+msgid "Hard byte ceiling per HTTP response (capped at 2097152 bytes / 2 MiB)."
+msgstr "Fetra henjana amin'ny bytes isaky ny valiny HTTP (voafetra amin'ny 2097152 bytes / 2 MiB)."
+
+#: lib/Settings.php
+msgid "CoDel Target Standing Delay (ms)"
+msgstr "Fahatarana maharitra kendrena CoDel (ms)"
+
+#: lib/Settings.php
+msgid "Queue standing-delay target in milliseconds before adaptive concurrency backs off."
+msgstr "Fahatarana maharitra kendrena ao anaty filaharana amin'ny milisegondra alohan'ny hihenan'ny fampiarahana mifanaraka."
+
+#: lib/Settings.php
+msgid "Minimum Concurrency"
+msgstr "Fampiarahana kely indrindra"
+
+#: lib/Settings.php
+msgid "Lower bound on concurrent WordPress probe workers per collector shard."
+msgstr "Fetra ambany indrindra amin'ny mpiasa fitsapana WordPress miara-miasa isaky ny fizarana mpanangona."
+
+#: lib/Settings.php
+msgid "Maximum Concurrency"
+msgstr "Fampiarahana ambony indrindra"
+
+#: lib/Settings.php
+msgid "Upper bound on concurrent WordPress probe workers per collector shard."
+msgstr "Fetra ambony indrindra amin'ny mpiasa fitsapana WordPress miara-miasa isaky ny fizarana mpanangona."
+
+#: lib/Settings.php
+msgid "HTTP User-Agent"
+msgstr "HTTP User-Agent"
+
+#: lib/Settings.php
+msgid "User-Agent header sent on read-only REST and Site Health probes."
+msgstr "Loha-laharana User-Agent alefa amin'ny fitsapana REST sy fahasalaman'ny tranonkala vakiana fotsiny."
+
+#: lib/Settings.php
+msgid "Fleet Health & Thold Thresholds"
+msgstr "Fahasalaman'ny andian-tranonkala sy fetra Thold"
+
+#: lib/Settings.php
+msgid "Default Apdex T (ms)"
+msgstr "Apdex T mahazatra (ms)"
+
+#: lib/Settings.php
+msgid "Satisfied TTFB threshold T in milliseconds (tolerating threshold is 4T)."
+msgstr "Fetra TTFB mahafa-po T amin'ny milisegondra (ny fetra azo leferina dia 4T)."
+
+#: lib/Settings.php
+msgid "Autoload Bloat Warning (bytes)"
+msgstr "Fampitandremana fitomboana tafahoatra autoload (bytes)"
+
+#: lib/Settings.php
+msgid "wp_options autoloaded size warning threshold (default 819200 / 800 KiB)."
+msgstr "Fetra fampitandremana ho an'ny haben'ny wp_options autoload (mahazatra 819200 / 800 KiB)."
+
+#: lib/Settings.php
+msgid "Autoload Bloat Critical (bytes)"
+msgstr "Fetra manakiana ny fitomboana tafahoatra autoload (bytes)"
+
+#: lib/Settings.php
+msgid "wp_options autoloaded size critical threshold (default 2097152 / 2 MiB)."
+msgstr "Fetra manakiana ho an'ny haben'ny wp_options autoload (mahazatra 2097152 / 2 MiB)."
+
+#: lib/Settings.php
+msgid "WP-Cron Lag Warning (seconds)"
+msgstr "Fampitandremana fahatarana WP-Cron (segondra)"
+
+#: lib/Settings.php
+msgid "Oldest overdue WP-Cron job lag threshold for degraded status."
+msgstr "Fetra fahatarana ho an'ny asa WP-Cron tara indrindra mba hamaritana toe-javatra miharatsy."
+
+#: lib/Settings.php
+msgid "TLS Expiry Warning (days)"
+msgstr "Fampitandremana fahataperan'ny TLS (andro)"
+
+#: lib/Settings.php
+msgid "Days before TLS certificate expiry triggering degraded status."
+msgstr "Isan'ny andro alohan'ny fahataperan'ny taratasy fanamarinana TLS izay miteraka toe-javatra miharatsy."
+
+#: lib/Settings.php
+msgid "TLS Expiry Critical (days)"
+msgstr "Fetra manakiana ny fahataperan'ny TLS (andro)"
+
+#: lib/Settings.php
+msgid "Days before TLS certificate expiry triggering critical status."
+msgstr "Isan'ny andro alohan'ny fahataperan'ny taratasy fanamarinana TLS izay miteraka toe-javatra manakiana."
+
+#: lib/Settings.php
+msgid "Keep Tables on Uninstall"
+msgstr "Tehirizo ny tabilao rehefa manaisotra"
+
+#: lib/Settings.php
+msgid "Preserve plugin_wordpress database tables when uninstalling the plugin."
+msgstr "Tehirizo ny tabilao angon-drakitra plugin_wordpress rehefa manaisotra ny fanampin-drindranasa."
+
+#: lib/Ui/PagesRenderer.php
+msgid "Fleet Health Summary"
+msgstr "Famintinana ny fahasalaman'ny andian-tranonkala"
+
+#: lib/Ui/PagesRenderer.php
+msgid "MAD Latency Anomalies"
+msgstr "Tsy fahatomombanana fahatarana MAD"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Site Snapshots"
+msgstr "Sary toe-javatry ny tranonkala"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Cacti Thold Baseline Templates"
+msgstr "Modely fototra Cacti Thold"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Dry-Run Probe Site:"
+msgstr "Tranonkala fitsapana andrana:"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Run Read-Only Probe"
+msgstr "Alefaso ny fitsapana vakiana fotsiny"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Latest Dry-Run Probe Result"
+msgstr "Valin'ny fitsapana andrana farany"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Update Drift, Cron Stalls & Autoload Bloat"
+msgstr "Fivilian'ny fanavaozana, fijanonan'ny Cron ary fitomboana tafahoatra autoload"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Vault Status:"
+msgstr "Toetran'ny fitehirizana:"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Add or Update WordPress Site"
+msgstr "Ampio na havaozy ny tranonkala WordPress"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Save Site"
+msgstr "Tehirizo ny tranonkala"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Configured Fleet Inventory"
+msgstr "Lisitry ny andian-tranonkala voalamina"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Delete"
+msgstr "Fafao"
+
+#: setup.php
+#, php-format
+msgid "The WordPress plugin requires PHP %s or later. This server runs PHP %s, so the plugin was not installed or enabled."
+msgstr "Mila PHP %s na vaovao kokoa ny fanampin-drindranasa WordPress. Mampiasa PHP %s ity mpizara ity, ka tsy napetraka na navela hiasa ilay fanampin-drindranasa."
+
+#: setup.php
+msgid "Utilities"
+msgstr "Fitaovana"
+
+#: setup.php
+msgid "WordPress"
+msgstr "WordPress"
+
+#: setup.php
+msgid "WordPress Fleet Monitor"
+msgstr "Mpanara-maso ny andian-tranonkala WordPress"
+
+#: setup.php
+msgid "The WordPress plugin is not enabled."
+msgstr "Tsy navela hiasa ny fanampin-drindranasa WordPress."
+
+#: setup.php
+#, php-format
+msgid "The WordPress plugin requires PHP %s or later."
+msgstr "Mila PHP %s na vaovao kokoa ny fanampin-drindranasa WordPress."
+
+#: wordpress_admin.php wordpress_operator.php
+msgid "CSRF verification failed. Reload the page and retry."
+msgstr "Tsy nahomby ny fanamarinana CSRF. Havaozy ny pejy ary andramo indray."
+
+#: wordpress_admin.php
+msgid "Saved WordPress site inventory entry."
+msgstr "Voatahiry ny firaketana lisitry ny tranonkala WordPress."
+
+#: wordpress_admin.php
+msgid "Encrypted Application Password stored in local AES-256-GCM vault."
+msgstr "Voatahiry ao amin'ny fitehirizana AES-256-GCM eo an-toerana ny tenimiafina rindranasa voaafina."
+
+#: wordpress_admin.php
+msgid "Deleted WordPress site and associated local vault secret."
+msgstr "Voafafa ny tranonkala WordPress sy ny tsiambaratelo mifandraika aminy ao amin'ny fitehirizana eo an-toerana."
+
+#: wordpress_admin.php
+msgid "Invalid site slug."
+msgstr "Tsy mety ny famantarana (slug) ny tranonkala."
+
+#: wordpress_admin.php
+msgid "Unsupported administrator action."
+msgstr "Hetsika mpitantana tsy tohanana."
+
+#: wordpress_admin.php
+msgid "WordPress Inventory, Vault Credentials & Poller Assignment (Administrator)"
+msgstr "Lisitra WordPress, fahazoan-dalana fitehirizana ary fanendrena poller (Mpitantana)"
+
+#: wordpress_operator.php
+msgid "Select a site to probe."
+msgstr "Misafidiana tranonkala hotsapaina."
+
+#: wordpress_operator.php
+msgid "Unknown WordPress site slug."
+msgstr "Tsy fantatra ny famantarana (slug) ny tranonkala WordPress."
+
+#: wordpress_operator.php
+msgid "Completed read-only dry-run probe."
+msgstr "Vita ny fitsapana andrana vakiana fotsiny."
+
+#: wordpress_operator.php
+msgid "Unsupported operator action."
+msgstr "Hetsika mpampiasa tsy tohanana."
+
+#: wordpress_operator.php
+msgid "WordPress Drift, Site Health, Cron & Dry-Run Probes (Operator)"
+msgstr "Fiviliana WordPress, fahasalaman'ny tranonkala, Cron ary fitsapana andrana (Mpampiasa)"
+
+#: wordpress_view.php
+msgid "WordPress Fleet Health & Metrics Overview (View)"
+msgstr "Topi-maso ny fahasalamana sy ny fandrefesana ny andian-tranonkala WordPress (Fijerena)"

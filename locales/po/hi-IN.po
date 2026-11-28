@@ -1,0 +1,325 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
+# SPDX-FileCopyrightText: 2026 Thomas Vincent <thomasvincent@gmail.com>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: wordpress 0.1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/somethingwithproof/plugin_wordpress/issues\n"
+"PO-Revision-Date: 2026-11-28 00:00+0000\n"
+"Last-Translator: Thomas Vincent <thomasvincent@gmail.com>\n"
+"Language-Team: Hindi <https://translate.cacti.net/projects/cacti/core/hi/>\n"
+"Language: hi-IN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+
+#: lib/Pages.php
+msgid "WordPress View"
+msgstr "WordPress दृश्य"
+
+#: lib/Pages.php
+msgid "WordPress Operator"
+msgstr "WordPress ऑपरेटर"
+
+#: lib/Pages.php
+msgid "WordPress Admin"
+msgstr "WordPress व्यवस्थापक"
+
+#: lib/Pages.php
+msgid "WordPress Fleet Overview"
+msgstr "WordPress फ़्लीट अवलोकन"
+
+#: lib/Pages.php
+msgid "WordPress Drift & Probes"
+msgstr "WordPress ड्रिफ्ट और जांच"
+
+#: lib/Pages.php
+msgid "WordPress Inventory & Vault"
+msgstr "WordPress इन्वेंट्री और वॉल्ट"
+
+#: lib/Settings.php
+msgid "WordPress Fleet Security & Vault"
+msgstr "WordPress फ़्लीट सुरक्षा और वॉल्ट"
+
+#: lib/Settings.php
+msgid "Vault Keyfile Path"
+msgstr "वॉल्ट कुंजी फ़ाइल पथ"
+
+#: lib/Settings.php
+msgid "Absolute path to the external 256-bit AES-GCM keyfile used to encrypt Application Passwords at rest. Never replicated to remote pollers."
+msgstr "संग्रहीत एप्लिकेशन पासवर्ड एन्क्रिप्ट करने के लिए प्रयुक्त बाहरी 256-bit AES-GCM कुंजी फ़ाइल का पूर्ण पथ। इसे कभी भी दूरस्थ पोलर्स पर प्रतिकृत नहीं किया जाता है।"
+
+#: lib/Settings.php
+msgid "Internal Host Allowlist"
+msgstr "आंतरिक होस्ट अनुमति सूची"
+
+#: lib/Settings.php
+msgid "Comma-separated hostnames or wildcard patterns (e.g. *.corp.example) exempt from private-IP SSRF blocking."
+msgstr "अल्पविराम से पृथक होस्टनाम या वाइल्डकार्ड पैटर्न (उदा. *.corp.example) जिन्हें निजी-IP SSRF अवरोधन से छूट प्राप्त है।"
+
+#: lib/Settings.php
+msgid "Internal CIDR Allowlist"
+msgstr "आंतरिक CIDR अनुमति सूची"
+
+#: lib/Settings.php
+msgid "Comma-separated internal CIDR ranges explicitly permitted by OutboundGuard."
+msgstr "OutboundGuard द्वारा स्पष्ट रूप से अनुमत अल्पविराम से पृथक आंतरिक CIDR श्रेणियाँ।"
+
+#: lib/Settings.php
+msgid "Outbound Client & Adaptive Poller Sizing"
+msgstr "आउटबाउंड क्लाइंट और अनुकूली पोलर आकार निर्धारण"
+
+#: lib/Settings.php
+msgid "Poll Interval (seconds)"
+msgstr "पोल अंतराल (सेकंड)"
+
+#: lib/Settings.php
+msgid "Target fleet polling interval in seconds for Little's Law concurrency sizing."
+msgstr "Little's Law समवर्ती आकार निर्धारण के लिए सेकंड में लक्षित फ़्लीट पोलिंग अंतराल।"
+
+#: lib/Settings.php
+msgid "Connect Timeout (seconds)"
+msgstr "कनेक्ट समय-सीमा (सेकंड)"
+
+#: lib/Settings.php
+msgid "Maximum TCP/TLS connect duration per WordPress probe (1-15s)."
+msgstr "प्रति WordPress जांच अधिकतम TCP/TLS कनेक्ट अवधि (1-15s)।"
+
+#: lib/Settings.php
+msgid "Read Timeout (seconds)"
+msgstr "रीड समय-सीमा (सेकंड)"
+
+#: lib/Settings.php
+msgid "Maximum total HTTP read duration per WordPress probe (1-60s)."
+msgstr "प्रति WordPress जांच अधिकतम कुल HTTP रीड अवधि (1-60s)।"
+
+#: lib/Settings.php
+msgid "Max Response Size (bytes)"
+msgstr "अधिकतम प्रतिक्रिया आकार (बाइट्स)"
+
+#: lib/Settings.php
+msgid "Hard byte ceiling per HTTP response (capped at 2097152 bytes / 2 MiB)."
+msgstr "प्रति HTTP प्रतिक्रिया कठोर बाइट सीमा (2097152 बाइट्स / 2 MiB पर सीमित)।"
+
+#: lib/Settings.php
+msgid "CoDel Target Standing Delay (ms)"
+msgstr "CoDel लक्षित स्थायी विलंब (ms)"
+
+#: lib/Settings.php
+msgid "Queue standing-delay target in milliseconds before adaptive concurrency backs off."
+msgstr "अनुकूली समवर्ती के घटने से पहले मिलीसेकंड में कतार स्थायी-विलंब लक्ष्य।"
+
+#: lib/Settings.php
+msgid "Minimum Concurrency"
+msgstr "न्यूनतम समवर्ती"
+
+#: lib/Settings.php
+msgid "Lower bound on concurrent WordPress probe workers per collector shard."
+msgstr "प्रति कलेक्टर शार्ड समवर्ती WordPress जांच कर्मियों की निचली सीमा।"
+
+#: lib/Settings.php
+msgid "Maximum Concurrency"
+msgstr "अधिकतम समवर्ती"
+
+#: lib/Settings.php
+msgid "Upper bound on concurrent WordPress probe workers per collector shard."
+msgstr "प्रति कलेक्टर शार्ड समवर्ती WordPress जांच कर्मियों की ऊपरी सीमा।"
+
+#: lib/Settings.php
+msgid "HTTP User-Agent"
+msgstr "HTTP User-Agent"
+
+#: lib/Settings.php
+msgid "User-Agent header sent on read-only REST and Site Health probes."
+msgstr "केवल-पठनीय REST और साइट स्वास्थ्य जांच पर भेजा गया User-Agent हेडर।"
+
+#: lib/Settings.php
+msgid "Fleet Health & Thold Thresholds"
+msgstr "फ़्लीट स्वास्थ्य और Thold सीमाएँ"
+
+#: lib/Settings.php
+msgid "Default Apdex T (ms)"
+msgstr "डिफ़ॉल्ट Apdex T (ms)"
+
+#: lib/Settings.php
+msgid "Satisfied TTFB threshold T in milliseconds (tolerating threshold is 4T)."
+msgstr "मिलीसेकंड में संतोषजनक TTFB सीमा T (सहनशील सीमा 4T है)।"
+
+#: lib/Settings.php
+msgid "Autoload Bloat Warning (bytes)"
+msgstr "ऑटोलोड विस्तार चेतावनी (बाइट्स)"
+
+#: lib/Settings.php
+msgid "wp_options autoloaded size warning threshold (default 819200 / 800 KiB)."
+msgstr "wp_options ऑटोलोड आकार चेतावनी सीमा (डिफ़ॉल्ट 819200 / 800 KiB)।"
+
+#: lib/Settings.php
+msgid "Autoload Bloat Critical (bytes)"
+msgstr "ऑटोलोड विस्तार गंभीर चेतावनी (बाइट्स)"
+
+#: lib/Settings.php
+msgid "wp_options autoloaded size critical threshold (default 2097152 / 2 MiB)."
+msgstr "wp_options ऑटोलोड आकार गंभीर सीमा (डिफ़ॉल्ट 2097152 / 2 MiB)।"
+
+#: lib/Settings.php
+msgid "WP-Cron Lag Warning (seconds)"
+msgstr "WP-Cron विलंब चेतावनी (सेकंड)"
+
+#: lib/Settings.php
+msgid "Oldest overdue WP-Cron job lag threshold for degraded status."
+msgstr "अवनत स्थिति के लिए सबसे पुराने अतिदेय WP-Cron कार्य की विलंब सीमा।"
+
+#: lib/Settings.php
+msgid "TLS Expiry Warning (days)"
+msgstr "TLS समाप्ति चेतावनी (दिन)"
+
+#: lib/Settings.php
+msgid "Days before TLS certificate expiry triggering degraded status."
+msgstr "TLS प्रमाणपत्र समाप्ति से पहले के दिन जो अवनत स्थिति को सक्रिय करते हैं।"
+
+#: lib/Settings.php
+msgid "TLS Expiry Critical (days)"
+msgstr "TLS समाप्ति गंभीर चेतावनी (दिन)"
+
+#: lib/Settings.php
+msgid "Days before TLS certificate expiry triggering critical status."
+msgstr "TLS प्रमाणपत्र समाप्ति से पहले के दिन जो गंभीर स्थिति को सक्रिय करते हैं।"
+
+#: lib/Settings.php
+msgid "Keep Tables on Uninstall"
+msgstr "अनइंस्टॉल पर तालिकाएँ सुरक्षित रखें"
+
+#: lib/Settings.php
+msgid "Preserve plugin_wordpress database tables when uninstalling the plugin."
+msgstr "प्लगइन अनइंस्टॉल करते समय plugin_wordpress डेटाबेस तालिकाओं को सुरक्षित रखें।"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Fleet Health Summary"
+msgstr "फ़्लीट स्वास्थ्य सारांश"
+
+#: lib/Ui/PagesRenderer.php
+msgid "MAD Latency Anomalies"
+msgstr "MAD विलंबता विसंगतियाँ"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Site Snapshots"
+msgstr "साइट स्नैपशॉट"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Cacti Thold Baseline Templates"
+msgstr "Cacti Thold आधारभूत टेम्पलेट्स"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Dry-Run Probe Site:"
+msgstr "ड्राई-रन जांच साइट:"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Run Read-Only Probe"
+msgstr "केवल-पठनीय जांच चलाएँ"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Latest Dry-Run Probe Result"
+msgstr "नवीनतम ड्राई-रन जांच परिणाम"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Update Drift, Cron Stalls & Autoload Bloat"
+msgstr "अपडेट ड्रिफ्ट, क्रॉन रुकावट और ऑटोलोड विस्तार"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Vault Status:"
+msgstr "वॉल्ट स्थिति:"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Add or Update WordPress Site"
+msgstr "WordPress साइट जोड़ें या अपडेट करें"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Save Site"
+msgstr "साइट सहेजें"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Configured Fleet Inventory"
+msgstr "कॉन्फ़िगर की गई फ़्लीट इन्वेंट्री"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Delete"
+msgstr "हटाएँ"
+
+#: setup.php
+#, php-format
+msgid "The WordPress plugin requires PHP %s or later. This server runs PHP %s, so the plugin was not installed or enabled."
+msgstr "WordPress प्लगइन के लिए PHP %s या उसके बाद का संस्करण आवश्यक है। यह सर्वर PHP %s चला रहा है, इसलिए प्लगइन इंस्टॉल या सक्षम नहीं किया गया।"
+
+#: setup.php
+msgid "Utilities"
+msgstr "उपयोगिताएँ"
+
+#: setup.php
+msgid "WordPress"
+msgstr "WordPress"
+
+#: setup.php
+msgid "WordPress Fleet Monitor"
+msgstr "WordPress फ़्लीट मॉनिटर"
+
+#: setup.php
+msgid "The WordPress plugin is not enabled."
+msgstr "WordPress प्लगइन सक्षम नहीं है।"
+
+#: setup.php
+#, php-format
+msgid "The WordPress plugin requires PHP %s or later."
+msgstr "WordPress प्लगइन के लिए PHP %s या उसके बाद का संस्करण आवश्यक है।"
+
+#: wordpress_admin.php wordpress_operator.php
+msgid "CSRF verification failed. Reload the page and retry."
+msgstr "CSRF सत्यापन विफल रहा। पृष्ठ को पुनः लोड करें और फिर से प्रयास करें।"
+
+#: wordpress_admin.php
+msgid "Saved WordPress site inventory entry."
+msgstr "WordPress साइट इन्वेंट्री प्रविष्टि सहेजी गई।"
+
+#: wordpress_admin.php
+msgid "Encrypted Application Password stored in local AES-256-GCM vault."
+msgstr "एन्क्रिप्टेड एप्लिकेशन पासवर्ड स्थानीय AES-256-GCM वॉल्ट में संग्रहीत किया गया।"
+
+#: wordpress_admin.php
+msgid "Deleted WordPress site and associated local vault secret."
+msgstr "WordPress साइट और उससे संबंधित स्थानीय वॉल्ट सीक्रेट हटा दिया गया।"
+
+#: wordpress_admin.php
+msgid "Invalid site slug."
+msgstr "अमान्य साइट स्लग।"
+
+#: wordpress_admin.php
+msgid "Unsupported administrator action."
+msgstr "असमर्थित व्यवस्थापक क्रिया।"
+
+#: wordpress_admin.php
+msgid "WordPress Inventory, Vault Credentials & Poller Assignment (Administrator)"
+msgstr "WordPress इन्वेंट्री, वॉल्ट क्रेडेंशियल्स और पोलर असाइनमेंट (व्यवस्थापक)"
+
+#: wordpress_operator.php
+msgid "Select a site to probe."
+msgstr "जांच के लिए एक साइट चुनें।"
+
+#: wordpress_operator.php
+msgid "Unknown WordPress site slug."
+msgstr "अज्ञात WordPress साइट स्लग।"
+
+#: wordpress_operator.php
+msgid "Completed read-only dry-run probe."
+msgstr "केवल-पठनीय ड्राई-रन जांच पूर्ण हुई।"
+
+#: wordpress_operator.php
+msgid "Unsupported operator action."
+msgstr "असमर्थित ऑपरेटर क्रिया।"
+
+#: wordpress_operator.php
+msgid "WordPress Drift, Site Health, Cron & Dry-Run Probes (Operator)"
+msgstr "WordPress ड्रिफ्ट, साइट स्वास्थ्य, क्रॉन और ड्राई-रन जांच (ऑपरेटर)"
+
+#: wordpress_view.php
+msgid "WordPress Fleet Health & Metrics Overview (View)"
+msgstr "WordPress फ़्लीट स्वास्थ्य और मेट्रिक्स अवलोकन (दृश्य)"

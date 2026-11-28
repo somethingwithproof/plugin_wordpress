@@ -1,0 +1,325 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
+# SPDX-FileCopyrightText: 2026 Thomas Vincent <thomasvincent@gmail.com>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: wordpress 0.1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/somethingwithproof/plugin_wordpress/issues\n"
+"PO-Revision-Date: 2026-11-28 00:00+0000\n"
+"Last-Translator: Thomas Vincent <thomasvincent@gmail.com>\n"
+"Language-Team: Kinyarwanda <developers@cacti.net>\n"
+"Language: rw_RW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: lib/Pages.php
+msgid "WordPress View"
+msgstr "Reba WordPress"
+
+#: lib/Pages.php
+msgid "WordPress Operator"
+msgstr "Umukoresha wa WordPress"
+
+#: lib/Pages.php
+msgid "WordPress Admin"
+msgstr "Umuyobozi wa WordPress"
+
+#: lib/Pages.php
+msgid "WordPress Fleet Overview"
+msgstr "Incamake y'imbuga za WordPress"
+
+#: lib/Pages.php
+msgid "WordPress Drift & Probes"
+msgstr "Impinduka n'isuzuma rya WordPress"
+
+#: lib/Pages.php
+msgid "WordPress Inventory & Vault"
+msgstr "Urutonde n'ububiko bw'ibanga bwa WordPress"
+
+#: lib/Settings.php
+msgid "WordPress Fleet Security & Vault"
+msgstr "Umutekano n'ububiko bw'ibanga bw'imbuga za WordPress"
+
+#: lib/Settings.php
+msgid "Vault Keyfile Path"
+msgstr "Inzira y'idosiye y'urufunguzo rw'ububiko bw'ibanga"
+
+#: lib/Settings.php
+msgid "Absolute path to the external 256-bit AES-GCM keyfile used to encrypt Application Passwords at rest. Never replicated to remote pollers."
+msgstr "Inzira yuzuye igana ku idosiye y'urufunguzo rwo hanze rwa 256-bit AES-GCM ikoreshwa mu gusobeka amagambo y'ibanga ya porogaramu abitswe. Ntiyigera yigana ku bakusanya amakuru bo kure."
+
+#: lib/Settings.php
+msgid "Internal Host Allowlist"
+msgstr "Urutonde rw'ibikoresho by'imbere byemewe"
+
+#: lib/Settings.php
+msgid "Comma-separated hostnames or wildcard patterns (e.g. *.corp.example) exempt from private-IP SSRF blocking."
+msgstr "Amazina y'ibikoresho cyangwa imiterere y'utumenyetso (urugero *.corp.example) atandukanyijwe n'akitso adafungirwa n'uburinzi bwa SSRF kuri IP z'ibanga."
+
+#: lib/Settings.php
+msgid "Internal CIDR Allowlist"
+msgstr "Urutonde rwa CIDR z'imbere zemewe"
+
+#: lib/Settings.php
+msgid "Comma-separated internal CIDR ranges explicitly permitted by OutboundGuard."
+msgstr "Ibipimo bya CIDR by'imbere bitandukanyijwe n'akitso byemewe ku mugaragaro na OutboundGuard."
+
+#: lib/Settings.php
+msgid "Outbound Client & Adaptive Poller Sizing"
+msgstr "Umukiriya wo hanze n'igenwa ry'ingano y'ikusanya ryihinduranya"
+
+#: lib/Settings.php
+msgid "Poll Interval (seconds)"
+msgstr "Intera y'ikusanya (amasegonda)"
+
+#: lib/Settings.php
+msgid "Target fleet polling interval in seconds for Little's Law concurrency sizing."
+msgstr "Intera igamijwe yo gukusanya amakuru y'imbuga mu masegonda yo kugena umubare w'ibikorwa bibera rimwe hifashishijwe Little's Law."
+
+#: lib/Settings.php
+msgid "Connect Timeout (seconds)"
+msgstr "Igihe ntarengwa cyo kwihuza (amasegonda)"
+
+#: lib/Settings.php
+msgid "Maximum TCP/TLS connect duration per WordPress probe (1-15s)."
+msgstr "Igihe ntarengwa cyo kwihuza kwa TCP/TLS kuri buri suzuma rya WordPress (1-15s)."
+
+#: lib/Settings.php
+msgid "Read Timeout (seconds)"
+msgstr "Igihe ntarengwa cyo gusoma (amasegonda)"
+
+#: lib/Settings.php
+msgid "Maximum total HTTP read duration per WordPress probe (1-60s)."
+msgstr "Igihe ntarengwa cyose cyo gusoma HTTP kuri buri suzuma rya WordPress (1-60s)."
+
+#: lib/Settings.php
+msgid "Max Response Size (bytes)"
+msgstr "Ingano ntarengwa y'igisubizo (bytes)"
+
+#: lib/Settings.php
+msgid "Hard byte ceiling per HTTP response (capped at 2097152 bytes / 2 MiB)."
+msgstr "Umupaka ntarengwa wa bytes kuri buri gisubizo cya HTTP (ntarengwa ni 2097152 bytes / 2 MiB)."
+
+#: lib/Settings.php
+msgid "CoDel Target Standing Delay (ms)"
+msgstr "Itinda rihoraho rigamijwe rya CoDel (ms)"
+
+#: lib/Settings.php
+msgid "Queue standing-delay target in milliseconds before adaptive concurrency backs off."
+msgstr "Itinda rihoraho mu murongo rigamijwe mu milisegonda mbere y'uko ubushobozi bwo gukorera rimwe bugabanywa."
+
+#: lib/Settings.php
+msgid "Minimum Concurrency"
+msgstr "Umubare muto w'ibikorwa bibera rimwe"
+
+#: lib/Settings.php
+msgid "Lower bound on concurrent WordPress probe workers per collector shard."
+msgstr "Umupaka wo hasi w'abakozi b'isuzuma rya WordPress bakorera rimwe kuri buri gice cy'ukusanya."
+
+#: lib/Settings.php
+msgid "Maximum Concurrency"
+msgstr "Umubare munini w'ibikorwa bibera rimwe"
+
+#: lib/Settings.php
+msgid "Upper bound on concurrent WordPress probe workers per collector shard."
+msgstr "Umupaka wo hejuru w'abakozi b'isuzuma rya WordPress bakorera rimwe kuri buri gice cy'ukusanya."
+
+#: lib/Settings.php
+msgid "HTTP User-Agent"
+msgstr "Umutwe wa HTTP User-Agent"
+
+#: lib/Settings.php
+msgid "User-Agent header sent on read-only REST and Site Health probes."
+msgstr "Umutwe wa User-Agent woherezwa mu isuzuma ryo gusoma gusa rya REST n'ubuzima bw'urubuga."
+
+#: lib/Settings.php
+msgid "Fleet Health & Thold Thresholds"
+msgstr "Ubuzima bw'imbuga n'imipaka ya Thold"
+
+#: lib/Settings.php
+msgid "Default Apdex T (ms)"
+msgstr "Apdex T isanzwe (ms)"
+
+#: lib/Settings.php
+msgid "Satisfied TTFB threshold T in milliseconds (tolerating threshold is 4T)."
+msgstr "Umupaka wa TTFB ushimishije T mu milisegonda (umupaka wihanganirwa ni 4T)."
+
+#: lib/Settings.php
+msgid "Autoload Bloat Warning (bytes)"
+msgstr "Umuburo w'uburemere bwa autoload (bytes)"
+
+#: lib/Settings.php
+msgid "wp_options autoloaded size warning threshold (default 819200 / 800 KiB)."
+msgstr "Umupaka w'umuburo w'ingano y'ibipakururwa byikora muri wp_options (isanzwe ni 819200 / 800 KiB)."
+
+#: lib/Settings.php
+msgid "Autoload Bloat Critical (bytes)"
+msgstr "Ikibazo gikomeye cy'uburemere bwa autoload (bytes)"
+
+#: lib/Settings.php
+msgid "wp_options autoloaded size critical threshold (default 2097152 / 2 MiB)."
+msgstr "Umupaka ukomeye w'ingano y'ibipakururwa byikora muri wp_options (isanzwe ni 2097152 / 2 MiB)."
+
+#: lib/Settings.php
+msgid "WP-Cron Lag Warning (seconds)"
+msgstr "Umuburo w'itinda rya WP-Cron (amasegonda)"
+
+#: lib/Settings.php
+msgid "Oldest overdue WP-Cron job lag threshold for degraded status."
+msgstr "Umupaka w'itinda ry'umurimo wa WP-Cron watinze cyane kurusha iyindi kugira ngo bigaragaze ko imikorere yagabanutse."
+
+#: lib/Settings.php
+msgid "TLS Expiry Warning (days)"
+msgstr "Umuburo wo kurangira kwa TLS (iminsi)"
+
+#: lib/Settings.php
+msgid "Days before TLS certificate expiry triggering degraded status."
+msgstr "Iminsi isigaye mbere y'uko icyemezo cya TLS kirangira itera uko imikorere igabanutse."
+
+#: lib/Settings.php
+msgid "TLS Expiry Critical (days)"
+msgstr "Ikibazo gikomeye cyo kurangira kwa TLS (iminsi)"
+
+#: lib/Settings.php
+msgid "Days before TLS certificate expiry triggering critical status."
+msgstr "Iminsi isigaye mbere y'uko icyemezo cya TLS kirangira itera uko ibintu bimeze nabi cyane."
+
+#: lib/Settings.php
+msgid "Keep Tables on Uninstall"
+msgstr "Guma ubika imbonerahamwe mu gihe cyo gukuramo"
+
+#: lib/Settings.php
+msgid "Preserve plugin_wordpress database tables when uninstalling the plugin."
+msgstr "Kubungabunga imbonerahamwe z'ububiko bw'amakuru za plugin_wordpress mu gihe ukuramo umugereka."
+
+#: lib/Ui/PagesRenderer.php
+msgid "Fleet Health Summary"
+msgstr "Incamake y'ubuzima bw'imbuga"
+
+#: lib/Ui/PagesRenderer.php
+msgid "MAD Latency Anomalies"
+msgstr "Ubudasa bw'itinda bwa MAD"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Site Snapshots"
+msgstr "Amashusho y'uko imbuga zihagaze"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Cacti Thold Baseline Templates"
+msgstr "Inyandikorugero fatizo za Cacti Thold"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Dry-Run Probe Site:"
+msgstr "Urubuga rw'isuzuma ry'igerageza:"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Run Read-Only Probe"
+msgstr "Kora isuzuma ryo gusoma gusa"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Latest Dry-Run Probe Result"
+msgstr "Ibisubizo biheruka by'isuzuma ry'igerageza"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Update Drift, Cron Stalls & Autoload Bloat"
+msgstr "Impinduka z'ivugurura, guhagarara kwa cron n'uburemere bwa autoload"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Vault Status:"
+msgstr "Uko ububiko bw'ibanga buhagaze:"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Add or Update WordPress Site"
+msgstr "Ongeraho cyangwa uvugurure urubuga rwa WordPress"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Save Site"
+msgstr "Bika urubuga"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Configured Fleet Inventory"
+msgstr "Urutonde rw'imbuga zashyizweho"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Delete"
+msgstr "Siba"
+
+#: setup.php
+#, php-format
+msgid "The WordPress plugin requires PHP %s or later. This server runs PHP %s, so the plugin was not installed or enabled."
+msgstr "Umugereka wa WordPress usaba PHP %s cyangwa isumbuyeho. Iyi seriveri ikoresha PHP %s, bityo umugereka ntiwashyizwemo cyangwa ngo wemerwe."
+
+#: setup.php
+msgid "Utilities"
+msgstr "Ibikoresho"
+
+#: setup.php
+msgid "WordPress"
+msgstr "WordPress"
+
+#: setup.php
+msgid "WordPress Fleet Monitor"
+msgstr "Umugenzuzi w'imbuga za WordPress"
+
+#: setup.php
+msgid "The WordPress plugin is not enabled."
+msgstr "Umugereka wa WordPress ntiwemewe."
+
+#: setup.php
+#, php-format
+msgid "The WordPress plugin requires PHP %s or later."
+msgstr "Umugereka wa WordPress usaba PHP %s cyangwa isumbuyeho."
+
+#: wordpress_admin.php wordpress_operator.php
+msgid "CSRF verification failed. Reload the page and retry."
+msgstr "Igenzura rya CSRF ryanze. Ongera utangize paji wongere ugerageze."
+
+#: wordpress_admin.php
+msgid "Saved WordPress site inventory entry."
+msgstr "Ibyanditswe by'urubuga rwa WordPress ku rutonde byabitswe."
+
+#: wordpress_admin.php
+msgid "Encrypted Application Password stored in local AES-256-GCM vault."
+msgstr "Ijambo ry'ibanga rya porogaramu risobetse ryabitswe mu bubiko bw'ibanga bwa AES-256-GCM bw'aho."
+
+#: wordpress_admin.php
+msgid "Deleted WordPress site and associated local vault secret."
+msgstr "Urubuga rwa WordPress n'ibanga rijyanye na rwo mu bubiko bw'aho byasibwe."
+
+#: wordpress_admin.php
+msgid "Invalid site slug."
+msgstr "Izina ngufi (slug) ry'urubuga ntiriboneye."
+
+#: wordpress_admin.php
+msgid "Unsupported administrator action."
+msgstr "Igikorwa cy'umuyobozi kidashyigikiwe."
+
+#: wordpress_admin.php
+msgid "WordPress Inventory, Vault Credentials & Poller Assignment (Administrator)"
+msgstr "Urutonde rwa WordPress, ibiranga ububiko bw'ibanga n'ishyirwaho ry'ukusanya (Umuyobozi)"
+
+#: wordpress_operator.php
+msgid "Select a site to probe."
+msgstr "Hitamo urubuga rwo gusuzuma."
+
+#: wordpress_operator.php
+msgid "Unknown WordPress site slug."
+msgstr "Izina ngufi (slug) ry'urubuga rwa WordPress ritazwi."
+
+#: wordpress_operator.php
+msgid "Completed read-only dry-run probe."
+msgstr "Isuzuma ry'igerageza ryo gusoma gusa ryarangiye."
+
+#: wordpress_operator.php
+msgid "Unsupported operator action."
+msgstr "Igikorwa cy'umukoresha kidashyigikiwe."
+
+#: wordpress_operator.php
+msgid "WordPress Drift, Site Health, Cron & Dry-Run Probes (Operator)"
+msgstr "Impinduka za WordPress, ubuzima bw'urubuga, cron n'isuzuma ry'igerageza (Umukoresha)"
+
+#: wordpress_view.php
+msgid "WordPress Fleet Health & Metrics Overview (View)"
+msgstr "Incamake y'ubuzima n'ibipimo by'imbuga za WordPress (Reba)"

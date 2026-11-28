@@ -1,0 +1,325 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
+# SPDX-FileCopyrightText: 2026 Thomas Vincent <thomasvincent@gmail.com>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: wordpress 0.1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/somethingwithproof/plugin_wordpress/issues\n"
+"PO-Revision-Date: 2026-11-28 00:00+0000\n"
+"Last-Translator: Thomas Vincent <thomasvincent@gmail.com>\n"
+"Language-Team: Korean <https://translate.cacti.net/projects/cacti/core/ko/>\n"
+"Language: ko-KR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: lib/Pages.php
+msgid "WordPress View"
+msgstr "WordPress 보기"
+
+#: lib/Pages.php
+msgid "WordPress Operator"
+msgstr "WordPress 운영자"
+
+#: lib/Pages.php
+msgid "WordPress Admin"
+msgstr "WordPress 관리자"
+
+#: lib/Pages.php
+msgid "WordPress Fleet Overview"
+msgstr "WordPress 플릿 개요"
+
+#: lib/Pages.php
+msgid "WordPress Drift & Probes"
+msgstr "WordPress 드리프트 및 프로브"
+
+#: lib/Pages.php
+msgid "WordPress Inventory & Vault"
+msgstr "WordPress 인벤토리 및 볼트"
+
+#: lib/Settings.php
+msgid "WordPress Fleet Security & Vault"
+msgstr "WordPress 플릿 보안 및 볼트"
+
+#: lib/Settings.php
+msgid "Vault Keyfile Path"
+msgstr "볼트 키 파일 경로"
+
+#: lib/Settings.php
+msgid "Absolute path to the external 256-bit AES-GCM keyfile used to encrypt Application Passwords at rest. Never replicated to remote pollers."
+msgstr "저장된 애플리케이션 비밀번호를 암호화하는 데 사용되는 외부 256-bit AES-GCM 키 파일의 절대 경로입니다. 원격 폴러에는 복제되지 않습니다."
+
+#: lib/Settings.php
+msgid "Internal Host Allowlist"
+msgstr "내부 호스트 허용 목록"
+
+#: lib/Settings.php
+msgid "Comma-separated hostnames or wildcard patterns (e.g. *.corp.example) exempt from private-IP SSRF blocking."
+msgstr "사설 IP SSRF 차단에서 제외되는 쉼표로 구분된 호스트 이름 또는 와일드카드 패턴(예: *.corp.example)입니다."
+
+#: lib/Settings.php
+msgid "Internal CIDR Allowlist"
+msgstr "내부 CIDR 허용 목록"
+
+#: lib/Settings.php
+msgid "Comma-separated internal CIDR ranges explicitly permitted by OutboundGuard."
+msgstr "OutboundGuard에서 명시적으로 허용하는 쉼표로 구분된 내부 CIDR 범위입니다."
+
+#: lib/Settings.php
+msgid "Outbound Client & Adaptive Poller Sizing"
+msgstr "아웃바운드 클라이언트 및 적응형 폴러 크기 조정"
+
+#: lib/Settings.php
+msgid "Poll Interval (seconds)"
+msgstr "폴링 간격(초)"
+
+#: lib/Settings.php
+msgid "Target fleet polling interval in seconds for Little's Law concurrency sizing."
+msgstr "Little's Law 동시성 크기 조정을 위한 대상 플릿 폴링 간격(초)입니다."
+
+#: lib/Settings.php
+msgid "Connect Timeout (seconds)"
+msgstr "연결 시간 초과(초)"
+
+#: lib/Settings.php
+msgid "Maximum TCP/TLS connect duration per WordPress probe (1-15s)."
+msgstr "WordPress 프로브당 최대 TCP/TLS 연결 시간(1-15s)입니다."
+
+#: lib/Settings.php
+msgid "Read Timeout (seconds)"
+msgstr "읽기 시간 초과(초)"
+
+#: lib/Settings.php
+msgid "Maximum total HTTP read duration per WordPress probe (1-60s)."
+msgstr "WordPress 프로브당 최대 총 HTTP 읽기 시간(1-60s)입니다."
+
+#: lib/Settings.php
+msgid "Max Response Size (bytes)"
+msgstr "최대 응답 크기(바이트)"
+
+#: lib/Settings.php
+msgid "Hard byte ceiling per HTTP response (capped at 2097152 bytes / 2 MiB)."
+msgstr "HTTP 응답당 엄격한 바이트 상한(최대 2097152 바이트 / 2 MiB)입니다."
+
+#: lib/Settings.php
+msgid "CoDel Target Standing Delay (ms)"
+msgstr "CoDel 목표 상시 지연 (ms)"
+
+#: lib/Settings.php
+msgid "Queue standing-delay target in milliseconds before adaptive concurrency backs off."
+msgstr "적응형 동시성이 백오프하기 전의 대기열 상시 지연 목표(밀리초)입니다."
+
+#: lib/Settings.php
+msgid "Minimum Concurrency"
+msgstr "최소 동시성"
+
+#: lib/Settings.php
+msgid "Lower bound on concurrent WordPress probe workers per collector shard."
+msgstr "수집기 샤드당 동시 WordPress 프로브 워커의 하한입니다."
+
+#: lib/Settings.php
+msgid "Maximum Concurrency"
+msgstr "최대 동시성"
+
+#: lib/Settings.php
+msgid "Upper bound on concurrent WordPress probe workers per collector shard."
+msgstr "수집기 샤드당 동시 WordPress 프로브 워커의 상한입니다."
+
+#: lib/Settings.php
+msgid "HTTP User-Agent"
+msgstr "HTTP User-Agent"
+
+#: lib/Settings.php
+msgid "User-Agent header sent on read-only REST and Site Health probes."
+msgstr "읽기 전용 REST 및 사이트 상태 프로브에서 전송되는 User-Agent 헤더입니다."
+
+#: lib/Settings.php
+msgid "Fleet Health & Thold Thresholds"
+msgstr "플릿 상태 및 Thold 임계값"
+
+#: lib/Settings.php
+msgid "Default Apdex T (ms)"
+msgstr "기본 Apdex T (ms)"
+
+#: lib/Settings.php
+msgid "Satisfied TTFB threshold T in milliseconds (tolerating threshold is 4T)."
+msgstr "만족 TTFB 임계값 T(밀리초, 허용 임계값은 4T)입니다."
+
+#: lib/Settings.php
+msgid "Autoload Bloat Warning (bytes)"
+msgstr "자동 로드 비대화 경고(바이트)"
+
+#: lib/Settings.php
+msgid "wp_options autoloaded size warning threshold (default 819200 / 800 KiB)."
+msgstr "wp_options 자동 로드 크기 경고 임계값(기본값 819200 / 800 KiB)입니다."
+
+#: lib/Settings.php
+msgid "Autoload Bloat Critical (bytes)"
+msgstr "자동 로드 비대화 심각(바이트)"
+
+#: lib/Settings.php
+msgid "wp_options autoloaded size critical threshold (default 2097152 / 2 MiB)."
+msgstr "wp_options 자동 로드 크기 심각 임계값(기본값 2097152 / 2 MiB)입니다."
+
+#: lib/Settings.php
+msgid "WP-Cron Lag Warning (seconds)"
+msgstr "WP-Cron 지연 경고(초)"
+
+#: lib/Settings.php
+msgid "Oldest overdue WP-Cron job lag threshold for degraded status."
+msgstr "성능 저하 상태 판정을 위한 가장 오래된 지연 WP-Cron 작업의 지연 임계값입니다."
+
+#: lib/Settings.php
+msgid "TLS Expiry Warning (days)"
+msgstr "TLS 만료 경고(일)"
+
+#: lib/Settings.php
+msgid "Days before TLS certificate expiry triggering degraded status."
+msgstr "성능 저하 상태를 트리거하는 TLS 인증서 만료 전 일수입니다."
+
+#: lib/Settings.php
+msgid "TLS Expiry Critical (days)"
+msgstr "TLS 만료 심각(일)"
+
+#: lib/Settings.php
+msgid "Days before TLS certificate expiry triggering critical status."
+msgstr "심각 상태를 트리거하는 TLS 인증서 만료 전 일수입니다."
+
+#: lib/Settings.php
+msgid "Keep Tables on Uninstall"
+msgstr "제거 시 테이블 유지"
+
+#: lib/Settings.php
+msgid "Preserve plugin_wordpress database tables when uninstalling the plugin."
+msgstr "플러그인을 제거할 때 plugin_wordpress 데이터베이스 테이블을 유지합니다."
+
+#: lib/Ui/PagesRenderer.php
+msgid "Fleet Health Summary"
+msgstr "플릿 상태 요약"
+
+#: lib/Ui/PagesRenderer.php
+msgid "MAD Latency Anomalies"
+msgstr "MAD 지연 이상 징후"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Site Snapshots"
+msgstr "사이트 스냅샷"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Cacti Thold Baseline Templates"
+msgstr "Cacti Thold 기준 템플릿"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Dry-Run Probe Site:"
+msgstr "드라이런 프로브 대상 사이트:"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Run Read-Only Probe"
+msgstr "읽기 전용 프로브 실행"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Latest Dry-Run Probe Result"
+msgstr "최신 드라이런 프로브 결과"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Update Drift, Cron Stalls & Autoload Bloat"
+msgstr "업데이트 드리프트, Cron 정체 및 자동 로드 비대화"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Vault Status:"
+msgstr "볼트 상태:"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Add or Update WordPress Site"
+msgstr "WordPress 사이트 추가 또는 업데이트"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Save Site"
+msgstr "사이트 저장"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Configured Fleet Inventory"
+msgstr "구성된 플릿 인벤토리"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Delete"
+msgstr "삭제"
+
+#: setup.php
+#, php-format
+msgid "The WordPress plugin requires PHP %s or later. This server runs PHP %s, so the plugin was not installed or enabled."
+msgstr "WordPress 플러그인에는 PHP %s 이상이 필요합니다. 이 서버는 PHP %s을(를) 실행 중이므로 플러그인이 설치되거나 활성화되지 않았습니다."
+
+#: setup.php
+msgid "Utilities"
+msgstr "유틸리티"
+
+#: setup.php
+msgid "WordPress"
+msgstr "WordPress"
+
+#: setup.php
+msgid "WordPress Fleet Monitor"
+msgstr "WordPress 플릿 모니터"
+
+#: setup.php
+msgid "The WordPress plugin is not enabled."
+msgstr "WordPress 플러그인이 활성화되어 있지 않습니다."
+
+#: setup.php
+#, php-format
+msgid "The WordPress plugin requires PHP %s or later."
+msgstr "WordPress 플러그인에는 PHP %s 이상이 필요합니다."
+
+#: wordpress_admin.php wordpress_operator.php
+msgid "CSRF verification failed. Reload the page and retry."
+msgstr "CSRF 검증에 실패했습니다. 페이지를 새로 고친 후 다시 시도하세요."
+
+#: wordpress_admin.php
+msgid "Saved WordPress site inventory entry."
+msgstr "WordPress 사이트 인벤토리 항목을 저장했습니다."
+
+#: wordpress_admin.php
+msgid "Encrypted Application Password stored in local AES-256-GCM vault."
+msgstr "암호화된 애플리케이션 비밀번호가 로컬 AES-256-GCM 볼트에 저장되었습니다."
+
+#: wordpress_admin.php
+msgid "Deleted WordPress site and associated local vault secret."
+msgstr "WordPress 사이트와 연결된 로컬 볼트 시크릿을 삭제했습니다."
+
+#: wordpress_admin.php
+msgid "Invalid site slug."
+msgstr "유효하지 않은 사이트 슬러그입니다."
+
+#: wordpress_admin.php
+msgid "Unsupported administrator action."
+msgstr "지원되지 않는 관리자 작업입니다."
+
+#: wordpress_admin.php
+msgid "WordPress Inventory, Vault Credentials & Poller Assignment (Administrator)"
+msgstr "WordPress 인벤토리, 볼트 자격 증명 및 폴러 할당(관리자)"
+
+#: wordpress_operator.php
+msgid "Select a site to probe."
+msgstr "프로브할 사이트를 선택하세요."
+
+#: wordpress_operator.php
+msgid "Unknown WordPress site slug."
+msgstr "알 수 없는 WordPress 사이트 슬러그입니다."
+
+#: wordpress_operator.php
+msgid "Completed read-only dry-run probe."
+msgstr "읽기 전용 드라이런 프로브를 완료했습니다."
+
+#: wordpress_operator.php
+msgid "Unsupported operator action."
+msgstr "지원되지 않는 운영자 작업입니다."
+
+#: wordpress_operator.php
+msgid "WordPress Drift, Site Health, Cron & Dry-Run Probes (Operator)"
+msgstr "WordPress 드리프트, 사이트 상태, Cron 및 드라이런 프로브(운영자)"
+
+#: wordpress_view.php
+msgid "WordPress Fleet Health & Metrics Overview (View)"
+msgstr "WordPress 플릿 상태 및 메트릭 개요(보기)"

@@ -1,0 +1,325 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
+# SPDX-FileCopyrightText: 2026 Thomas Vincent <thomasvincent@gmail.com>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: wordpress 0.1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/somethingwithproof/plugin_wordpress/issues\n"
+"PO-Revision-Date: 2026-11-28 00:00+0000\n"
+"Last-Translator: Thomas Vincent <thomasvincent@gmail.com>\n"
+"Language-Team: Turkish <https://translate.cacti.net/projects/cacti/core/tr/>\n"
+"Language: tr-TR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: lib/Pages.php
+msgid "WordPress View"
+msgstr "WordPress Görünümü"
+
+#: lib/Pages.php
+msgid "WordPress Operator"
+msgstr "WordPress Operatörü"
+
+#: lib/Pages.php
+msgid "WordPress Admin"
+msgstr "WordPress Yöneticisi"
+
+#: lib/Pages.php
+msgid "WordPress Fleet Overview"
+msgstr "WordPress Filosu Genel Bakış"
+
+#: lib/Pages.php
+msgid "WordPress Drift & Probes"
+msgstr "WordPress Sapma ve Yoklamaları"
+
+#: lib/Pages.php
+msgid "WordPress Inventory & Vault"
+msgstr "WordPress Envanteri ve Kasa"
+
+#: lib/Settings.php
+msgid "WordPress Fleet Security & Vault"
+msgstr "WordPress Filo Güvenliği ve Kasa"
+
+#: lib/Settings.php
+msgid "Vault Keyfile Path"
+msgstr "Kasa Anahtar Dosyası Yolu"
+
+#: lib/Settings.php
+msgid "Absolute path to the external 256-bit AES-GCM keyfile used to encrypt Application Passwords at rest. Never replicated to remote pollers."
+msgstr "Uygulama Parolalarını depolama sırasında şifrelemek için kullanılan harici 256-bit AES-GCM anahtar dosyasının mutlak yolu. Uzak yoklayıcılara asla çoğaltılmaz."
+
+#: lib/Settings.php
+msgid "Internal Host Allowlist"
+msgstr "Dahili Ana Bilgisayar İzin Listesi"
+
+#: lib/Settings.php
+msgid "Comma-separated hostnames or wildcard patterns (e.g. *.corp.example) exempt from private-IP SSRF blocking."
+msgstr "Özel IP SSRF engellemesinden muaf tutulan, virgülle ayrılmış ana bilgisayar adları veya joker karakter desenleri (ör. *.corp.example)."
+
+#: lib/Settings.php
+msgid "Internal CIDR Allowlist"
+msgstr "Dahili CIDR İzin Listesi"
+
+#: lib/Settings.php
+msgid "Comma-separated internal CIDR ranges explicitly permitted by OutboundGuard."
+msgstr "OutboundGuard tarafından açıkça izin verilen virgülle ayrılmış dahili CIDR aralıkları."
+
+#: lib/Settings.php
+msgid "Outbound Client & Adaptive Poller Sizing"
+msgstr "Giden İstemci ve Uyarlanabilir Yoklayıcı Boyutlandırma"
+
+#: lib/Settings.php
+msgid "Poll Interval (seconds)"
+msgstr "Yoklama Aralığı (saniye)"
+
+#: lib/Settings.php
+msgid "Target fleet polling interval in seconds for Little's Law concurrency sizing."
+msgstr "Little's Law eşzamanlılık boyutlandırması için saniye cinsinden hedef filo yoklama aralığı."
+
+#: lib/Settings.php
+msgid "Connect Timeout (seconds)"
+msgstr "Bağlantı Zaman Aşımı (saniye)"
+
+#: lib/Settings.php
+msgid "Maximum TCP/TLS connect duration per WordPress probe (1-15s)."
+msgstr "WordPress yoklaması başına maksimum TCP/TLS bağlantı süresi (1-15s)."
+
+#: lib/Settings.php
+msgid "Read Timeout (seconds)"
+msgstr "Okuma Zaman Aşımı (saniye)"
+
+#: lib/Settings.php
+msgid "Maximum total HTTP read duration per WordPress probe (1-60s)."
+msgstr "WordPress yoklaması başına maksimum toplam HTTP okuma süresi (1-60s)."
+
+#: lib/Settings.php
+msgid "Max Response Size (bytes)"
+msgstr "Maksimum Yanıt Boyutu (bayt)"
+
+#: lib/Settings.php
+msgid "Hard byte ceiling per HTTP response (capped at 2097152 bytes / 2 MiB)."
+msgstr "HTTP yanıtı başına kesin bayt üst sınırı (2097152 bayt / 2 MiB ile sınırlıdır)."
+
+#: lib/Settings.php
+msgid "CoDel Target Standing Delay (ms)"
+msgstr "CoDel Hedef Sürekli Gecikmesi (ms)"
+
+#: lib/Settings.php
+msgid "Queue standing-delay target in milliseconds before adaptive concurrency backs off."
+msgstr "Uyarlanabilir eşzamanlılık geri çekilmeden önce milisaniye cinsinden kuyruk sürekli gecikme hedefi."
+
+#: lib/Settings.php
+msgid "Minimum Concurrency"
+msgstr "Minimum Eşzamanlılık"
+
+#: lib/Settings.php
+msgid "Lower bound on concurrent WordPress probe workers per collector shard."
+msgstr "Toplayıcı parçası başına eşzamanlı WordPress yoklama çalışanları için alt sınır."
+
+#: lib/Settings.php
+msgid "Maximum Concurrency"
+msgstr "Maksimum Eşzamanlılık"
+
+#: lib/Settings.php
+msgid "Upper bound on concurrent WordPress probe workers per collector shard."
+msgstr "Toplayıcı parçası başına eşzamanlı WordPress yoklama çalışanları için üst sınır."
+
+#: lib/Settings.php
+msgid "HTTP User-Agent"
+msgstr "HTTP User-Agent Başlığı"
+
+#: lib/Settings.php
+msgid "User-Agent header sent on read-only REST and Site Health probes."
+msgstr "Salt okunur REST ve Site Sağlığı yoklamalarında gönderilen User-Agent başlığı."
+
+#: lib/Settings.php
+msgid "Fleet Health & Thold Thresholds"
+msgstr "Filo Sağlığı ve Thold Eşikleri"
+
+#: lib/Settings.php
+msgid "Default Apdex T (ms)"
+msgstr "Varsayılan Apdex T (ms)"
+
+#: lib/Settings.php
+msgid "Satisfied TTFB threshold T in milliseconds (tolerating threshold is 4T)."
+msgstr "Milisaniye cinsinden tatmin edici TTFB eşiği T (tolere edilebilir eşik 4T'dir)."
+
+#: lib/Settings.php
+msgid "Autoload Bloat Warning (bytes)"
+msgstr "Otomatik Yükleme Şişmesi Uyarısı (bayt)"
+
+#: lib/Settings.php
+msgid "wp_options autoloaded size warning threshold (default 819200 / 800 KiB)."
+msgstr "wp_options otomatik yüklenen boyut uyarı eşiği (varsayılan 819200 / 800 KiB)."
+
+#: lib/Settings.php
+msgid "Autoload Bloat Critical (bytes)"
+msgstr "Kritik Otomatik Yükleme Şişmesi (bayt)"
+
+#: lib/Settings.php
+msgid "wp_options autoloaded size critical threshold (default 2097152 / 2 MiB)."
+msgstr "wp_options otomatik yüklenen boyut kritik eşiği (varsayılan 2097152 / 2 MiB)."
+
+#: lib/Settings.php
+msgid "WP-Cron Lag Warning (seconds)"
+msgstr "WP-Cron Gecikme Uyarısı (saniye)"
+
+#: lib/Settings.php
+msgid "Oldest overdue WP-Cron job lag threshold for degraded status."
+msgstr "Düşük performans durumu için en eski gecikmiş WP-Cron görevi gecikme eşiği."
+
+#: lib/Settings.php
+msgid "TLS Expiry Warning (days)"
+msgstr "TLS Süre Dolumu Uyarısı (gün)"
+
+#: lib/Settings.php
+msgid "Days before TLS certificate expiry triggering degraded status."
+msgstr "Düşük performans durumunu tetikleyen TLS sertifikası süre dolumundan önceki gün sayısı."
+
+#: lib/Settings.php
+msgid "TLS Expiry Critical (days)"
+msgstr "Kritik TLS Süre Dolumu (gün)"
+
+#: lib/Settings.php
+msgid "Days before TLS certificate expiry triggering critical status."
+msgstr "Kritik durumu tetikleyen TLS sertifikası süre dolumundan önceki gün sayısı."
+
+#: lib/Settings.php
+msgid "Keep Tables on Uninstall"
+msgstr "Kaldırırken Tabloları Koru"
+
+#: lib/Settings.php
+msgid "Preserve plugin_wordpress database tables when uninstalling the plugin."
+msgstr "Eklenti kaldırılırken plugin_wordpress veritabanı tablolarını koru."
+
+#: lib/Ui/PagesRenderer.php
+msgid "Fleet Health Summary"
+msgstr "Filo Sağlığı Özeti"
+
+#: lib/Ui/PagesRenderer.php
+msgid "MAD Latency Anomalies"
+msgstr "MAD Gecikme Anomalileri"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Site Snapshots"
+msgstr "Site Anlık Görüntüleri"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Cacti Thold Baseline Templates"
+msgstr "Cacti Thold Temel Şablonları"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Dry-Run Probe Site:"
+msgstr "Deneme Yoklaması Sitesi:"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Run Read-Only Probe"
+msgstr "Salt Okunur Yoklamayı Çalıştır"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Latest Dry-Run Probe Result"
+msgstr "Son Deneme Yoklaması Sonucu"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Update Drift, Cron Stalls & Autoload Bloat"
+msgstr "Güncelleme Sapması, Cron Takılmaları ve Otomatik Yükleme Şişmesi"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Vault Status:"
+msgstr "Kasa Durumu:"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Add or Update WordPress Site"
+msgstr "WordPress Sitesi Ekle veya Güncelle"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Save Site"
+msgstr "Siteyi Kaydet"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Configured Fleet Inventory"
+msgstr "Yapılandırılmış Filo Envanteri"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Delete"
+msgstr "Sil"
+
+#: setup.php
+#, php-format
+msgid "The WordPress plugin requires PHP %s or later. This server runs PHP %s, so the plugin was not installed or enabled."
+msgstr "WordPress eklentisi PHP %s veya daha yeni bir sürüm gerektirir. Bu sunucuda PHP %s çalışıyor, bu nedenle eklenti kurulmadı veya etkinleştirilmedi."
+
+#: setup.php
+msgid "Utilities"
+msgstr "Araçlar"
+
+#: setup.php
+msgid "WordPress"
+msgstr "WordPress"
+
+#: setup.php
+msgid "WordPress Fleet Monitor"
+msgstr "WordPress Filo İzleyici"
+
+#: setup.php
+msgid "The WordPress plugin is not enabled."
+msgstr "WordPress eklentisi etkin değil."
+
+#: setup.php
+#, php-format
+msgid "The WordPress plugin requires PHP %s or later."
+msgstr "WordPress eklentisi PHP %s veya daha yeni bir sürüm gerektirir."
+
+#: wordpress_admin.php wordpress_operator.php
+msgid "CSRF verification failed. Reload the page and retry."
+msgstr "CSRF doğrulaması başarısız oldu. Sayfayı yenileyin ve tekrar deneyin."
+
+#: wordpress_admin.php
+msgid "Saved WordPress site inventory entry."
+msgstr "WordPress site envanter kaydı kaydedildi."
+
+#: wordpress_admin.php
+msgid "Encrypted Application Password stored in local AES-256-GCM vault."
+msgstr "Şifrelenmiş Uygulama Parolası yerel AES-256-GCM kasasında saklandı."
+
+#: wordpress_admin.php
+msgid "Deleted WordPress site and associated local vault secret."
+msgstr "WordPress sitesi ve ilişkili yerel kasa sırrı silindi."
+
+#: wordpress_admin.php
+msgid "Invalid site slug."
+msgstr "Geçersiz site kısa adı (slug)."
+
+#: wordpress_admin.php
+msgid "Unsupported administrator action."
+msgstr "Desteklenmeyen yönetici işlemi."
+
+#: wordpress_admin.php
+msgid "WordPress Inventory, Vault Credentials & Poller Assignment (Administrator)"
+msgstr "WordPress Envanteri, Kasa Kimlik Bilgileri ve Yoklayıcı Ataması (Yönetici)"
+
+#: wordpress_operator.php
+msgid "Select a site to probe."
+msgstr "Yoklanacak bir site seçin."
+
+#: wordpress_operator.php
+msgid "Unknown WordPress site slug."
+msgstr "Bilinmeyen WordPress site kısa adı (slug)."
+
+#: wordpress_operator.php
+msgid "Completed read-only dry-run probe."
+msgstr "Salt okunur deneme yoklaması tamamlandı."
+
+#: wordpress_operator.php
+msgid "Unsupported operator action."
+msgstr "Desteklenmeyen operatör işlemi."
+
+#: wordpress_operator.php
+msgid "WordPress Drift, Site Health, Cron & Dry-Run Probes (Operator)"
+msgstr "WordPress Sapması, Site Sağlığı, Cron ve Deneme Yoklamaları (Operatör)"
+
+#: wordpress_view.php
+msgid "WordPress Fleet Health & Metrics Overview (View)"
+msgstr "WordPress Filo Sağlığı ve Metrikleri Genel Bakış (Görünüm)"

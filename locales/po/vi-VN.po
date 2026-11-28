@@ -1,0 +1,325 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
+# SPDX-FileCopyrightText: 2026 Thomas Vincent <thomasvincent@gmail.com>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: wordpress 0.1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/somethingwithproof/plugin_wordpress/issues\n"
+"PO-Revision-Date: 2026-11-28 00:00+0000\n"
+"Last-Translator: Thomas Vincent <thomasvincent@gmail.com>\n"
+"Language-Team: Vietnamese <https://translate.cacti.net/projects/cacti/core/vi/>\n"
+"Language: vi-VN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: lib/Pages.php
+msgid "WordPress View"
+msgstr "Xem WordPress"
+
+#: lib/Pages.php
+msgid "WordPress Operator"
+msgstr "Vận hành WordPress"
+
+#: lib/Pages.php
+msgid "WordPress Admin"
+msgstr "Quản trị WordPress"
+
+#: lib/Pages.php
+msgid "WordPress Fleet Overview"
+msgstr "Tổng quan hệ thống WordPress"
+
+#: lib/Pages.php
+msgid "WordPress Drift & Probes"
+msgstr "Sai lệch & Thăm dò WordPress"
+
+#: lib/Pages.php
+msgid "WordPress Inventory & Vault"
+msgstr "Danh mục & Kho khóa WordPress"
+
+#: lib/Settings.php
+msgid "WordPress Fleet Security & Vault"
+msgstr "Bảo mật hệ thống & Kho khóa WordPress"
+
+#: lib/Settings.php
+msgid "Vault Keyfile Path"
+msgstr "Đường dẫn tệp khóa kho bảo mật"
+
+#: lib/Settings.php
+msgid "Absolute path to the external 256-bit AES-GCM keyfile used to encrypt Application Passwords at rest. Never replicated to remote pollers."
+msgstr "Đường dẫn tuyệt đối tới tệp khóa ngoài 256-bit AES-GCM dùng để mã hóa Mật khẩu ứng dụng khi lưu trữ. Không bao giờ sao chép tới các bộ thu thập từ xa."
+
+#: lib/Settings.php
+msgid "Internal Host Allowlist"
+msgstr "Danh sách máy chủ nội bộ được phép"
+
+#: lib/Settings.php
+msgid "Comma-separated hostnames or wildcard patterns (e.g. *.corp.example) exempt from private-IP SSRF blocking."
+msgstr "Danh sách tên máy chủ hoặc mẫu ký tự đại diện phân tách bằng dấu phẩy (ví dụ: *.corp.example) được miễn chặn SSRF IP riêng."
+
+#: lib/Settings.php
+msgid "Internal CIDR Allowlist"
+msgstr "Danh sách CIDR nội bộ được phép"
+
+#: lib/Settings.php
+msgid "Comma-separated internal CIDR ranges explicitly permitted by OutboundGuard."
+msgstr "Các dải CIDR nội bộ phân tách bằng dấu phẩy được OutboundGuard cho phép rõ ràng."
+
+#: lib/Settings.php
+msgid "Outbound Client & Adaptive Poller Sizing"
+msgstr "Máy khách gửi đi & Điều chỉnh kích thước bộ thu thập thích ứng"
+
+#: lib/Settings.php
+msgid "Poll Interval (seconds)"
+msgstr "Chu kỳ thu thập (giây)"
+
+#: lib/Settings.php
+msgid "Target fleet polling interval in seconds for Little's Law concurrency sizing."
+msgstr "Chu kỳ thu thập mục tiêu của hệ thống tính bằng giây để ước lượng mức đồng thời theo Little's Law."
+
+#: lib/Settings.php
+msgid "Connect Timeout (seconds)"
+msgstr "Thời gian chờ kết nối (giây)"
+
+#: lib/Settings.php
+msgid "Maximum TCP/TLS connect duration per WordPress probe (1-15s)."
+msgstr "Thời gian kết nối TCP/TLS tối đa cho mỗi lần thăm dò WordPress (1-15s)."
+
+#: lib/Settings.php
+msgid "Read Timeout (seconds)"
+msgstr "Thời gian chờ đọc (giây)"
+
+#: lib/Settings.php
+msgid "Maximum total HTTP read duration per WordPress probe (1-60s)."
+msgstr "Tổng thời gian đọc HTTP tối đa cho mỗi lần thăm dò WordPress (1-60s)."
+
+#: lib/Settings.php
+msgid "Max Response Size (bytes)"
+msgstr "Kích thước phản hồi tối đa (byte)"
+
+#: lib/Settings.php
+msgid "Hard byte ceiling per HTTP response (capped at 2097152 bytes / 2 MiB)."
+msgstr "Giới hạn cứng theo byte cho mỗi phản hồi HTTP (tối đa 2097152 byte / 2 MiB)."
+
+#: lib/Settings.php
+msgid "CoDel Target Standing Delay (ms)"
+msgstr "Độ trễ duy trì mục tiêu CoDel (ms)"
+
+#: lib/Settings.php
+msgid "Queue standing-delay target in milliseconds before adaptive concurrency backs off."
+msgstr "Mục tiêu độ trễ duy trì trong hàng đợi tính bằng mili giây trước khi cơ chế đồng thời thích ứng giảm tải."
+
+#: lib/Settings.php
+msgid "Minimum Concurrency"
+msgstr "Mức đồng thời tối thiểu"
+
+#: lib/Settings.php
+msgid "Lower bound on concurrent WordPress probe workers per collector shard."
+msgstr "Giới hạn dưới số tiến trình thăm dò WordPress đồng thời trên mỗi phân mảnh thu thập."
+
+#: lib/Settings.php
+msgid "Maximum Concurrency"
+msgstr "Mức đồng thời tối đa"
+
+#: lib/Settings.php
+msgid "Upper bound on concurrent WordPress probe workers per collector shard."
+msgstr "Giới hạn trên số tiến trình thăm dò WordPress đồng thời trên mỗi phân mảnh thu thập."
+
+#: lib/Settings.php
+msgid "HTTP User-Agent"
+msgstr "Tiêu đề HTTP User-Agent"
+
+#: lib/Settings.php
+msgid "User-Agent header sent on read-only REST and Site Health probes."
+msgstr "Tiêu đề User-Agent được gửi trong các lần thăm dò REST và Tình trạng trang chỉ đọc."
+
+#: lib/Settings.php
+msgid "Fleet Health & Thold Thresholds"
+msgstr "Tình trạng hệ thống & Ngưỡng Thold"
+
+#: lib/Settings.php
+msgid "Default Apdex T (ms)"
+msgstr "Giá trị Apdex T mặc định (ms)"
+
+#: lib/Settings.php
+msgid "Satisfied TTFB threshold T in milliseconds (tolerating threshold is 4T)."
+msgstr "Ngưỡng TTFB hài lòng T tính bằng mili giây (ngưỡng chấp nhận được là 4T)."
+
+#: lib/Settings.php
+msgid "Autoload Bloat Warning (bytes)"
+msgstr "Cảnh báo phình tự động nạp (byte)"
+
+#: lib/Settings.php
+msgid "wp_options autoloaded size warning threshold (default 819200 / 800 KiB)."
+msgstr "Ngưỡng cảnh báo kích thước dữ liệu tự động nạp trong wp_options (mặc định 819200 / 800 KiB)."
+
+#: lib/Settings.php
+msgid "Autoload Bloat Critical (bytes)"
+msgstr "Mức nghiêm trọng phình tự động nạp (byte)"
+
+#: lib/Settings.php
+msgid "wp_options autoloaded size critical threshold (default 2097152 / 2 MiB)."
+msgstr "Ngưỡng nghiêm trọng kích thước dữ liệu tự động nạp trong wp_options (mặc định 2097152 / 2 MiB)."
+
+#: lib/Settings.php
+msgid "WP-Cron Lag Warning (seconds)"
+msgstr "Cảnh báo trễ WP-Cron (giây)"
+
+#: lib/Settings.php
+msgid "Oldest overdue WP-Cron job lag threshold for degraded status."
+msgstr "Ngưỡng trễ của tác vụ WP-Cron quá hạn lâu nhất để chuyển sang trạng thái suy giảm."
+
+#: lib/Settings.php
+msgid "TLS Expiry Warning (days)"
+msgstr "Cảnh báo hết hạn TLS (ngày)"
+
+#: lib/Settings.php
+msgid "Days before TLS certificate expiry triggering degraded status."
+msgstr "Số ngày trước khi chứng chỉ TLS hết hạn kích hoạt trạng thái suy giảm."
+
+#: lib/Settings.php
+msgid "TLS Expiry Critical (days)"
+msgstr "Mức nghiêm trọng hết hạn TLS (ngày)"
+
+#: lib/Settings.php
+msgid "Days before TLS certificate expiry triggering critical status."
+msgstr "Số ngày trước khi chứng chỉ TLS hết hạn kích hoạt trạng thái nghiêm trọng."
+
+#: lib/Settings.php
+msgid "Keep Tables on Uninstall"
+msgstr "Giữ lại bảng khi gỡ cài đặt"
+
+#: lib/Settings.php
+msgid "Preserve plugin_wordpress database tables when uninstalling the plugin."
+msgstr "Giữ lại các bảng cơ sở dữ liệu plugin_wordpress khi gỡ cài đặt tiện ích mở rộng."
+
+#: lib/Ui/PagesRenderer.php
+msgid "Fleet Health Summary"
+msgstr "Tóm tắt tình trạng hệ thống"
+
+#: lib/Ui/PagesRenderer.php
+msgid "MAD Latency Anomalies"
+msgstr "Bất thường độ trễ MAD"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Site Snapshots"
+msgstr "Ảnh chụp trạng thái trang"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Cacti Thold Baseline Templates"
+msgstr "Mẫu cơ sở Cacti Thold"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Dry-Run Probe Site:"
+msgstr "Trang chạy thăm dò thử:"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Run Read-Only Probe"
+msgstr "Chạy thăm dò chỉ đọc"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Latest Dry-Run Probe Result"
+msgstr "Kết quả thăm dò thử mới nhất"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Update Drift, Cron Stalls & Autoload Bloat"
+msgstr "Sai lệch cập nhật, tắc nghẽn cron & phình tự động nạp"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Vault Status:"
+msgstr "Trạng thái kho khóa:"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Add or Update WordPress Site"
+msgstr "Thêm hoặc cập nhật trang WordPress"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Save Site"
+msgstr "Lưu trang"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Configured Fleet Inventory"
+msgstr "Danh mục hệ thống đã cấu hình"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Delete"
+msgstr "Xóa"
+
+#: setup.php
+#, php-format
+msgid "The WordPress plugin requires PHP %s or later. This server runs PHP %s, so the plugin was not installed or enabled."
+msgstr "Tiện ích mở rộng WordPress yêu cầu PHP %s trở lên. Máy chủ này đang chạy PHP %s, vì vậy tiện ích mở rộng chưa được cài đặt hoặc bật."
+
+#: setup.php
+msgid "Utilities"
+msgstr "Tiện ích"
+
+#: setup.php
+msgid "WordPress"
+msgstr "WordPress"
+
+#: setup.php
+msgid "WordPress Fleet Monitor"
+msgstr "Giám sát hệ thống WordPress"
+
+#: setup.php
+msgid "The WordPress plugin is not enabled."
+msgstr "Tiện ích mở rộng WordPress chưa được bật."
+
+#: setup.php
+#, php-format
+msgid "The WordPress plugin requires PHP %s or later."
+msgstr "Tiện ích mở rộng WordPress yêu cầu PHP %s trở lên."
+
+#: wordpress_admin.php wordpress_operator.php
+msgid "CSRF verification failed. Reload the page and retry."
+msgstr "Xác minh CSRF thất bại. Hãy tải lại trang và thử lại."
+
+#: wordpress_admin.php
+msgid "Saved WordPress site inventory entry."
+msgstr "Đã lưu mục danh mục trang WordPress."
+
+#: wordpress_admin.php
+msgid "Encrypted Application Password stored in local AES-256-GCM vault."
+msgstr "Mật khẩu ứng dụng đã mã hóa được lưu trong kho khóa cục bộ AES-256-GCM."
+
+#: wordpress_admin.php
+msgid "Deleted WordPress site and associated local vault secret."
+msgstr "Đã xóa trang WordPress và bí mật kho khóa cục bộ liên quan."
+
+#: wordpress_admin.php
+msgid "Invalid site slug."
+msgstr "Định danh (slug) trang không hợp lệ."
+
+#: wordpress_admin.php
+msgid "Unsupported administrator action."
+msgstr "Hành động quản trị không được hỗ trợ."
+
+#: wordpress_admin.php
+msgid "WordPress Inventory, Vault Credentials & Poller Assignment (Administrator)"
+msgstr "Danh mục WordPress, thông tin xác thực kho khóa & phân công bộ thu thập (Quản trị viên)"
+
+#: wordpress_operator.php
+msgid "Select a site to probe."
+msgstr "Chọn một trang để thăm dò."
+
+#: wordpress_operator.php
+msgid "Unknown WordPress site slug."
+msgstr "Định danh (slug) trang WordPress không xác định."
+
+#: wordpress_operator.php
+msgid "Completed read-only dry-run probe."
+msgstr "Đã hoàn tất thăm dò thử chỉ đọc."
+
+#: wordpress_operator.php
+msgid "Unsupported operator action."
+msgstr "Hành động vận hành không được hỗ trợ."
+
+#: wordpress_operator.php
+msgid "WordPress Drift, Site Health, Cron & Dry-Run Probes (Operator)"
+msgstr "Sai lệch WordPress, tình trạng trang, cron & thăm dò thử (Vận hành viên)"
+
+#: wordpress_view.php
+msgid "WordPress Fleet Health & Metrics Overview (View)"
+msgstr "Tổng quan tình trạng & chỉ số hệ thống WordPress (Xem)"

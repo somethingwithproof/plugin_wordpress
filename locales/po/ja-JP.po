@@ -1,0 +1,325 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
+# SPDX-FileCopyrightText: 2026 Thomas Vincent <thomasvincent@gmail.com>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: wordpress 0.1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/somethingwithproof/plugin_wordpress/issues\n"
+"PO-Revision-Date: 2026-11-28 00:00+0000\n"
+"Last-Translator: Thomas Vincent <thomasvincent@gmail.com>\n"
+"Language-Team: Japanese <https://translate.cacti.net/projects/cacti/core/ja/>\n"
+"Language: ja-JP\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: lib/Pages.php
+msgid "WordPress View"
+msgstr "WordPress 表示"
+
+#: lib/Pages.php
+msgid "WordPress Operator"
+msgstr "WordPress オペレーター"
+
+#: lib/Pages.php
+msgid "WordPress Admin"
+msgstr "WordPress 管理者"
+
+#: lib/Pages.php
+msgid "WordPress Fleet Overview"
+msgstr "WordPress フリート概要"
+
+#: lib/Pages.php
+msgid "WordPress Drift & Probes"
+msgstr "WordPress ドリフトとプローブ"
+
+#: lib/Pages.php
+msgid "WordPress Inventory & Vault"
+msgstr "WordPress インベントリとボールト"
+
+#: lib/Settings.php
+msgid "WordPress Fleet Security & Vault"
+msgstr "WordPress フリートセキュリティとボールト"
+
+#: lib/Settings.php
+msgid "Vault Keyfile Path"
+msgstr "ボールト鍵ファイルパス"
+
+#: lib/Settings.php
+msgid "Absolute path to the external 256-bit AES-GCM keyfile used to encrypt Application Passwords at rest. Never replicated to remote pollers."
+msgstr "保存時のアプリケーションパスワードを暗号化するために使用される外部 256-bit AES-GCM 鍵ファイルの絶対パス。リモートポーラーには決して複製されません。"
+
+#: lib/Settings.php
+msgid "Internal Host Allowlist"
+msgstr "内部ホスト許可リスト"
+
+#: lib/Settings.php
+msgid "Comma-separated hostnames or wildcard patterns (e.g. *.corp.example) exempt from private-IP SSRF blocking."
+msgstr "プライベート IP の SSRF ブロックから除外されるホスト名またはワイルドカードパターン（例: *.corp.example）のカンマ区切りリスト。"
+
+#: lib/Settings.php
+msgid "Internal CIDR Allowlist"
+msgstr "内部 CIDR 許可リスト"
+
+#: lib/Settings.php
+msgid "Comma-separated internal CIDR ranges explicitly permitted by OutboundGuard."
+msgstr "OutboundGuard によって明示的に許可された内部 CIDR 範囲のカンマ区切りリスト。"
+
+#: lib/Settings.php
+msgid "Outbound Client & Adaptive Poller Sizing"
+msgstr "アウトバウンドクライアントと適応型ポーラーサイジング"
+
+#: lib/Settings.php
+msgid "Poll Interval (seconds)"
+msgstr "ポーリング間隔（秒）"
+
+#: lib/Settings.php
+msgid "Target fleet polling interval in seconds for Little's Law concurrency sizing."
+msgstr "Little's Law による並列数サイジングのための目標フリートポーリング間隔（秒）。"
+
+#: lib/Settings.php
+msgid "Connect Timeout (seconds)"
+msgstr "接続タイムアウト（秒）"
+
+#: lib/Settings.php
+msgid "Maximum TCP/TLS connect duration per WordPress probe (1-15s)."
+msgstr "WordPress プローブあたりの最大 TCP/TLS 接続時間（1-15s）。"
+
+#: lib/Settings.php
+msgid "Read Timeout (seconds)"
+msgstr "読み取りタイムアウト（秒）"
+
+#: lib/Settings.php
+msgid "Maximum total HTTP read duration per WordPress probe (1-60s)."
+msgstr "WordPress プローブあたりの最大合計 HTTP 読み取り時間（1-60s）。"
+
+#: lib/Settings.php
+msgid "Max Response Size (bytes)"
+msgstr "最大レスポンスサイズ（バイト）"
+
+#: lib/Settings.php
+msgid "Hard byte ceiling per HTTP response (capped at 2097152 bytes / 2 MiB)."
+msgstr "HTTP レスポンスあたりの厳格なバイト上限（上限 2097152 バイト / 2 MiB）。"
+
+#: lib/Settings.php
+msgid "CoDel Target Standing Delay (ms)"
+msgstr "CoDel 目標定常遅延 (ms)"
+
+#: lib/Settings.php
+msgid "Queue standing-delay target in milliseconds before adaptive concurrency backs off."
+msgstr "適応型並列制御がバックオフする前のキュー定常遅延目標（ミリ秒）。"
+
+#: lib/Settings.php
+msgid "Minimum Concurrency"
+msgstr "最小並列数"
+
+#: lib/Settings.php
+msgid "Lower bound on concurrent WordPress probe workers per collector shard."
+msgstr "コレクターシャードあたりの同時実行 WordPress プローブワーカー数の下限。"
+
+#: lib/Settings.php
+msgid "Maximum Concurrency"
+msgstr "最大並列数"
+
+#: lib/Settings.php
+msgid "Upper bound on concurrent WordPress probe workers per collector shard."
+msgstr "コレクターシャードあたりの同時実行 WordPress プローブワーカー数の上限。"
+
+#: lib/Settings.php
+msgid "HTTP User-Agent"
+msgstr "HTTP User-Agent"
+
+#: lib/Settings.php
+msgid "User-Agent header sent on read-only REST and Site Health probes."
+msgstr "読み取り専用 REST およびサイトヘルスプローブで送信される User-Agent ヘッダー。"
+
+#: lib/Settings.php
+msgid "Fleet Health & Thold Thresholds"
+msgstr "フリートヘルスと Thold しきい値"
+
+#: lib/Settings.php
+msgid "Default Apdex T (ms)"
+msgstr "デフォルト Apdex T (ms)"
+
+#: lib/Settings.php
+msgid "Satisfied TTFB threshold T in milliseconds (tolerating threshold is 4T)."
+msgstr "満足とみなす TTFB しきい値 T（ミリ秒、許容しきい値は 4T）。"
+
+#: lib/Settings.php
+msgid "Autoload Bloat Warning (bytes)"
+msgstr "オートロード肥大化警告（バイト）"
+
+#: lib/Settings.php
+msgid "wp_options autoloaded size warning threshold (default 819200 / 800 KiB)."
+msgstr "wp_options オートロードサイズの警告しきい値（デフォルト 819200 / 800 KiB）。"
+
+#: lib/Settings.php
+msgid "Autoload Bloat Critical (bytes)"
+msgstr "オートロード肥大化重大（バイト）"
+
+#: lib/Settings.php
+msgid "wp_options autoloaded size critical threshold (default 2097152 / 2 MiB)."
+msgstr "wp_options オートロードサイズの重大しきい値（デフォルト 2097152 / 2 MiB）。"
+
+#: lib/Settings.php
+msgid "WP-Cron Lag Warning (seconds)"
+msgstr "WP-Cron 遅延警告（秒）"
+
+#: lib/Settings.php
+msgid "Oldest overdue WP-Cron job lag threshold for degraded status."
+msgstr "劣化ステータスと判定する最も古い期限超過 WP-Cron ジョブの遅延しきい値。"
+
+#: lib/Settings.php
+msgid "TLS Expiry Warning (days)"
+msgstr "TLS 有効期限警告（日）"
+
+#: lib/Settings.php
+msgid "Days before TLS certificate expiry triggering degraded status."
+msgstr "劣化ステータスを発生させる TLS 証明書有効期限前の日数。"
+
+#: lib/Settings.php
+msgid "TLS Expiry Critical (days)"
+msgstr "TLS 有効期限重大（日）"
+
+#: lib/Settings.php
+msgid "Days before TLS certificate expiry triggering critical status."
+msgstr "重大ステータスを発生させる TLS 証明書有効期限前の日数。"
+
+#: lib/Settings.php
+msgid "Keep Tables on Uninstall"
+msgstr "アンインストール時にテーブルを保持"
+
+#: lib/Settings.php
+msgid "Preserve plugin_wordpress database tables when uninstalling the plugin."
+msgstr "プラグインのアンインストール時に plugin_wordpress データベーステーブルを保持します。"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Fleet Health Summary"
+msgstr "フリートヘルスサマリー"
+
+#: lib/Ui/PagesRenderer.php
+msgid "MAD Latency Anomalies"
+msgstr "MAD レイテンシ異常"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Site Snapshots"
+msgstr "サイトスナップショット"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Cacti Thold Baseline Templates"
+msgstr "Cacti Thold ベースラインテンプレート"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Dry-Run Probe Site:"
+msgstr "ドライランプローブ対象サイト:"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Run Read-Only Probe"
+msgstr "読み取り専用プローブを実行"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Latest Dry-Run Probe Result"
+msgstr "最新のドライランプローブ結果"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Update Drift, Cron Stalls & Autoload Bloat"
+msgstr "更新ドリフト、Cron 停滞、およびオートロード肥大化"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Vault Status:"
+msgstr "ボールトステータス:"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Add or Update WordPress Site"
+msgstr "WordPress サイトの追加または更新"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Save Site"
+msgstr "サイトを保存"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Configured Fleet Inventory"
+msgstr "構成済みフリートインベントリ"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Delete"
+msgstr "削除"
+
+#: setup.php
+#, php-format
+msgid "The WordPress plugin requires PHP %s or later. This server runs PHP %s, so the plugin was not installed or enabled."
+msgstr "WordPress プラグインには PHP %s 以降が必要です。このサーバーでは PHP %s が実行されているため、プラグインはインストールまたは有効化されませんでした。"
+
+#: setup.php
+msgid "Utilities"
+msgstr "ユーティリティ"
+
+#: setup.php
+msgid "WordPress"
+msgstr "WordPress"
+
+#: setup.php
+msgid "WordPress Fleet Monitor"
+msgstr "WordPress フリートモニター"
+
+#: setup.php
+msgid "The WordPress plugin is not enabled."
+msgstr "WordPress プラグインは有効になっていません。"
+
+#: setup.php
+#, php-format
+msgid "The WordPress plugin requires PHP %s or later."
+msgstr "WordPress プラグインには PHP %s 以降が必要です。"
+
+#: wordpress_admin.php wordpress_operator.php
+msgid "CSRF verification failed. Reload the page and retry."
+msgstr "CSRF 検証に失敗しました。ページを再読み込みして再試行してください。"
+
+#: wordpress_admin.php
+msgid "Saved WordPress site inventory entry."
+msgstr "WordPress サイトインベントリエントリを保存しました。"
+
+#: wordpress_admin.php
+msgid "Encrypted Application Password stored in local AES-256-GCM vault."
+msgstr "暗号化されたアプリケーションパスワードをローカルの AES-256-GCM ボールトに保存しました。"
+
+#: wordpress_admin.php
+msgid "Deleted WordPress site and associated local vault secret."
+msgstr "WordPress サイトと関連するローカルボールトシークレットを削除しました。"
+
+#: wordpress_admin.php
+msgid "Invalid site slug."
+msgstr "無効なサイトスラッグです。"
+
+#: wordpress_admin.php
+msgid "Unsupported administrator action."
+msgstr "サポートされていない管理者アクションです。"
+
+#: wordpress_admin.php
+msgid "WordPress Inventory, Vault Credentials & Poller Assignment (Administrator)"
+msgstr "WordPress インベントリ、ボールト認証情報、およびポーラー割り当て（管理者）"
+
+#: wordpress_operator.php
+msgid "Select a site to probe."
+msgstr "プローブするサイトを選択してください。"
+
+#: wordpress_operator.php
+msgid "Unknown WordPress site slug."
+msgstr "不明な WordPress サイトスラッグです。"
+
+#: wordpress_operator.php
+msgid "Completed read-only dry-run probe."
+msgstr "読み取り専用ドライランプローブが完了しました。"
+
+#: wordpress_operator.php
+msgid "Unsupported operator action."
+msgstr "サポートされていないオペレーターアクションです。"
+
+#: wordpress_operator.php
+msgid "WordPress Drift, Site Health, Cron & Dry-Run Probes (Operator)"
+msgstr "WordPress ドリフト、サイトヘルス、Cron、およびドライランプローブ（オペレーター）"
+
+#: wordpress_view.php
+msgid "WordPress Fleet Health & Metrics Overview (View)"
+msgstr "WordPress フリートヘルスとメトリクス概要（表示）"

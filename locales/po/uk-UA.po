@@ -1,0 +1,325 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
+# SPDX-FileCopyrightText: 2026 Thomas Vincent <thomasvincent@gmail.com>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: wordpress 0.1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/somethingwithproof/plugin_wordpress/issues\n"
+"PO-Revision-Date: 2026-11-28 00:00+0000\n"
+"Last-Translator: Thomas Vincent <thomasvincent@gmail.com>\n"
+"Language-Team: Ukrainian <https://translate.cacti.net/projects/cacti/core/uk/>\n"
+"Language: uk-UA\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+
+#: lib/Pages.php
+msgid "WordPress View"
+msgstr "Перегляд WordPress"
+
+#: lib/Pages.php
+msgid "WordPress Operator"
+msgstr "Оператор WordPress"
+
+#: lib/Pages.php
+msgid "WordPress Admin"
+msgstr "Адміністратор WordPress"
+
+#: lib/Pages.php
+msgid "WordPress Fleet Overview"
+msgstr "Огляд парку WordPress"
+
+#: lib/Pages.php
+msgid "WordPress Drift & Probes"
+msgstr "Відхилення та перевірки WordPress"
+
+#: lib/Pages.php
+msgid "WordPress Inventory & Vault"
+msgstr "Інвентар і сховище WordPress"
+
+#: lib/Settings.php
+msgid "WordPress Fleet Security & Vault"
+msgstr "Безпека та сховище парку WordPress"
+
+#: lib/Settings.php
+msgid "Vault Keyfile Path"
+msgstr "Шлях до файлу ключа сховища"
+
+#: lib/Settings.php
+msgid "Absolute path to the external 256-bit AES-GCM keyfile used to encrypt Application Passwords at rest. Never replicated to remote pollers."
+msgstr "Абсолютний шлях до зовнішнього файлу ключа 256-bit AES-GCM, який використовується для шифрування паролів застосунків під час зберігання. Ніколи не реплікується на віддалені опитувачі."
+
+#: lib/Settings.php
+msgid "Internal Host Allowlist"
+msgstr "Список дозволених внутрішніх вузлів"
+
+#: lib/Settings.php
+msgid "Comma-separated hostnames or wildcard patterns (e.g. *.corp.example) exempt from private-IP SSRF blocking."
+msgstr "Розділені комами імена хостів або шаблони з підстановками (наприклад, *.corp.example), виключені з блокування SSRF для приватних IP-адрес."
+
+#: lib/Settings.php
+msgid "Internal CIDR Allowlist"
+msgstr "Список дозволених внутрішніх діапазонів CIDR"
+
+#: lib/Settings.php
+msgid "Comma-separated internal CIDR ranges explicitly permitted by OutboundGuard."
+msgstr "Розділені комами внутрішні діапазони CIDR, явно дозволені OutboundGuard."
+
+#: lib/Settings.php
+msgid "Outbound Client & Adaptive Poller Sizing"
+msgstr "Вихідний клієнт та адаптивне масштабування опитувача"
+
+#: lib/Settings.php
+msgid "Poll Interval (seconds)"
+msgstr "Інтервал опитування (секунди)"
+
+#: lib/Settings.php
+msgid "Target fleet polling interval in seconds for Little's Law concurrency sizing."
+msgstr "Цільовий інтервал опитування парку в секундах для розрахунку паралельності за Little's Law."
+
+#: lib/Settings.php
+msgid "Connect Timeout (seconds)"
+msgstr "Таймаут підключення (секунди)"
+
+#: lib/Settings.php
+msgid "Maximum TCP/TLS connect duration per WordPress probe (1-15s)."
+msgstr "Максимальна тривалість підключення TCP/TLS на одну перевірку WordPress (1-15s)."
+
+#: lib/Settings.php
+msgid "Read Timeout (seconds)"
+msgstr "Таймаут читання (секунди)"
+
+#: lib/Settings.php
+msgid "Maximum total HTTP read duration per WordPress probe (1-60s)."
+msgstr "Максимальна загальна тривалість читання HTTP на одну перевірку WordPress (1-60s)."
+
+#: lib/Settings.php
+msgid "Max Response Size (bytes)"
+msgstr "Максимальний розмір відповіді (байти)"
+
+#: lib/Settings.php
+msgid "Hard byte ceiling per HTTP response (capped at 2097152 bytes / 2 MiB)."
+msgstr "Жорстке обмеження розміру однієї відповіді HTTP у байтах (обмежено 2097152 байтами / 2 MiB)."
+
+#: lib/Settings.php
+msgid "CoDel Target Standing Delay (ms)"
+msgstr "Цільова постійна затримка CoDel (ms)"
+
+#: lib/Settings.php
+msgid "Queue standing-delay target in milliseconds before adaptive concurrency backs off."
+msgstr "Цільова постійна затримка в черзі в мілісекундах, після якої адаптивна паралельність знижується."
+
+#: lib/Settings.php
+msgid "Minimum Concurrency"
+msgstr "Мінімальна паралельність"
+
+#: lib/Settings.php
+msgid "Lower bound on concurrent WordPress probe workers per collector shard."
+msgstr "Нижня межа кількості одночасних обробників перевірок WordPress на один шард збирача."
+
+#: lib/Settings.php
+msgid "Maximum Concurrency"
+msgstr "Максимальна паралельність"
+
+#: lib/Settings.php
+msgid "Upper bound on concurrent WordPress probe workers per collector shard."
+msgstr "Верхня межа кількості одночасних обробників перевірок WordPress на один шард збирача."
+
+#: lib/Settings.php
+msgid "HTTP User-Agent"
+msgstr "Заголовок HTTP User-Agent"
+
+#: lib/Settings.php
+msgid "User-Agent header sent on read-only REST and Site Health probes."
+msgstr "Заголовок User-Agent, що надсилається під час перевірок REST і стану сайту лише для читання."
+
+#: lib/Settings.php
+msgid "Fleet Health & Thold Thresholds"
+msgstr "Стан парку та пороги Thold"
+
+#: lib/Settings.php
+msgid "Default Apdex T (ms)"
+msgstr "Значення Apdex T за замовчуванням (ms)"
+
+#: lib/Settings.php
+msgid "Satisfied TTFB threshold T in milliseconds (tolerating threshold is 4T)."
+msgstr "Поріг задовільного TTFB T у мілісекундах (допустимий поріг — 4T)."
+
+#: lib/Settings.php
+msgid "Autoload Bloat Warning (bytes)"
+msgstr "Попередження про розростання автозавантаження (байти)"
+
+#: lib/Settings.php
+msgid "wp_options autoloaded size warning threshold (default 819200 / 800 KiB)."
+msgstr "Поріг попередження для розміру автозавантажуваних даних wp_options (за замовчуванням 819200 / 800 KiB)."
+
+#: lib/Settings.php
+msgid "Autoload Bloat Critical (bytes)"
+msgstr "Критичний рівень розростання автозавантаження (байти)"
+
+#: lib/Settings.php
+msgid "wp_options autoloaded size critical threshold (default 2097152 / 2 MiB)."
+msgstr "Критичний поріг розміру автозавантажуваних даних wp_options (за замовчуванням 2097152 / 2 MiB)."
+
+#: lib/Settings.php
+msgid "WP-Cron Lag Warning (seconds)"
+msgstr "Попередження про затримку WP-Cron (секунди)"
+
+#: lib/Settings.php
+msgid "Oldest overdue WP-Cron job lag threshold for degraded status."
+msgstr "Поріг затримки найстарішого простроченого завдання WP-Cron для стану погіршення."
+
+#: lib/Settings.php
+msgid "TLS Expiry Warning (days)"
+msgstr "Попередження про завершення терміну дії TLS (дні)"
+
+#: lib/Settings.php
+msgid "Days before TLS certificate expiry triggering degraded status."
+msgstr "Кількість днів до завершення терміну дії сертифіката TLS, що викликає стан погіршення."
+
+#: lib/Settings.php
+msgid "TLS Expiry Critical (days)"
+msgstr "Критичний термін дії TLS (дні)"
+
+#: lib/Settings.php
+msgid "Days before TLS certificate expiry triggering critical status."
+msgstr "Кількість днів до завершення терміну дії сертифіката TLS, що викликає критичний стан."
+
+#: lib/Settings.php
+msgid "Keep Tables on Uninstall"
+msgstr "Зберігати таблиці під час видалення"
+
+#: lib/Settings.php
+msgid "Preserve plugin_wordpress database tables when uninstalling the plugin."
+msgstr "Зберігати таблиці бази даних plugin_wordpress під час видалення плагіна."
+
+#: lib/Ui/PagesRenderer.php
+msgid "Fleet Health Summary"
+msgstr "Зведення стану парку"
+
+#: lib/Ui/PagesRenderer.php
+msgid "MAD Latency Anomalies"
+msgstr "Аномалії затримки MAD"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Site Snapshots"
+msgstr "Знімки сайтів"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Cacti Thold Baseline Templates"
+msgstr "Базові шаблони Cacti Thold"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Dry-Run Probe Site:"
+msgstr "Сайт для пробної перевірки:"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Run Read-Only Probe"
+msgstr "Запустити перевірку лише для читання"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Latest Dry-Run Probe Result"
+msgstr "Останній результат пробної перевірки"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Update Drift, Cron Stalls & Autoload Bloat"
+msgstr "Відхилення оновлень, затримки cron і розростання автозавантаження"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Vault Status:"
+msgstr "Стан сховища:"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Add or Update WordPress Site"
+msgstr "Додати або оновити сайт WordPress"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Save Site"
+msgstr "Зберегти сайт"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Configured Fleet Inventory"
+msgstr "Налаштований інвентар парку"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Delete"
+msgstr "Видалити"
+
+#: setup.php
+#, php-format
+msgid "The WordPress plugin requires PHP %s or later. This server runs PHP %s, so the plugin was not installed or enabled."
+msgstr "Плагін WordPress потребує PHP %s або новішої версії. На цьому сервері працює PHP %s, тому плагін не було встановлено або увімкнено."
+
+#: setup.php
+msgid "Utilities"
+msgstr "Утиліти"
+
+#: setup.php
+msgid "WordPress"
+msgstr "WordPress"
+
+#: setup.php
+msgid "WordPress Fleet Monitor"
+msgstr "Монітор парку WordPress"
+
+#: setup.php
+msgid "The WordPress plugin is not enabled."
+msgstr "Плагін WordPress не увімкнено."
+
+#: setup.php
+#, php-format
+msgid "The WordPress plugin requires PHP %s or later."
+msgstr "Плагін WordPress потребує PHP %s або новішої версії."
+
+#: wordpress_admin.php wordpress_operator.php
+msgid "CSRF verification failed. Reload the page and retry."
+msgstr "Перевірка CSRF не вдалася. Перезавантажте сторінку та повторіть спробу."
+
+#: wordpress_admin.php
+msgid "Saved WordPress site inventory entry."
+msgstr "Запис сайту WordPress в інвентарі збережено."
+
+#: wordpress_admin.php
+msgid "Encrypted Application Password stored in local AES-256-GCM vault."
+msgstr "Зашифрований пароль застосунку збережено в локальному сховищі AES-256-GCM."
+
+#: wordpress_admin.php
+msgid "Deleted WordPress site and associated local vault secret."
+msgstr "Сайт WordPress і пов'язаний секрет локального сховища видалено."
+
+#: wordpress_admin.php
+msgid "Invalid site slug."
+msgstr "Неприпустимий ідентифікатор (slug) сайту."
+
+#: wordpress_admin.php
+msgid "Unsupported administrator action."
+msgstr "Непідтримувана дія адміністратора."
+
+#: wordpress_admin.php
+msgid "WordPress Inventory, Vault Credentials & Poller Assignment (Administrator)"
+msgstr "Інвентар WordPress, облікові дані сховища та призначення опитувачів (Адміністратор)"
+
+#: wordpress_operator.php
+msgid "Select a site to probe."
+msgstr "Виберіть сайт для перевірки."
+
+#: wordpress_operator.php
+msgid "Unknown WordPress site slug."
+msgstr "Невідомий ідентифікатор (slug) сайту WordPress."
+
+#: wordpress_operator.php
+msgid "Completed read-only dry-run probe."
+msgstr "Пробну перевірку лише для читання завершено."
+
+#: wordpress_operator.php
+msgid "Unsupported operator action."
+msgstr "Непідтримувана дія оператора."
+
+#: wordpress_operator.php
+msgid "WordPress Drift, Site Health, Cron & Dry-Run Probes (Operator)"
+msgstr "Відхилення WordPress, стан сайту, cron і пробні перевірки (Оператор)"
+
+#: wordpress_view.php
+msgid "WordPress Fleet Health & Metrics Overview (View)"
+msgstr "Огляд стану та метрик парку WordPress (Перегляд)"

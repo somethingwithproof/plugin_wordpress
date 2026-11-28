@@ -1,0 +1,325 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
+# SPDX-FileCopyrightText: 2026 Thomas Vincent <thomasvincent@gmail.com>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: wordpress 0.1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/somethingwithproof/plugin_wordpress/issues\n"
+"PO-Revision-Date: 2026-11-28 00:00+0000\n"
+"Last-Translator: Thomas Vincent <thomasvincent@gmail.com>\n"
+"Language-Team: Polish <https://translate.cacti.net/projects/cacti/core/pl/>\n"
+"Language: pl-PL\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+
+#: lib/Pages.php
+msgid "WordPress View"
+msgstr "WordPress – podgląd"
+
+#: lib/Pages.php
+msgid "WordPress Operator"
+msgstr "WordPress – operator"
+
+#: lib/Pages.php
+msgid "WordPress Admin"
+msgstr "WordPress – administrator"
+
+#: lib/Pages.php
+msgid "WordPress Fleet Overview"
+msgstr "Przegląd floty WordPress"
+
+#: lib/Pages.php
+msgid "WordPress Drift & Probes"
+msgstr "Rozbieżności i sondy WordPress"
+
+#: lib/Pages.php
+msgid "WordPress Inventory & Vault"
+msgstr "Inwentarz i sejf WordPress"
+
+#: lib/Settings.php
+msgid "WordPress Fleet Security & Vault"
+msgstr "Bezpieczeństwo floty WordPress i sejf"
+
+#: lib/Settings.php
+msgid "Vault Keyfile Path"
+msgstr "Ścieżka pliku klucza sejfu"
+
+#: lib/Settings.php
+msgid "Absolute path to the external 256-bit AES-GCM keyfile used to encrypt Application Passwords at rest. Never replicated to remote pollers."
+msgstr "Bezwzględna ścieżka do zewnętrznego pliku klucza 256-bit AES-GCM używanego do szyfrowania haseł aplikacji w spoczynku. Nigdy nie jest replikowana do zdalnych pollerów."
+
+#: lib/Settings.php
+msgid "Internal Host Allowlist"
+msgstr "Lista dozwolonych hostów wewnętrznych"
+
+#: lib/Settings.php
+msgid "Comma-separated hostnames or wildcard patterns (e.g. *.corp.example) exempt from private-IP SSRF blocking."
+msgstr "Rozdzielone przecinkami nazwy hostów lub wzorce z symbolami wieloznacznymi (np. *.corp.example) zwolnione z blokady SSRF dla prywatnych adresów IP."
+
+#: lib/Settings.php
+msgid "Internal CIDR Allowlist"
+msgstr "Lista dozwolonych zakresów CIDR wewnętrznych"
+
+#: lib/Settings.php
+msgid "Comma-separated internal CIDR ranges explicitly permitted by OutboundGuard."
+msgstr "Rozdzielone przecinkami wewnętrzne zakresy CIDR jawnie dozwolone przez OutboundGuard."
+
+#: lib/Settings.php
+msgid "Outbound Client & Adaptive Poller Sizing"
+msgstr "Klient wychodzący i adaptacyjne skalowanie pollera"
+
+#: lib/Settings.php
+msgid "Poll Interval (seconds)"
+msgstr "Interwał odpytywania (sekundy)"
+
+#: lib/Settings.php
+msgid "Target fleet polling interval in seconds for Little's Law concurrency sizing."
+msgstr "Docelowy interwał odpytywania floty w sekundach na potrzeby wyznaczania współbieżności według Little's Law."
+
+#: lib/Settings.php
+msgid "Connect Timeout (seconds)"
+msgstr "Limit czasu połączenia (sekundy)"
+
+#: lib/Settings.php
+msgid "Maximum TCP/TLS connect duration per WordPress probe (1-15s)."
+msgstr "Maksymalny czas nawiązywania połączenia TCP/TLS na sondę WordPress (1-15s)."
+
+#: lib/Settings.php
+msgid "Read Timeout (seconds)"
+msgstr "Limit czasu odczytu (sekundy)"
+
+#: lib/Settings.php
+msgid "Maximum total HTTP read duration per WordPress probe (1-60s)."
+msgstr "Maksymalny łączny czas odczytu HTTP na sondę WordPress (1-60s)."
+
+#: lib/Settings.php
+msgid "Max Response Size (bytes)"
+msgstr "Maksymalny rozmiar odpowiedzi (bajty)"
+
+#: lib/Settings.php
+msgid "Hard byte ceiling per HTTP response (capped at 2097152 bytes / 2 MiB)."
+msgstr "Sztywny limit bajtów na odpowiedź HTTP (ograniczony do 2097152 bajtów / 2 MiB)."
+
+#: lib/Settings.php
+msgid "CoDel Target Standing Delay (ms)"
+msgstr "Docelowe stałe opóźnienie CoDel (ms)"
+
+#: lib/Settings.php
+msgid "Queue standing-delay target in milliseconds before adaptive concurrency backs off."
+msgstr "Docelowe stałe opóźnienie kolejki w milisekundach, po którym adaptacyjna współbieżność zmniejsza obciążenie."
+
+#: lib/Settings.php
+msgid "Minimum Concurrency"
+msgstr "Minimalna współbieżność"
+
+#: lib/Settings.php
+msgid "Lower bound on concurrent WordPress probe workers per collector shard."
+msgstr "Dolna granica liczby równoczesnych procesów roboczych sondy WordPress na partycję kolektora."
+
+#: lib/Settings.php
+msgid "Maximum Concurrency"
+msgstr "Maksymalna współbieżność"
+
+#: lib/Settings.php
+msgid "Upper bound on concurrent WordPress probe workers per collector shard."
+msgstr "Górna granica liczby równoczesnych procesów roboczych sondy WordPress na partycję kolektora."
+
+#: lib/Settings.php
+msgid "HTTP User-Agent"
+msgstr "HTTP User-Agent"
+
+#: lib/Settings.php
+msgid "User-Agent header sent on read-only REST and Site Health probes."
+msgstr "Nagłówek User-Agent wysyłany w sondach REST i stanu witryny w trybie tylko do odczytu."
+
+#: lib/Settings.php
+msgid "Fleet Health & Thold Thresholds"
+msgstr "Kondycja floty i progi Thold"
+
+#: lib/Settings.php
+msgid "Default Apdex T (ms)"
+msgstr "Domyślne Apdex T (ms)"
+
+#: lib/Settings.php
+msgid "Satisfied TTFB threshold T in milliseconds (tolerating threshold is 4T)."
+msgstr "Satysfakcjonujący próg TTFB T w milisekundach (próg tolerancji wynosi 4T)."
+
+#: lib/Settings.php
+msgid "Autoload Bloat Warning (bytes)"
+msgstr "Ostrzeżenie o rozroście autoload (bajty)"
+
+#: lib/Settings.php
+msgid "wp_options autoloaded size warning threshold (default 819200 / 800 KiB)."
+msgstr "Próg ostrzegawczy rozmiaru automatycznie ładowanych opcji wp_options (domyślnie 819200 / 800 KiB)."
+
+#: lib/Settings.php
+msgid "Autoload Bloat Critical (bytes)"
+msgstr "Próg krytyczny rozrostu autoload (bajty)"
+
+#: lib/Settings.php
+msgid "wp_options autoloaded size critical threshold (default 2097152 / 2 MiB)."
+msgstr "Próg krytyczny rozmiaru automatycznie ładowanych opcji wp_options (domyślnie 2097152 / 2 MiB)."
+
+#: lib/Settings.php
+msgid "WP-Cron Lag Warning (seconds)"
+msgstr "Ostrzeżenie o opóźnieniu WP-Cron (sekundy)"
+
+#: lib/Settings.php
+msgid "Oldest overdue WP-Cron job lag threshold for degraded status."
+msgstr "Próg opóźnienia najstarszego zaległego zadania WP-Cron dla stanu obniżonej sprawności."
+
+#: lib/Settings.php
+msgid "TLS Expiry Warning (days)"
+msgstr "Ostrzeżenie o wygaśnięciu TLS (dni)"
+
+#: lib/Settings.php
+msgid "Days before TLS certificate expiry triggering degraded status."
+msgstr "Liczba dni przed wygaśnięciem certyfikatu TLS wywołująca stan obniżonej sprawności."
+
+#: lib/Settings.php
+msgid "TLS Expiry Critical (days)"
+msgstr "Próg krytyczny wygaśnięcia TLS (dni)"
+
+#: lib/Settings.php
+msgid "Days before TLS certificate expiry triggering critical status."
+msgstr "Liczba dni przed wygaśnięciem certyfikatu TLS wywołująca stan krytyczny."
+
+#: lib/Settings.php
+msgid "Keep Tables on Uninstall"
+msgstr "Zachowaj tabele podczas odinstalowywania"
+
+#: lib/Settings.php
+msgid "Preserve plugin_wordpress database tables when uninstalling the plugin."
+msgstr "Zachowaj tabele bazy danych plugin_wordpress podczas odinstalowywania wtyczki."
+
+#: lib/Ui/PagesRenderer.php
+msgid "Fleet Health Summary"
+msgstr "Podsumowanie kondycji floty"
+
+#: lib/Ui/PagesRenderer.php
+msgid "MAD Latency Anomalies"
+msgstr "Anomalie opóźnień MAD"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Site Snapshots"
+msgstr "Migawki witryn"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Cacti Thold Baseline Templates"
+msgstr "Szablony bazowe Cacti Thold"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Dry-Run Probe Site:"
+msgstr "Witryna dla próbnej sondy:"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Run Read-Only Probe"
+msgstr "Uruchom sondę tylko do odczytu"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Latest Dry-Run Probe Result"
+msgstr "Ostatni wynik próbnej sondy"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Update Drift, Cron Stalls & Autoload Bloat"
+msgstr "Rozbieżności aktualizacji, przestoje Crona i rozrost autoload"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Vault Status:"
+msgstr "Status sejfu:"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Add or Update WordPress Site"
+msgstr "Dodaj lub zaktualizuj witrynę WordPress"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Save Site"
+msgstr "Zapisz witrynę"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Configured Fleet Inventory"
+msgstr "Skonfigurowany inwentarz floty"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Delete"
+msgstr "Usuń"
+
+#: setup.php
+#, php-format
+msgid "The WordPress plugin requires PHP %s or later. This server runs PHP %s, so the plugin was not installed or enabled."
+msgstr "Wtyczka WordPress wymaga PHP %s lub nowszego. Ten serwer korzysta z PHP %s, więc wtyczka nie została zainstalowana ani włączona."
+
+#: setup.php
+msgid "Utilities"
+msgstr "Narzędzia"
+
+#: setup.php
+msgid "WordPress"
+msgstr "WordPress"
+
+#: setup.php
+msgid "WordPress Fleet Monitor"
+msgstr "Monitor floty WordPress"
+
+#: setup.php
+msgid "The WordPress plugin is not enabled."
+msgstr "Wtyczka WordPress nie jest włączona."
+
+#: setup.php
+#, php-format
+msgid "The WordPress plugin requires PHP %s or later."
+msgstr "Wtyczka WordPress wymaga PHP %s lub nowszego."
+
+#: wordpress_admin.php wordpress_operator.php
+msgid "CSRF verification failed. Reload the page and retry."
+msgstr "Weryfikacja CSRF nie powiodła się. Odśwież stronę i spróbuj ponownie."
+
+#: wordpress_admin.php
+msgid "Saved WordPress site inventory entry."
+msgstr "Zapisano wpis inwentarza witryny WordPress."
+
+#: wordpress_admin.php
+msgid "Encrypted Application Password stored in local AES-256-GCM vault."
+msgstr "Zaszyfrowane hasło aplikacji zostało zapisane w lokalnym sejfie AES-256-GCM."
+
+#: wordpress_admin.php
+msgid "Deleted WordPress site and associated local vault secret."
+msgstr "Usunięto witrynę WordPress oraz powiązany sekret z lokalnego sejfu."
+
+#: wordpress_admin.php
+msgid "Invalid site slug."
+msgstr "Nieprawidłowy identyfikator (slug) witryny."
+
+#: wordpress_admin.php
+msgid "Unsupported administrator action."
+msgstr "Nieobsługiwana akcja administratora."
+
+#: wordpress_admin.php
+msgid "WordPress Inventory, Vault Credentials & Poller Assignment (Administrator)"
+msgstr "Inwentarz WordPress, poświadczenia sejfu i przypisanie pollerów (Administrator)"
+
+#: wordpress_operator.php
+msgid "Select a site to probe."
+msgstr "Wybierz witrynę do sondowania."
+
+#: wordpress_operator.php
+msgid "Unknown WordPress site slug."
+msgstr "Nieznany identyfikator (slug) witryny WordPress."
+
+#: wordpress_operator.php
+msgid "Completed read-only dry-run probe."
+msgstr "Zakończono próbną sondę w trybie tylko do odczytu."
+
+#: wordpress_operator.php
+msgid "Unsupported operator action."
+msgstr "Nieobsługiwana akcja operatora."
+
+#: wordpress_operator.php
+msgid "WordPress Drift, Site Health, Cron & Dry-Run Probes (Operator)"
+msgstr "Rozbieżności WordPress, stan witryny, Cron i próbne sondy (Operator)"
+
+#: wordpress_view.php
+msgid "WordPress Fleet Health & Metrics Overview (View)"
+msgstr "Przegląd kondycji i metryk floty WordPress (Podgląd)"

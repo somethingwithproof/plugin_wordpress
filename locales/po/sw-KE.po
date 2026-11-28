@@ -1,0 +1,325 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
+# SPDX-FileCopyrightText: 2026 Thomas Vincent <thomasvincent@gmail.com>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: wordpress 0.1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/somethingwithproof/plugin_wordpress/issues\n"
+"PO-Revision-Date: 2026-11-28 00:00+0000\n"
+"Last-Translator: Thomas Vincent <thomasvincent@gmail.com>\n"
+"Language-Team: Swahili <developers@cacti.net>\n"
+"Language: sw_KE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: lib/Pages.php
+msgid "WordPress View"
+msgstr "Mwonekano wa WordPress"
+
+#: lib/Pages.php
+msgid "WordPress Operator"
+msgstr "Mwendeshaji wa WordPress"
+
+#: lib/Pages.php
+msgid "WordPress Admin"
+msgstr "Msimamizi wa WordPress"
+
+#: lib/Pages.php
+msgid "WordPress Fleet Overview"
+msgstr "Muhtasari wa Kundi la WordPress"
+
+#: lib/Pages.php
+msgid "WordPress Drift & Probes"
+msgstr "Mabadiliko na Uchunguzi wa WordPress"
+
+#: lib/Pages.php
+msgid "WordPress Inventory & Vault"
+msgstr "Orodha na Hifadhi Salama ya WordPress"
+
+#: lib/Settings.php
+msgid "WordPress Fleet Security & Vault"
+msgstr "Usalama na Hifadhi Salama ya Kundi la WordPress"
+
+#: lib/Settings.php
+msgid "Vault Keyfile Path"
+msgstr "Njia ya Faili ya Ufunguo wa Hifadhi Salama"
+
+#: lib/Settings.php
+msgid "Absolute path to the external 256-bit AES-GCM keyfile used to encrypt Application Passwords at rest. Never replicated to remote pollers."
+msgstr "Njia kamili ya faili ya ufunguo wa nje wa 256-bit AES-GCM inayotumika kusimba manenosiri ya programu yakiwa yamehifadhiwa. Hainakiliwi kamwe kwa wakusanyaji wa mbali."
+
+#: lib/Settings.php
+msgid "Internal Host Allowlist"
+msgstr "Orodha ya Seva za Ndani Zilizoruhusiwa"
+
+#: lib/Settings.php
+msgid "Comma-separated hostnames or wildcard patterns (e.g. *.corp.example) exempt from private-IP SSRF blocking."
+msgstr "Majina ya seva au ruwaza za alama za ujumla (k.m. *.corp.example) zilizotenganishwa kwa koma ambazo hazizuiliwi na kizuizi cha SSRF cha IP za faragha."
+
+#: lib/Settings.php
+msgid "Internal CIDR Allowlist"
+msgstr "Orodha ya CIDR za Ndani Zilizoruhusiwa"
+
+#: lib/Settings.php
+msgid "Comma-separated internal CIDR ranges explicitly permitted by OutboundGuard."
+msgstr "Masafa ya CIDR ya ndani yaliyotenganishwa kwa koma yaliyoruhusiwa wazi na OutboundGuard."
+
+#: lib/Settings.php
+msgid "Outbound Client & Adaptive Poller Sizing"
+msgstr "Mteja wa Nje na Upimaji wa Mkusanyaji unaobadilika"
+
+#: lib/Settings.php
+msgid "Poll Interval (seconds)"
+msgstr "Muda kati ya Ukusanyaji (sekunde)"
+
+#: lib/Settings.php
+msgid "Target fleet polling interval in seconds for Little's Law concurrency sizing."
+msgstr "Muda lengwa wa ukusanyaji wa kundi kwa sekunde kwa ajili ya kupima utendaji sambamba wa Little's Law."
+
+#: lib/Settings.php
+msgid "Connect Timeout (seconds)"
+msgstr "Muda wa Mwisho wa Muunganisho (sekunde)"
+
+#: lib/Settings.php
+msgid "Maximum TCP/TLS connect duration per WordPress probe (1-15s)."
+msgstr "Muda wa juu zaidi wa muunganisho wa TCP/TLS kwa kila uchunguzi wa WordPress (1-15s)."
+
+#: lib/Settings.php
+msgid "Read Timeout (seconds)"
+msgstr "Muda wa Mwisho wa Kusoma (sekunde)"
+
+#: lib/Settings.php
+msgid "Maximum total HTTP read duration per WordPress probe (1-60s)."
+msgstr "Jumla ya muda wa juu zaidi wa kusoma HTTP kwa kila uchunguzi wa WordPress (1-60s)."
+
+#: lib/Settings.php
+msgid "Max Response Size (bytes)"
+msgstr "Ukubwa wa Juu wa Jibu (baiti)"
+
+#: lib/Settings.php
+msgid "Hard byte ceiling per HTTP response (capped at 2097152 bytes / 2 MiB)."
+msgstr "Kikomo thabiti cha baiti kwa kila jibu la HTTP (kimewekwa kikomo cha baiti 2097152 / 2 MiB)."
+
+#: lib/Settings.php
+msgid "CoDel Target Standing Delay (ms)"
+msgstr "Lengo la Ucheleweshaji wa Kudumu wa CoDel (ms)"
+
+#: lib/Settings.php
+msgid "Queue standing-delay target in milliseconds before adaptive concurrency backs off."
+msgstr "Lengo la ucheleweshaji wa kudumu kwenye foleni kwa milisekunde kabla ya utendaji sambamba unaobadilika kupunguza kasi."
+
+#: lib/Settings.php
+msgid "Minimum Concurrency"
+msgstr "Utendaji Sambamba wa Chini Zaidi"
+
+#: lib/Settings.php
+msgid "Lower bound on concurrent WordPress probe workers per collector shard."
+msgstr "Kikomo cha chini cha wafanyakazi wa uchunguzi wa WordPress wanaofanya kazi sambamba kwa kila kipande cha mkusanyaji."
+
+#: lib/Settings.php
+msgid "Maximum Concurrency"
+msgstr "Utendaji Sambamba wa Juu Zaidi"
+
+#: lib/Settings.php
+msgid "Upper bound on concurrent WordPress probe workers per collector shard."
+msgstr "Kikomo cha juu cha wafanyakazi wa uchunguzi wa WordPress wanaofanya kazi sambamba kwa kila kipande cha mkusanyaji."
+
+#: lib/Settings.php
+msgid "HTTP User-Agent"
+msgstr "Kichwa cha HTTP User-Agent"
+
+#: lib/Settings.php
+msgid "User-Agent header sent on read-only REST and Site Health probes."
+msgstr "Kichwa cha User-Agent kinachotumwa kwenye uchunguzi wa kusoma tu wa REST na Afya ya Tovuti."
+
+#: lib/Settings.php
+msgid "Fleet Health & Thold Thresholds"
+msgstr "Afya ya Kundi na Viwango vya Thold"
+
+#: lib/Settings.php
+msgid "Default Apdex T (ms)"
+msgstr "Apdex T Chaguo-msingi (ms)"
+
+#: lib/Settings.php
+msgid "Satisfied TTFB threshold T in milliseconds (tolerating threshold is 4T)."
+msgstr "Kiwango cha TTFB cha kuridhisha T kwa milisekunde (kiwango cha uvumilivu ni 4T)."
+
+#: lib/Settings.php
+msgid "Autoload Bloat Warning (bytes)"
+msgstr "Onyo la Uvimbe wa Autoload (baiti)"
+
+#: lib/Settings.php
+msgid "wp_options autoloaded size warning threshold (default 819200 / 800 KiB)."
+msgstr "Kiwango cha onyo cha ukubwa wa data zinazopakiwa kiotomatiki kwenye wp_options (chaguo-msingi 819200 / 800 KiB)."
+
+#: lib/Settings.php
+msgid "Autoload Bloat Critical (bytes)"
+msgstr "Kiwango Muhimu cha Uvimbe wa Autoload (baiti)"
+
+#: lib/Settings.php
+msgid "wp_options autoloaded size critical threshold (default 2097152 / 2 MiB)."
+msgstr "Kiwango muhimu cha ukubwa wa data zinazopakiwa kiotomatiki kwenye wp_options (chaguo-msingi 2097152 / 2 MiB)."
+
+#: lib/Settings.php
+msgid "WP-Cron Lag Warning (seconds)"
+msgstr "Onyo la Ucheleweshaji wa WP-Cron (sekunde)"
+
+#: lib/Settings.php
+msgid "Oldest overdue WP-Cron job lag threshold for degraded status."
+msgstr "Kiwango cha ucheleweshaji wa kazi ya WP-Cron iliyochelewa zaidi kwa ajili ya hali iliyoshuka."
+
+#: lib/Settings.php
+msgid "TLS Expiry Warning (days)"
+msgstr "Onyo la Kuisha kwa TLS (siku)"
+
+#: lib/Settings.php
+msgid "Days before TLS certificate expiry triggering degraded status."
+msgstr "Idadi ya siku kabla ya cheti cha TLS kuisha muda wake zinazoamsha hali iliyoshuka."
+
+#: lib/Settings.php
+msgid "TLS Expiry Critical (days)"
+msgstr "Kiwango Muhimu cha Kuisha kwa TLS (siku)"
+
+#: lib/Settings.php
+msgid "Days before TLS certificate expiry triggering critical status."
+msgstr "Idadi ya siku kabla ya cheti cha TLS kuisha muda wake zinazoamsha hali ya dharura."
+
+#: lib/Settings.php
+msgid "Keep Tables on Uninstall"
+msgstr "Hifadhi Majedwali Wakati wa Kuondoa"
+
+#: lib/Settings.php
+msgid "Preserve plugin_wordpress database tables when uninstalling the plugin."
+msgstr "Hifadhi majedwali ya hifadhidata ya plugin_wordpress wakati wa kuondoa programu-jalizi."
+
+#: lib/Ui/PagesRenderer.php
+msgid "Fleet Health Summary"
+msgstr "Muhtasari wa Afya ya Kundi"
+
+#: lib/Ui/PagesRenderer.php
+msgid "MAD Latency Anomalies"
+msgstr "Hitilafu za Ucheleweshaji za MAD"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Site Snapshots"
+msgstr "Picha za Hali ya Tovuti"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Cacti Thold Baseline Templates"
+msgstr "Violezo vya Msingi vya Cacti Thold"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Dry-Run Probe Site:"
+msgstr "Tovuti ya Uchunguzi wa Majaribio:"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Run Read-Only Probe"
+msgstr "Endesha Uchunguzi wa Kusoma Tu"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Latest Dry-Run Probe Result"
+msgstr "Matokeo ya Hivi Karibuni ya Uchunguzi wa Majaribio"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Update Drift, Cron Stalls & Autoload Bloat"
+msgstr "Mabadiliko ya Masasisho, Kukwama kwa Cron na Uvimbe wa Autoload"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Vault Status:"
+msgstr "Hali ya Hifadhi Salama:"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Add or Update WordPress Site"
+msgstr "Ongeza au Sasisha Tovuti ya WordPress"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Save Site"
+msgstr "Hifadhi Tovuti"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Configured Fleet Inventory"
+msgstr "Orodha ya Kundi Iliyosanidiwa"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Delete"
+msgstr "Futa"
+
+#: setup.php
+#, php-format
+msgid "The WordPress plugin requires PHP %s or later. This server runs PHP %s, so the plugin was not installed or enabled."
+msgstr "Programu-jalizi ya WordPress inahitaji PHP %s au toleo jipya zaidi. Seva hii inatumia PHP %s, kwa hivyo programu-jalizi haikusakinishwa wala kuwezeshwa."
+
+#: setup.php
+msgid "Utilities"
+msgstr "Vifaa vya Huduma"
+
+#: setup.php
+msgid "WordPress"
+msgstr "WordPress"
+
+#: setup.php
+msgid "WordPress Fleet Monitor"
+msgstr "Kifuatiliaji cha Kundi la WordPress"
+
+#: setup.php
+msgid "The WordPress plugin is not enabled."
+msgstr "Programu-jalizi ya WordPress haijawezeshwa."
+
+#: setup.php
+#, php-format
+msgid "The WordPress plugin requires PHP %s or later."
+msgstr "Programu-jalizi ya WordPress inahitaji PHP %s au toleo jipya zaidi."
+
+#: wordpress_admin.php wordpress_operator.php
+msgid "CSRF verification failed. Reload the page and retry."
+msgstr "Uthibitishaji wa CSRF umeshindikana. Pakia upya ukurasa kisha ujaribu tena."
+
+#: wordpress_admin.php
+msgid "Saved WordPress site inventory entry."
+msgstr "Kipengele cha orodha ya tovuti ya WordPress kimehifadhiwa."
+
+#: wordpress_admin.php
+msgid "Encrypted Application Password stored in local AES-256-GCM vault."
+msgstr "Nenosiri la programu lililosimbwa limehifadhiwa kwenye hifadhi salama ya ndani ya AES-256-GCM."
+
+#: wordpress_admin.php
+msgid "Deleted WordPress site and associated local vault secret."
+msgstr "Tovuti ya WordPress na siri ya hifadhi salama ya ndani inayohusiana zimefutwa."
+
+#: wordpress_admin.php
+msgid "Invalid site slug."
+msgstr "Kitambulisho kifupi (slug) cha tovuti si sahihi."
+
+#: wordpress_admin.php
+msgid "Unsupported administrator action."
+msgstr "Kitendo cha msimamizi hakitumiki."
+
+#: wordpress_admin.php
+msgid "WordPress Inventory, Vault Credentials & Poller Assignment (Administrator)"
+msgstr "Orodha ya WordPress, Vitambulisho vya Hifadhi Salama na Ugawaji wa Mkusanyaji (Msimamizi)"
+
+#: wordpress_operator.php
+msgid "Select a site to probe."
+msgstr "Chagua tovuti ya kuchunguza."
+
+#: wordpress_operator.php
+msgid "Unknown WordPress site slug."
+msgstr "Kitambulisho kifupi (slug) cha tovuti ya WordPress hakijulikani."
+
+#: wordpress_operator.php
+msgid "Completed read-only dry-run probe."
+msgstr "Uchunguzi wa majaribio wa kusoma tu umekamilika."
+
+#: wordpress_operator.php
+msgid "Unsupported operator action."
+msgstr "Kitendo cha mwendeshaji hakitumiki."
+
+#: wordpress_operator.php
+msgid "WordPress Drift, Site Health, Cron & Dry-Run Probes (Operator)"
+msgstr "Mabadiliko ya WordPress, Afya ya Tovuti, Cron na Uchunguzi wa Majaribio (Mwendeshaji)"
+
+#: wordpress_view.php
+msgid "WordPress Fleet Health & Metrics Overview (View)"
+msgstr "Muhtasari wa Afya na Vipimo vya Kundi la WordPress (Mwonekano)"

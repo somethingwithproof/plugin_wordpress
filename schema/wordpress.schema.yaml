@@ -1,0 +1,201 @@
+# SPDX-FileCopyrightText: 2026 Thomas Vincent <thomasvincent@gmail.com>
+# SPDX-License-Identifier: GPL-2.0-or-later
+#
+# This file is part of plugin_wordpress, a plugin for Cacti.
+# https://github.com/somethingwithproof/plugin_wordpress
+#
+# Static Drupal-style Config vs. State schema for plugin_wordpress.
+# Config keys and site inventory definitions are declarative, validated, and
+# eligible for CasC export/apply. Application Passwords are never exported;
+# they are referenced exclusively as symbolic vault:wordpress:<slug> strings.
+# State tables, snapshots, encrypted vault ciphertexts, and poller CoDel state
+# are never exported.
+
+apiVersion: cacti.net/v1alpha1
+kind: PluginConfigSchema
+metadata:
+  plugin: wordpress
+  schemaVersion: '1.0'
+config:
+  export: true
+  fields:
+    wordpress_vault_key_file:
+      type: string
+      pattern: '^$|^/[A-Za-z0-9_./-]{1,254}$'
+      default: ''
+      description: Absolute path to the external 256-bit AES-GCM vault keyfile (never replicated or exported).
+    wordpress_poll_interval:
+      type: integer
+      min: 30
+      max: 86400
+      default: 300
+      description: Target fleet polling interval in seconds used by Little's Law concurrency sizing.
+    wordpress_connect_timeout:
+      type: integer
+      min: 1
+      max: 15
+      default: 5
+      description: Bounded TCP/TLS connect timeout in seconds for outbound WordPress HTTPS probes.
+    wordpress_read_timeout:
+      type: integer
+      min: 1
+      max: 60
+      default: 10
+      description: Bounded total read timeout in seconds for outbound WordPress HTTPS probes.
+    wordpress_max_response_bytes:
+      type: integer
+      min: 65536
+      max: 2097152
+      default: 2097152
+      description: Hard maximum HTTP response payload size in bytes (capped at 2 MiB).
+    wordpress_allowlist_hosts:
+      type: string
+      pattern: '^[A-Za-z0-9.*, _:-]{0,1024}$'
+      default: ''
+      description: Comma-separated internal enterprise WordPress hostnames or wildcard suffixes exempt from private-IP SSRF blocking.
+    wordpress_allowlist_cidrs:
+      type: string
+      pattern: '^[0-9a-fA-F:.,/ ]{0,1024}$'
+      default: ''
+      description: Comma-separated internal CIDR ranges explicitly permitted by OutboundGuard.
+    wordpress_default_apdex_t_ms:
+      type: integer
+      min: 50
+      max: 10000
+      default: 500
+      description: Default Apdex satisfied latency threshold T in milliseconds (tolerating threshold is 4T).
+    wordpress_autoload_warn_bytes:
+      type: integer
+      min: 65536
+      max: 16777216
+      default: 819200
+      description: Warning threshold in bytes for wp_options autoloaded payload size (default 800 KiB).
+    wordpress_autoload_crit_bytes:
+      type: integer
+      min: 131072
+      max: 33554432
+      default: 2097152
+      description: Critical threshold in bytes for wp_options autoloaded payload size (default 2 MiB).
+    wordpress_cron_lag_warn_sec:
+      type: integer
+      min: 60
+      max: 86400
+      default: 900
+      description: Warning threshold in seconds for oldest overdue WP-Cron job lag.
+    wordpress_tls_warn_days:
+      type: integer
+      min: 1
+      max: 180
+      default: 30
+      description: Warning threshold in days before TLS certificate expiration.
+    wordpress_tls_crit_days:
+      type: integer
+      min: 1
+      max: 90
+      default: 7
+      description: Critical threshold in days before TLS certificate expiration.
+    wordpress_codel_target_ms:
+      type: integer
+      min: 50
+      max: 10000
+      default: 500
+      description: CoDel standing-delay target in milliseconds for adaptive fleet concurrency control.
+    wordpress_min_concurrency:
+      type: integer
+      min: 1
+      max: 64
+      default: 2
+      description: Minimum concurrent WordPress probe workers per collector shard.
+    wordpress_max_concurrency:
+      type: integer
+      min: 1
+      max: 256
+      default: 32
+      description: Maximum concurrent WordPress probe workers per collector shard.
+    wordpress_user_agent:
+      type: string
+      pattern: '^[A-Za-z0-9 ._/+();:-]{1,128}$'
+      default: 'Cacti-Plugin-WordPress/0.1.0'
+      description: User-Agent header sent on read-only WordPress REST and Site Health probes.
+    wordpress_uninstall_keep_tables:
+      type: boolean
+      default: false
+      description: Preserve plugin_wordpress_* tables when uninstalling the plugin.
+  collections:
+    sites:
+      itemFields:
+        slug:
+          type: string
+          pattern: '^[a-z0-9][a-z0-9_-]{1,63}$'
+          required: true
+        name:
+          type: string
+          maxLength: 128
+          required: true
+        base_url:
+          type: string
+          scheme: https
+          required: true
+        username:
+          type: string
+          maxLength: 128
+          required: true
+        secret_ref:
+          type: string
+          pattern: '^vault:wordpress:[a-z0-9][a-z0-9_-]{1,63}$'
+          secretRef: true
+          required: true
+        telemetry_path:
+          type: string
+          maxLength: 255
+          default: '/wp-json/cacti-wp/v1/telemetry'
+        poller_id:
+          type: integer
+          min: 1
+          default: 1
+        enabled:
+          type: boolean
+          default: true
+        verify_tls:
+          type: boolean
+          default: true
+        allow_private_ip:
+          type: boolean
+          default: false
+        timeout_connect:
+          type: integer
+          min: 1
+          max: 15
+          default: 5
+        timeout_read:
+          type: integer
+          min: 1
+          max: 60
+          default: 10
+        apdex_t_ms:
+          type: integer
+          min: 50
+          max: 10000
+          default: 500
+state:
+  export: false
+  tables:
+    plugin_wordpress_secrets:
+      description: AES-256-GCM encrypted WordPress Application Passwords (never exported, never replicated to remote pollers).
+      replicate: false
+    plugin_wordpress_snapshots:
+      description: Latest polled telemetry snapshots, health scores, and error messages per site.
+      replicate: false
+    plugin_wordpress_poller_state:
+      description: Adaptive Little's Law and CoDel concurrency state per collector poller ID.
+      replicate: false
+  ephemeralMetrics:
+    - sites_total
+    - sites_healthy
+    - sites_degraded
+    - sites_critical
+    - updates_pending
+    - cron_overdue_total
+    - autoload_bloat_sites
+    - ttfb_p95_ms
+    - tls_min_expiry_days

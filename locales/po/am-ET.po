@@ -1,0 +1,325 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
+# SPDX-FileCopyrightText: 2026 Thomas Vincent <thomasvincent@gmail.com>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: wordpress 0.1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/somethingwithproof/plugin_wordpress/issues\n"
+"PO-Revision-Date: 2026-11-28 00:00+0000\n"
+"Last-Translator: Thomas Vincent <thomasvincent@gmail.com>\n"
+"Language-Team: Amharic <developers@cacti.net>\n"
+"Language: am_ET\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: lib/Pages.php
+msgid "WordPress View"
+msgstr "የWordPress እይታ"
+
+#: lib/Pages.php
+msgid "WordPress Operator"
+msgstr "የWordPress ኦፕሬተር"
+
+#: lib/Pages.php
+msgid "WordPress Admin"
+msgstr "የWordPress አስተዳዳሪ"
+
+#: lib/Pages.php
+msgid "WordPress Fleet Overview"
+msgstr "የWordPress ስብስብ አጠቃላይ እይታ"
+
+#: lib/Pages.php
+msgid "WordPress Drift & Probes"
+msgstr "የWordPress መዛባት እና ፍተሻዎች"
+
+#: lib/Pages.php
+msgid "WordPress Inventory & Vault"
+msgstr "የWordPress ዝርዝር እና ካዝና"
+
+#: lib/Settings.php
+msgid "WordPress Fleet Security & Vault"
+msgstr "የWordPress ስብስብ ደህንነት እና ካዝና"
+
+#: lib/Settings.php
+msgid "Vault Keyfile Path"
+msgstr "የካዝና ቁልፍ ፋይል መንገድ"
+
+#: lib/Settings.php
+msgid "Absolute path to the external 256-bit AES-GCM keyfile used to encrypt Application Passwords at rest. Never replicated to remote pollers."
+msgstr "የመተግበሪያ የይለፍ ቃላትን በማከማቻ ውስጥ ለማመስጠር የሚያገለግል የውጫዊ 256-bit AES-GCM ቁልፍ ፋይል ሙሉ መንገድ። ወደ ርቀት ፖለሮች በፍጹም አይባዛም።"
+
+#: lib/Settings.php
+msgid "Internal Host Allowlist"
+msgstr "የውስጥ አስተናጋጅ ፍቃድ ዝርዝር"
+
+#: lib/Settings.php
+msgid "Comma-separated hostnames or wildcard patterns (e.g. *.corp.example) exempt from private-IP SSRF blocking."
+msgstr "ከግል-IP SSRF እገዳ ነፃ የሆኑ በኮማ የተለዩ የአስተናጋጅ ስሞች ወይም የዋይልድካርድ ቅጦች (ለምሳሌ *.corp.example)።"
+
+#: lib/Settings.php
+msgid "Internal CIDR Allowlist"
+msgstr "የውስጥ CIDR ፍቃድ ዝርዝር"
+
+#: lib/Settings.php
+msgid "Comma-separated internal CIDR ranges explicitly permitted by OutboundGuard."
+msgstr "በOutboundGuard በግልጽ የተፈቀዱ በኮማ የተለዩ የውስጥ CIDR ክልሎች።"
+
+#: lib/Settings.php
+msgid "Outbound Client & Adaptive Poller Sizing"
+msgstr "የውጪ ደንበኛ እና ተስማሚ የፖለር መጠን ማስተካከያ"
+
+#: lib/Settings.php
+msgid "Poll Interval (seconds)"
+msgstr "የፍተሻ ክፍተት (ሰከንዶች)"
+
+#: lib/Settings.php
+msgid "Target fleet polling interval in seconds for Little's Law concurrency sizing."
+msgstr "ለLittle's Law ተመሳሳይነት መጠን ማስተካከያ የታለመው የስብስብ ፍተሻ ክፍተት በሰከንዶች።"
+
+#: lib/Settings.php
+msgid "Connect Timeout (seconds)"
+msgstr "የግንኙነት ጊዜ ማብቂያ (ሰከንዶች)"
+
+#: lib/Settings.php
+msgid "Maximum TCP/TLS connect duration per WordPress probe (1-15s)."
+msgstr "በእያንዳንዱ የWordPress ፍተሻ ከፍተኛው የTCP/TLS ግንኙነት ቆይታ (1-15s)።"
+
+#: lib/Settings.php
+msgid "Read Timeout (seconds)"
+msgstr "የንባብ ጊዜ ማብቂያ (ሰከንዶች)"
+
+#: lib/Settings.php
+msgid "Maximum total HTTP read duration per WordPress probe (1-60s)."
+msgstr "በእያንዳንዱ የWordPress ፍተሻ ከፍተኛው አጠቃላይ የHTTP ንባብ ቆይታ (1-60s)።"
+
+#: lib/Settings.php
+msgid "Max Response Size (bytes)"
+msgstr "ከፍተኛው የምላሽ መጠን (ባይቶች)"
+
+#: lib/Settings.php
+msgid "Hard byte ceiling per HTTP response (capped at 2097152 bytes / 2 MiB)."
+msgstr "በእያንዳንዱ HTTP ምላሽ ጠንካራ የባይት ገደብ (እስከ 2097152 ባይቶች / 2 MiB የተገደበ)።"
+
+#: lib/Settings.php
+msgid "CoDel Target Standing Delay (ms)"
+msgstr "የCoDel ዒላማ ቋሚ መዘግየት (ms)"
+
+#: lib/Settings.php
+msgid "Queue standing-delay target in milliseconds before adaptive concurrency backs off."
+msgstr "ተስማሚ ተመሳሳይነት ከመቀነሱ በፊት የወረፋ ቋሚ መዘግየት ዒላማ በሚሊሰከንዶች።"
+
+#: lib/Settings.php
+msgid "Minimum Concurrency"
+msgstr "ዝቅተኛ ተመሳሳይነት"
+
+#: lib/Settings.php
+msgid "Lower bound on concurrent WordPress probe workers per collector shard."
+msgstr "በእያንዳንዱ ሰብሳቢ ክፍል ለተመሳሳይ የWordPress ፍተሻ ሰራተኞች ዝቅተኛ ገደብ።"
+
+#: lib/Settings.php
+msgid "Maximum Concurrency"
+msgstr "ከፍተኛ ተመሳሳይነት"
+
+#: lib/Settings.php
+msgid "Upper bound on concurrent WordPress probe workers per collector shard."
+msgstr "በእያንዳንዱ ሰብሳቢ ክፍል ለተመሳሳይ የWordPress ፍተሻ ሰራተኞች ከፍተኛ ገደብ።"
+
+#: lib/Settings.php
+msgid "HTTP User-Agent"
+msgstr "የHTTP User-Agent ራስጌ"
+
+#: lib/Settings.php
+msgid "User-Agent header sent on read-only REST and Site Health probes."
+msgstr "ለንባብ ብቻ በሚሆኑ የREST እና የጣቢያ ጤና ፍተሻዎች ላይ የሚላክ የUser-Agent ራስጌ።"
+
+#: lib/Settings.php
+msgid "Fleet Health & Thold Thresholds"
+msgstr "የስብስብ ጤና እና የThold ገደቦች"
+
+#: lib/Settings.php
+msgid "Default Apdex T (ms)"
+msgstr "ነባሪ Apdex T (ms)"
+
+#: lib/Settings.php
+msgid "Satisfied TTFB threshold T in milliseconds (tolerating threshold is 4T)."
+msgstr "አርኪ የTTFB ገደብ T በሚሊሰከንዶች (ተቀባይነት ያለው ገደብ 4T ነው)።"
+
+#: lib/Settings.php
+msgid "Autoload Bloat Warning (bytes)"
+msgstr "የራስ-ጭነት መብዛት ማስጠንቀቂያ (ባይቶች)"
+
+#: lib/Settings.php
+msgid "wp_options autoloaded size warning threshold (default 819200 / 800 KiB)."
+msgstr "የwp_options ራስ-ጭነት መጠን ማስጠንቀቂያ ገደብ (ነባሪ 819200 / 800 KiB)።"
+
+#: lib/Settings.php
+msgid "Autoload Bloat Critical (bytes)"
+msgstr "ከባድ የራስ-ጭነት መብዛት (ባይቶች)"
+
+#: lib/Settings.php
+msgid "wp_options autoloaded size critical threshold (default 2097152 / 2 MiB)."
+msgstr "የwp_options ራስ-ጭነት መጠን ከባድ ገደብ (ነባሪ 2097152 / 2 MiB)።"
+
+#: lib/Settings.php
+msgid "WP-Cron Lag Warning (seconds)"
+msgstr "የWP-Cron መዘግየት ማስጠንቀቂያ (ሰከንዶች)"
+
+#: lib/Settings.php
+msgid "Oldest overdue WP-Cron job lag threshold for degraded status."
+msgstr "ለተዳከመ ሁኔታ በጣም ያለፈበት የWP-Cron ስራ መዘግየት ገደብ።"
+
+#: lib/Settings.php
+msgid "TLS Expiry Warning (days)"
+msgstr "የTLS ጊዜ ማብቂያ ማስጠንቀቂያ (ቀናት)"
+
+#: lib/Settings.php
+msgid "Days before TLS certificate expiry triggering degraded status."
+msgstr "የTLS ሰርተፍኬት ጊዜ ከማብቃቱ በፊት የተዳከመ ሁኔታን የሚቀሰቅሱ ቀናት።"
+
+#: lib/Settings.php
+msgid "TLS Expiry Critical (days)"
+msgstr "ከባድ የTLS ጊዜ ማብቂያ (ቀናት)"
+
+#: lib/Settings.php
+msgid "Days before TLS certificate expiry triggering critical status."
+msgstr "የTLS ሰርተፍኬት ጊዜ ከማብቃቱ በፊት ከባድ ሁኔታን የሚቀሰቅሱ ቀናት።"
+
+#: lib/Settings.php
+msgid "Keep Tables on Uninstall"
+msgstr "ሲራገፍ ሠንጠረዦችን አቆይ"
+
+#: lib/Settings.php
+msgid "Preserve plugin_wordpress database tables when uninstalling the plugin."
+msgstr "ተሰኪውን ሲያራግፉ የplugin_wordpress ዳታቤዝ ሠንጠረዦችን ጠብቀው ያቆዩ።"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Fleet Health Summary"
+msgstr "የስብስብ ጤና ማጠቃለያ"
+
+#: lib/Ui/PagesRenderer.php
+msgid "MAD Latency Anomalies"
+msgstr "የMAD መዘግየት ያልተለመዱ ሁኔታዎች"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Site Snapshots"
+msgstr "የጣቢያ ቅጽበታዊ ገጽ እይታዎች"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Cacti Thold Baseline Templates"
+msgstr "የCacti Thold መሰረታዊ አብነቶች"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Dry-Run Probe Site:"
+msgstr "የሙከራ ፍተሻ ጣቢያ:"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Run Read-Only Probe"
+msgstr "ለንባብ ብቻ ፍተሻ አሂድ"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Latest Dry-Run Probe Result"
+msgstr "የቅርብ ጊዜ የሙከራ ፍተሻ ውጤት"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Update Drift, Cron Stalls & Autoload Bloat"
+msgstr "የዝማኔ መዛባት፣ የCron መቆም እና የራስ-ጭነት መብዛት"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Vault Status:"
+msgstr "የካዝና ሁኔታ:"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Add or Update WordPress Site"
+msgstr "የWordPress ጣቢያ ያክሉ ወይም ያዘምኑ"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Save Site"
+msgstr "ጣቢያ አስቀምጥ"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Configured Fleet Inventory"
+msgstr "የተዋቀረ የስብስብ ዝርዝር"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Delete"
+msgstr "ሰርዝ"
+
+#: setup.php
+#, php-format
+msgid "The WordPress plugin requires PHP %s or later. This server runs PHP %s, so the plugin was not installed or enabled."
+msgstr "የWordPress ተሰኪ PHP %s ወይም ከዚያ በላይ ይፈልጋል። ይህ አገልጋይ PHP %s ያሄዳል፣ ስለዚህ ተሰኪው አልተጫነም ወይም አልነቃም።"
+
+#: setup.php
+msgid "Utilities"
+msgstr "መገልገያዎች"
+
+#: setup.php
+msgid "WordPress"
+msgstr "WordPress"
+
+#: setup.php
+msgid "WordPress Fleet Monitor"
+msgstr "የWordPress ስብስብ ተቆጣጣሪ"
+
+#: setup.php
+msgid "The WordPress plugin is not enabled."
+msgstr "የWordPress ተሰኪ አልነቃም።"
+
+#: setup.php
+#, php-format
+msgid "The WordPress plugin requires PHP %s or later."
+msgstr "የWordPress ተሰኪ PHP %s ወይም ከዚያ በላይ ይፈልጋል።"
+
+#: wordpress_admin.php wordpress_operator.php
+msgid "CSRF verification failed. Reload the page and retry."
+msgstr "የCSRF ማረጋገጫ አልተሳካም። ገጹን እንደገና ይጫኑ እና እንደገና ይሞክሩ።"
+
+#: wordpress_admin.php
+msgid "Saved WordPress site inventory entry."
+msgstr "የWordPress ጣቢያ ዝርዝር ግቤት ተቀምጧል።"
+
+#: wordpress_admin.php
+msgid "Encrypted Application Password stored in local AES-256-GCM vault."
+msgstr "የተመሰጠረ የመተግበሪያ የይለፍ ቃል በአካባቢያዊ AES-256-GCM ካዝና ውስጥ ተቀምጧል።"
+
+#: wordpress_admin.php
+msgid "Deleted WordPress site and associated local vault secret."
+msgstr "የWordPress ጣቢያ እና ተያያዥ የአካባቢ ካዝና ሚስጥር ተሰርዘዋል።"
+
+#: wordpress_admin.php
+msgid "Invalid site slug."
+msgstr "ልክ ያልሆነ የጣቢያ ስላግ።"
+
+#: wordpress_admin.php
+msgid "Unsupported administrator action."
+msgstr "የማይደገፍ የአስተዳዳሪ እርምጃ።"
+
+#: wordpress_admin.php
+msgid "WordPress Inventory, Vault Credentials & Poller Assignment (Administrator)"
+msgstr "የWordPress ዝርዝር፣ የካዝና ማረጋገጫዎች እና የፖለር ምደባ (አስተዳዳሪ)"
+
+#: wordpress_operator.php
+msgid "Select a site to probe."
+msgstr "ለመፈተሽ ጣቢያ ይምረጡ።"
+
+#: wordpress_operator.php
+msgid "Unknown WordPress site slug."
+msgstr "ያልታወቀ የWordPress ጣቢያ ስላግ።"
+
+#: wordpress_operator.php
+msgid "Completed read-only dry-run probe."
+msgstr "ለንባብ ብቻ የሚሆን የሙከራ ፍተሻ ተጠናቋል።"
+
+#: wordpress_operator.php
+msgid "Unsupported operator action."
+msgstr "የማይደገፍ የኦፕሬተር እርምጃ።"
+
+#: wordpress_operator.php
+msgid "WordPress Drift, Site Health, Cron & Dry-Run Probes (Operator)"
+msgstr "የWordPress መዛባት፣ የጣቢያ ጤና፣ Cron እና የሙከራ ፍተሻዎች (ኦፕሬተር)"
+
+#: wordpress_view.php
+msgid "WordPress Fleet Health & Metrics Overview (View)"
+msgstr "የWordPress ስብስብ ጤና እና የመለኪያዎች አጠቃላይ እይታ (እይታ)"

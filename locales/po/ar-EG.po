@@ -1,0 +1,325 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
+# SPDX-FileCopyrightText: 2026 Thomas Vincent <thomasvincent@gmail.com>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: wordpress 0.1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/somethingwithproof/plugin_wordpress/issues\n"
+"PO-Revision-Date: 2026-11-28 00:00+0000\n"
+"Last-Translator: Thomas Vincent <thomasvincent@gmail.com>\n"
+"Language-Team: Arabic (Egypt) <developers@cacti.net>\n"
+"Language: ar_EG\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+
+#: lib/Pages.php
+msgid "WordPress View"
+msgstr "عرض WordPress"
+
+#: lib/Pages.php
+msgid "WordPress Operator"
+msgstr "مشغّل WordPress"
+
+#: lib/Pages.php
+msgid "WordPress Admin"
+msgstr "مدير WordPress"
+
+#: lib/Pages.php
+msgid "WordPress Fleet Overview"
+msgstr "نظرة عامة على أسطول WordPress"
+
+#: lib/Pages.php
+msgid "WordPress Drift & Probes"
+msgstr "انحرافات وفحوصات WordPress"
+
+#: lib/Pages.php
+msgid "WordPress Inventory & Vault"
+msgstr "جرد مواقع WordPress والخزنة"
+
+#: lib/Settings.php
+msgid "WordPress Fleet Security & Vault"
+msgstr "أمان أسطول WordPress والخزنة"
+
+#: lib/Settings.php
+msgid "Vault Keyfile Path"
+msgstr "مسار ملف مفتاح الخزنة"
+
+#: lib/Settings.php
+msgid "Absolute path to the external 256-bit AES-GCM keyfile used to encrypt Application Passwords at rest. Never replicated to remote pollers."
+msgstr "المسار الكامل لملف المفتاح الخارجي 256-bit AES-GCM المستخدم لتشفير كلمات مرور التطبيقات أثناء التخزين. لا يتم نسخه مطلقاً إلى وحدات الاستطلاع البعيدة."
+
+#: lib/Settings.php
+msgid "Internal Host Allowlist"
+msgstr "قائمة المضيفين الداخليين المسموح بهم"
+
+#: lib/Settings.php
+msgid "Comma-separated hostnames or wildcard patterns (e.g. *.corp.example) exempt from private-IP SSRF blocking."
+msgstr "أسماء مضيفين أو أنماط بدل مفصولة بفواصل (مثل *.corp.example) مستثناة من حظر SSRF لعناوين IP الخاصة."
+
+#: lib/Settings.php
+msgid "Internal CIDR Allowlist"
+msgstr "قائمة نطاقات CIDR الداخلية المسموح بها"
+
+#: lib/Settings.php
+msgid "Comma-separated internal CIDR ranges explicitly permitted by OutboundGuard."
+msgstr "نطاقات CIDR الداخلية المفصولة بفواصل والمسموح بها صراحةً بواسطة OutboundGuard."
+
+#: lib/Settings.php
+msgid "Outbound Client & Adaptive Poller Sizing"
+msgstr "العميل الصادر وتحجيم الاستطلاع التكيفي"
+
+#: lib/Settings.php
+msgid "Poll Interval (seconds)"
+msgstr "الفاصل الزمني للاستطلاع (بالثواني)"
+
+#: lib/Settings.php
+msgid "Target fleet polling interval in seconds for Little's Law concurrency sizing."
+msgstr "الفاصل الزمني المستهدف لاستطلاع الأسطول بالثواني لحساب التزامن وفقاً لـ Little's Law."
+
+#: lib/Settings.php
+msgid "Connect Timeout (seconds)"
+msgstr "مهلة الاتصال (بالثواني)"
+
+#: lib/Settings.php
+msgid "Maximum TCP/TLS connect duration per WordPress probe (1-15s)."
+msgstr "الحد الأقصى لمدة اتصال TCP/TLS لكل فحص WordPress (1-15s)."
+
+#: lib/Settings.php
+msgid "Read Timeout (seconds)"
+msgstr "مهلة القراءة (بالثواني)"
+
+#: lib/Settings.php
+msgid "Maximum total HTTP read duration per WordPress probe (1-60s)."
+msgstr "الحد الأقصى لإجمالي مدة قراءة HTTP لكل فحص WordPress (1-60s)."
+
+#: lib/Settings.php
+msgid "Max Response Size (bytes)"
+msgstr "الحد الأقصى لحجم الاستجابة (بالبايت)"
+
+#: lib/Settings.php
+msgid "Hard byte ceiling per HTTP response (capped at 2097152 bytes / 2 MiB)."
+msgstr "سقف صارم بالبايت لكل استجابة HTTP (بحد أقصى 2097152 بايت / 2 MiB)."
+
+#: lib/Settings.php
+msgid "CoDel Target Standing Delay (ms)"
+msgstr "تأخير الانتظار المستهدف لـ CoDel (ms)"
+
+#: lib/Settings.php
+msgid "Queue standing-delay target in milliseconds before adaptive concurrency backs off."
+msgstr "الحد المستهدف لتأخير قائمة الانتظار بالمللي ثانية قبل تراجع التزامن التكيفي."
+
+#: lib/Settings.php
+msgid "Minimum Concurrency"
+msgstr "الحد الأدنى للتزامن"
+
+#: lib/Settings.php
+msgid "Lower bound on concurrent WordPress probe workers per collector shard."
+msgstr "الحد الأدنى لعدد عمليات فحص WordPress المتزامنة لكل جزء جامع بيانات."
+
+#: lib/Settings.php
+msgid "Maximum Concurrency"
+msgstr "الحد الأقصى للتزامن"
+
+#: lib/Settings.php
+msgid "Upper bound on concurrent WordPress probe workers per collector shard."
+msgstr "الحد الأقصى لعدد عمليات فحص WordPress المتزامنة لكل جزء جامع بيانات."
+
+#: lib/Settings.php
+msgid "HTTP User-Agent"
+msgstr "ترويسة HTTP User-Agent"
+
+#: lib/Settings.php
+msgid "User-Agent header sent on read-only REST and Site Health probes."
+msgstr "ترويسة User-Agent المرسلة في فحوصات REST وصحة الموقع للقراءة فقط."
+
+#: lib/Settings.php
+msgid "Fleet Health & Thold Thresholds"
+msgstr "صحة الأسطول وحدود Thold"
+
+#: lib/Settings.php
+msgid "Default Apdex T (ms)"
+msgstr "قيمة Apdex T الافتراضية (ms)"
+
+#: lib/Settings.php
+msgid "Satisfied TTFB threshold T in milliseconds (tolerating threshold is 4T)."
+msgstr "حد TTFB المُرضي T بالمللي ثانية (الحد المقبول هو 4T)."
+
+#: lib/Settings.php
+msgid "Autoload Bloat Warning (bytes)"
+msgstr "تحذير تضخم التحميل التلقائي (بالبايت)"
+
+#: lib/Settings.php
+msgid "wp_options autoloaded size warning threshold (default 819200 / 800 KiB)."
+msgstr "حد التحذير لحجم البيانات المحمّلة تلقائياً في wp_options (الافتراضي 819200 / 800 KiB)."
+
+#: lib/Settings.php
+msgid "Autoload Bloat Critical (bytes)"
+msgstr "حد حرج لتضخم التحميل التلقائي (بالبايت)"
+
+#: lib/Settings.php
+msgid "wp_options autoloaded size critical threshold (default 2097152 / 2 MiB)."
+msgstr "الحد الحرج لحجم البيانات المحمّلة تلقائياً في wp_options (الافتراضي 2097152 / 2 MiB)."
+
+#: lib/Settings.php
+msgid "WP-Cron Lag Warning (seconds)"
+msgstr "تحذير تأخر WP-Cron (بالثواني)"
+
+#: lib/Settings.php
+msgid "Oldest overdue WP-Cron job lag threshold for degraded status."
+msgstr "حد تأخر أقدم مهمة WP-Cron متأخرة لتفعيل الحالة المتدهورة."
+
+#: lib/Settings.php
+msgid "TLS Expiry Warning (days)"
+msgstr "تحذير انتهاء صلاحية TLS (بالأيام)"
+
+#: lib/Settings.php
+msgid "Days before TLS certificate expiry triggering degraded status."
+msgstr "عدد الأيام قبل انتهاء شهادة TLS لتفعيل الحالة المتدهورة."
+
+#: lib/Settings.php
+msgid "TLS Expiry Critical (days)"
+msgstr "حد حرج لانتهاء صلاحية TLS (بالأيام)"
+
+#: lib/Settings.php
+msgid "Days before TLS certificate expiry triggering critical status."
+msgstr "عدد الأيام قبل انتهاء شهادة TLS لتفعيل الحالة الحرجة."
+
+#: lib/Settings.php
+msgid "Keep Tables on Uninstall"
+msgstr "الاحتفاظ بالجداول عند إلغاء التثبيت"
+
+#: lib/Settings.php
+msgid "Preserve plugin_wordpress database tables when uninstalling the plugin."
+msgstr "الاحتفاظ بجداول قاعدة بيانات plugin_wordpress عند إلغاء تثبيت الملحق."
+
+#: lib/Ui/PagesRenderer.php
+msgid "Fleet Health Summary"
+msgstr "ملخص صحة الأسطول"
+
+#: lib/Ui/PagesRenderer.php
+msgid "MAD Latency Anomalies"
+msgstr "شذوذ زمن الاستجابة وفق MAD"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Site Snapshots"
+msgstr "لقطات حالة المواقع"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Cacti Thold Baseline Templates"
+msgstr "قوالب الأساس لـ Cacti Thold"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Dry-Run Probe Site:"
+msgstr "موقع الفحص التجريبي:"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Run Read-Only Probe"
+msgstr "تشغيل فحص للقراءة فقط"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Latest Dry-Run Probe Result"
+msgstr "أحدث نتيجة للفحص التجريبي"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Update Drift, Cron Stalls & Autoload Bloat"
+msgstr "انحرافات التحديث وتوقفات Cron وتضخم التحميل التلقائي"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Vault Status:"
+msgstr "حالة الخزنة:"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Add or Update WordPress Site"
+msgstr "إضافة أو تحديث موقع WordPress"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Save Site"
+msgstr "حفظ الموقع"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Configured Fleet Inventory"
+msgstr "جرد الأسطول المُعدّ"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Delete"
+msgstr "حذف"
+
+#: setup.php
+#, php-format
+msgid "The WordPress plugin requires PHP %s or later. This server runs PHP %s, so the plugin was not installed or enabled."
+msgstr "يتطلب ملحق WordPress إصدار PHP %s أو أحدث. يعمل هذا الخادم بإصدار PHP %s، لذلك لم يتم تثبيت الملحق أو تفعيله."
+
+#: setup.php
+msgid "Utilities"
+msgstr "أدوات مساعدة"
+
+#: setup.php
+msgid "WordPress"
+msgstr "WordPress"
+
+#: setup.php
+msgid "WordPress Fleet Monitor"
+msgstr "مراقب أسطول WordPress"
+
+#: setup.php
+msgid "The WordPress plugin is not enabled."
+msgstr "ملحق WordPress غير مفعّل."
+
+#: setup.php
+#, php-format
+msgid "The WordPress plugin requires PHP %s or later."
+msgstr "يتطلب ملحق WordPress إصدار PHP %s أو أحدث."
+
+#: wordpress_admin.php wordpress_operator.php
+msgid "CSRF verification failed. Reload the page and retry."
+msgstr "فشل التحقق من CSRF. أعد تحميل الصفحة وحاول مرة أخرى."
+
+#: wordpress_admin.php
+msgid "Saved WordPress site inventory entry."
+msgstr "تم حفظ سجل موقع WordPress في الجرد."
+
+#: wordpress_admin.php
+msgid "Encrypted Application Password stored in local AES-256-GCM vault."
+msgstr "تم حفظ كلمة مرور التطبيق المشفّرة في خزنة AES-256-GCM المحلية."
+
+#: wordpress_admin.php
+msgid "Deleted WordPress site and associated local vault secret."
+msgstr "تم حذف موقع WordPress والسر المرتبط به في الخزنة المحلية."
+
+#: wordpress_admin.php
+msgid "Invalid site slug."
+msgstr "معرّف الموقع غير صالح."
+
+#: wordpress_admin.php
+msgid "Unsupported administrator action."
+msgstr "إجراء مدير غير مدعوم."
+
+#: wordpress_admin.php
+msgid "WordPress Inventory, Vault Credentials & Poller Assignment (Administrator)"
+msgstr "جرد WordPress وبيانات اعتماد الخزنة وتعيين وحدة الاستطلاع (مدير)"
+
+#: wordpress_operator.php
+msgid "Select a site to probe."
+msgstr "اختر موقعاً لفحصه."
+
+#: wordpress_operator.php
+msgid "Unknown WordPress site slug."
+msgstr "معرّف موقع WordPress غير معروف."
+
+#: wordpress_operator.php
+msgid "Completed read-only dry-run probe."
+msgstr "اكتمل الفحص التجريبي للقراءة فقط."
+
+#: wordpress_operator.php
+msgid "Unsupported operator action."
+msgstr "إجراء مشغّل غير مدعوم."
+
+#: wordpress_operator.php
+msgid "WordPress Drift, Site Health, Cron & Dry-Run Probes (Operator)"
+msgstr "انحرافات WordPress وصحة الموقع وCron والفحوصات التجريبية (مشغّل)"
+
+#: wordpress_view.php
+msgid "WordPress Fleet Health & Metrics Overview (View)"
+msgstr "صحة أسطول WordPress ونظرة عامة على المقاييس (عرض)"

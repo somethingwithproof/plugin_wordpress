@@ -1,0 +1,325 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
+# SPDX-FileCopyrightText: 2026 Thomas Vincent <thomasvincent@gmail.com>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: wordpress 0.1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/somethingwithproof/plugin_wordpress/issues\n"
+"PO-Revision-Date: 2026-11-28 00:00+0000\n"
+"Last-Translator: Thomas Vincent <thomasvincent@gmail.com>\n"
+"Language-Team: Zulu <developers@cacti.net>\n"
+"Language: zu_ZA\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: lib/Pages.php
+msgid "WordPress View"
+msgstr "Ukubuka kwe-WordPress"
+
+#: lib/Pages.php
+msgid "WordPress Operator"
+msgstr "Umsebenzi we-WordPress"
+
+#: lib/Pages.php
+msgid "WordPress Admin"
+msgstr "Umlawuli we-WordPress"
+
+#: lib/Pages.php
+msgid "WordPress Fleet Overview"
+msgstr "Isifinyezo Seqembu le-WordPress"
+
+#: lib/Pages.php
+msgid "WordPress Drift & Probes"
+msgstr "Ukuphambuka Nokuhlola kwe-WordPress"
+
+#: lib/Pages.php
+msgid "WordPress Inventory & Vault"
+msgstr "Uhlu Negumbi Lokuphepha le-WordPress"
+
+#: lib/Settings.php
+msgid "WordPress Fleet Security & Vault"
+msgstr "Ukuphepha Negumbi Lokuphepha leQembu le-WordPress"
+
+#: lib/Settings.php
+msgid "Vault Keyfile Path"
+msgstr "Indlela Yefayela Lesihluthulelo Segumbi Lokuphepha"
+
+#: lib/Settings.php
+msgid "Absolute path to the external 256-bit AES-GCM keyfile used to encrypt Application Passwords at rest. Never replicated to remote pollers."
+msgstr "Indlela ephelele eya kufayela lesihluthulelo sangaphandle se-256-bit AES-GCM esisetshenziselwa ukubethela Amaphasiwedi Ohlelo uma egciniwe. Asikaze siphindwe kubavoti bakude."
+
+#: lib/Settings.php
+msgid "Internal Host Allowlist"
+msgstr "Uhlu Lwamasistimu Angaphakathi Avunyelwe"
+
+#: lib/Settings.php
+msgid "Comma-separated hostnames or wildcard patterns (e.g. *.corp.example) exempt from private-IP SSRF blocking."
+msgstr "Amagama amasistimu noma amaphethini e-wildcard ahlukaniswe ngokhefana (isib. *.corp.example) angafakwanga ekuvinjweni kwe-SSRF kwe-IP yangasese."
+
+#: lib/Settings.php
+msgid "Internal CIDR Allowlist"
+msgstr "Uhlu lwe-CIDR Yangaphakathi Evunyelwe"
+
+#: lib/Settings.php
+msgid "Comma-separated internal CIDR ranges explicitly permitted by OutboundGuard."
+msgstr "Uhlu lwe-CIDR yangaphakathi oluhlukaniswe ngokhefana oluvunyelwe ngokucacile yi-OutboundGuard."
+
+#: lib/Settings.php
+msgid "Outbound Client & Adaptive Poller Sizing"
+msgstr "Iklayenti Langaphandle Nokulinganisa Komvoti Ozivumelanisayo"
+
+#: lib/Settings.php
+msgid "Poll Interval (seconds)"
+msgstr "Isikhawu Sokuvota (imizuzwana)"
+
+#: lib/Settings.php
+msgid "Target fleet polling interval in seconds for Little's Law concurrency sizing."
+msgstr "Isikhawu esiqondiwe sokuvota kweqembu ngemizuzwana ukuze kulinganiswe ukusebenza ngasikhathi sinye kwe-Little's Law."
+
+#: lib/Settings.php
+msgid "Connect Timeout (seconds)"
+msgstr "Isikhathi Sokuphelelwa Kokuxhuma (imizuzwana)"
+
+#: lib/Settings.php
+msgid "Maximum TCP/TLS connect duration per WordPress probe (1-15s)."
+msgstr "Ubude obuphezulu besikhathi sokuxhuma kwe-TCP/TLS ekuhlolweni ngakunye kwe-WordPress (1-15s)."
+
+#: lib/Settings.php
+msgid "Read Timeout (seconds)"
+msgstr "Isikhathi Sokuphelelwa Kokufunda (imizuzwana)"
+
+#: lib/Settings.php
+msgid "Maximum total HTTP read duration per WordPress probe (1-60s)."
+msgstr "Ubude besikhathi obuphelele obuphezulu bokufunda i-HTTP ekuhlolweni ngakunye kwe-WordPress (1-60s)."
+
+#: lib/Settings.php
+msgid "Max Response Size (bytes)"
+msgstr "Usayizi Omukhulu Wempendulo (amabhayithi)"
+
+#: lib/Settings.php
+msgid "Hard byte ceiling per HTTP response (capped at 2097152 bytes / 2 MiB)."
+msgstr "Umkhawulo oqinile wamabhayithi empendulweni ngayinye ye-HTTP (ukhawulelwe kumabhayithi angu-2097152 / 2 MiB)."
+
+#: lib/Settings.php
+msgid "CoDel Target Standing Delay (ms)"
+msgstr "Ukubambezeleka Okumile Okuqondiwe kwe-CoDel (ms)"
+
+#: lib/Settings.php
+msgid "Queue standing-delay target in milliseconds before adaptive concurrency backs off."
+msgstr "Ukubambezeleka okumile komugqa okuqondiwe ngamamilisekhondi ngaphambi kokuba ukusebenza ngasikhathi sinye okuzivumelanisayo kwehlise ijubane."
+
+#: lib/Settings.php
+msgid "Minimum Concurrency"
+msgstr "Ubuncane Bokusebenza Ngasikhathi Sinye"
+
+#: lib/Settings.php
+msgid "Lower bound on concurrent WordPress probe workers per collector shard."
+msgstr "Umkhawulo ophansi wabasebenzi bokuhlola be-WordPress abasebenza ngasikhathi sinye engxenyeni ngayinye yomqoqi."
+
+#: lib/Settings.php
+msgid "Maximum Concurrency"
+msgstr "Ubuningi Bokusebenza Ngasikhathi Sinye"
+
+#: lib/Settings.php
+msgid "Upper bound on concurrent WordPress probe workers per collector shard."
+msgstr "Umkhawulo ophezulu wabasebenzi bokuhlola be-WordPress abasebenza ngasikhathi sinye engxenyeni ngayinye yomqoqi."
+
+#: lib/Settings.php
+msgid "HTTP User-Agent"
+msgstr "Isihloko se-HTTP User-Agent"
+
+#: lib/Settings.php
+msgid "User-Agent header sent on read-only REST and Site Health probes."
+msgstr "Isihloko se-User-Agent esithunyelwa ekuhloleni kokufunda kuphela kwe-REST Nokuphila Kwesayithi."
+
+#: lib/Settings.php
+msgid "Fleet Health & Thold Thresholds"
+msgstr "Impilo Yeqembu Nemikhawulo ye-Thold"
+
+#: lib/Settings.php
+msgid "Default Apdex T (ms)"
+msgstr "I-Apdex T Ezenzakalelayo (ms)"
+
+#: lib/Settings.php
+msgid "Satisfied TTFB threshold T in milliseconds (tolerating threshold is 4T)."
+msgstr "Umkhawulo owanelisayo we-TTFB T ngamamilisekhondi (umkhawulo obekezelelwayo ngu-4T)."
+
+#: lib/Settings.php
+msgid "Autoload Bloat Warning (bytes)"
+msgstr "Isexwayiso Sokukhukhumala kwe-Autoload (amabhayithi)"
+
+#: lib/Settings.php
+msgid "wp_options autoloaded size warning threshold (default 819200 / 800 KiB)."
+msgstr "Umkhawulo wesexwayiso wosayizi olayishwa ngokuzenzakalela ku-wp_options (okuzenzakalelayo ngu-819200 / 800 KiB)."
+
+#: lib/Settings.php
+msgid "Autoload Bloat Critical (bytes)"
+msgstr "Umkhawulo Obucayi Wokukhukhumala kwe-Autoload (amabhayithi)"
+
+#: lib/Settings.php
+msgid "wp_options autoloaded size critical threshold (default 2097152 / 2 MiB)."
+msgstr "Umkhawulo obucayi wosayizi olayishwa ngokuzenzakalela ku-wp_options (okuzenzakalelayo ngu-2097152 / 2 MiB)."
+
+#: lib/Settings.php
+msgid "WP-Cron Lag Warning (seconds)"
+msgstr "Isexwayiso Sokubambezeleka kwe-WP-Cron (imizuzwana)"
+
+#: lib/Settings.php
+msgid "Oldest overdue WP-Cron job lag threshold for degraded status."
+msgstr "Umkhawulo wokubambezeleka komsebenzi we-WP-Cron omdala kakhulu odlulelwe yisikhathi ngesimo esehle kakhulu."
+
+#: lib/Settings.php
+msgid "TLS Expiry Warning (days)"
+msgstr "Isexwayiso Sokuphelelwa yisikhathi kwe-TLS (izinsuku)"
+
+#: lib/Settings.php
+msgid "Days before TLS certificate expiry triggering degraded status."
+msgstr "Izinsuku ngaphambi kokuphelelwa yisikhathi kwesitifiketi se-TLS ezidala isimo esehliwe."
+
+#: lib/Settings.php
+msgid "TLS Expiry Critical (days)"
+msgstr "Umkhawulo Obucayi Wokuphelelwa yisikhathi kwe-TLS (izinsuku)"
+
+#: lib/Settings.php
+msgid "Days before TLS certificate expiry triggering critical status."
+msgstr "Izinsuku ngaphambi kokuphelelwa yisikhathi kwesitifiketi se-TLS ezidala isimo esibucayi."
+
+#: lib/Settings.php
+msgid "Keep Tables on Uninstall"
+msgstr "Gcina Amathebula Lapho Ukhipha"
+
+#: lib/Settings.php
+msgid "Preserve plugin_wordpress database tables when uninstalling the plugin."
+msgstr "Gcina amathebula esizindalwazi se-plugin_wordpress lapho ukhipha i-plugin."
+
+#: lib/Ui/PagesRenderer.php
+msgid "Fleet Health Summary"
+msgstr "Isifinyezo Sempilo Yeqembu"
+
+#: lib/Ui/PagesRenderer.php
+msgid "MAD Latency Anomalies"
+msgstr "Ukungajwayeleki Kokubambezeleka kwe-MAD"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Site Snapshots"
+msgstr "Izifinyezo Zesimo Zamasayithi"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Cacti Thold Baseline Templates"
+msgstr "Izifanekiso Zesisekelo ze-Cacti Thold"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Dry-Run Probe Site:"
+msgstr "Isayithi Lokuhlola Lokuzama:"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Run Read-Only Probe"
+msgstr "Qalisa Ukuhlola Kokufunda Kuphela"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Latest Dry-Run Probe Result"
+msgstr "Umphumela Wakamuva Wokuhlola Lokuzama"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Update Drift, Cron Stalls & Autoload Bloat"
+msgstr "Ukuphambuka Kokubuyekeza, Ukuma kwe-Cron Nokukhukhumala kwe-Autoload"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Vault Status:"
+msgstr "Isimo Segumbi Lokuphepha:"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Add or Update WordPress Site"
+msgstr "Engeza noma Buyekeza Isayithi le-WordPress"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Save Site"
+msgstr "Londoloza Isayithi"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Configured Fleet Inventory"
+msgstr "Uhlu Lweqembu Olulungisiwe"
+
+#: lib/Ui/PagesRenderer.php
+msgid "Delete"
+msgstr "Susa"
+
+#: setup.php
+#, php-format
+msgid "The WordPress plugin requires PHP %s or later. This server runs PHP %s, so the plugin was not installed or enabled."
+msgstr "I-plugin ye-WordPress idinga i-PHP %s noma eyakamuva. Le seva isebenzisa i-PHP %s, ngakho-ke i-plugin ayifakwanga noma ayinikwanga amandla."
+
+#: setup.php
+msgid "Utilities"
+msgstr "Amathuluzi Osizo"
+
+#: setup.php
+msgid "WordPress"
+msgstr "WordPress"
+
+#: setup.php
+msgid "WordPress Fleet Monitor"
+msgstr "Umgadi Weqembu le-WordPress"
+
+#: setup.php
+msgid "The WordPress plugin is not enabled."
+msgstr "I-plugin ye-WordPress ayinikwanga amandla."
+
+#: setup.php
+#, php-format
+msgid "The WordPress plugin requires PHP %s or later."
+msgstr "I-plugin ye-WordPress idinga i-PHP %s noma eyakamuva."
+
+#: wordpress_admin.php wordpress_operator.php
+msgid "CSRF verification failed. Reload the page and retry."
+msgstr "Ukuqinisekiswa kwe-CSRF kwehlulekile. Layisha kabusha ikhasi bese uzama futhi."
+
+#: wordpress_admin.php
+msgid "Saved WordPress site inventory entry."
+msgstr "Okufakiwe kohlu lwesayithi le-WordPress kulondoloziwe."
+
+#: wordpress_admin.php
+msgid "Encrypted Application Password stored in local AES-256-GCM vault."
+msgstr "Iphasiwedi Yohlelo ebethelwe igcinwe egumbini lokuphepha lendawo le-AES-256-GCM."
+
+#: wordpress_admin.php
+msgid "Deleted WordPress site and associated local vault secret."
+msgstr "Isayithi le-WordPress nemfihlo yegumbi lokuphepha lendawo ehlobene nayo kususiwe."
+
+#: wordpress_admin.php
+msgid "Invalid site slug."
+msgstr "Igama elifushane lesayithi (slug) alilungile."
+
+#: wordpress_admin.php
+msgid "Unsupported administrator action."
+msgstr "Isenzo somlawuli esingasekelwa."
+
+#: wordpress_admin.php
+msgid "WordPress Inventory, Vault Credentials & Poller Assignment (Administrator)"
+msgstr "Uhlu lwe-WordPress, Imininingwane Yegumbi Lokuphepha Nokwabiwa Komvoti (Umlawuli)"
+
+#: wordpress_operator.php
+msgid "Select a site to probe."
+msgstr "Khetha isayithi ozolihlola."
+
+#: wordpress_operator.php
+msgid "Unknown WordPress site slug."
+msgstr "Igama elifushane lesayithi le-WordPress (slug) elingaziwa."
+
+#: wordpress_operator.php
+msgid "Completed read-only dry-run probe."
+msgstr "Ukuhlola kokuzama kokufunda kuphela kuqediwe."
+
+#: wordpress_operator.php
+msgid "Unsupported operator action."
+msgstr "Isenzo somsebenzi esingasekelwa."
+
+#: wordpress_operator.php
+msgid "WordPress Drift, Site Health, Cron & Dry-Run Probes (Operator)"
+msgstr "Ukuphambuka kwe-WordPress, Impilo Yesayithi, i-Cron Nokuhlola Kokuzama (Umsebenzi)"
+
+#: wordpress_view.php
+msgid "WordPress Fleet Health & Metrics Overview (View)"
+msgstr "Isifinyezo Sempilo Namamethrikhi Eqembu le-WordPress (Ukubuka)"
